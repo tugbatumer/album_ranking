@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Album Rankings</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+    }
+    .album-art {
+      display: block;
+      margin: 0 auto 1rem;
+      max-width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+    .box {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .track {
+      padding: 0.3rem 0;
+      transition: background 0.3s;
+    }
+    .track:hover {
+      background: #e2e6ea;
+      border-radius: 4px;
+    }
+    .highlight {
+      background: #d1e7dd;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Top 5 Songs: *Album Name*</h1>
+
+<img class="album-art" src="ALBUM_ART_URL_HERE" alt="Album Art">
+
+<div class="container">
+  <div class="box">
+    <h2>All Tracks</h2>
+    <div class="track">1. Song A</div>
+    <div class="track">2. Song B</div>
+    <div class="track">3. Song C</div>
+    <div class="track">4. Song D</div>
+    <div class="track">5. Song E</div>
+    <div class="track">6. Song F</div>
+    <div class="track">7. Song G</div>
+  </div>
+
+  <div class="box">
+    <h2>Your Ranking</h2>
+    <ol>
+      <li class="highlight">Song B
+        <iframe src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID_1" height="80"></iframe>
+      </li>
+      <li class="highlight">Song E
+        <iframe src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID_2" height="80"></iframe>
+      </li>
+      <li class="highlight">Song A
+        <iframe src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID_3" height="80"></iframe>
+      </li>
+      <li class="highlight">Song D
+        <iframe src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID_4" height="80"></iframe>
+      </li>
+      <li class="highlight">Song F
+        <iframe src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID_5" height="80"></iframe>
+      </li>
+    </ol>
+  </div>
+
+  <div class="box">
+    <h2>Friend's Ranking</h2>
+    <ol>
+      <li class="highlight">Song C
+        <iframe src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID_6" height="80"></iframe>
+      </li>
+      <li class="highlight">Song B
+        <iframe src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID_1" height="80"></iframe>
+      </li>
+      <li class="highlight">Song G
+        <iframe src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID_7" height="80"></iframe>
+      </li>
+      <li class="highlight">Song E
+        <iframe src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID_2" height="80"></iframe>
+      </li>
+      <li class="highlight">Song A
+        <iframe src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID_3" height="80"></iframe>
+      </li>
+    </ol>
+  </div>
+</div>
+
+</body>
+</html>
