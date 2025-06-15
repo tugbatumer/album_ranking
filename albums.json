@@ -1,0 +1,82 @@
+[
+  {
+    "album": "Even in Arcadia",
+    "artist": "Sleep Token",
+    "spotify_id": "1lS7FeRcSUuIGqyg99UGpj",
+    "loss": 6,
+    "Yagiz": [
+      1,
+      3,
+      0,
+      8,
+      5
+    ],
+    "Tugba": [
+      1,
+      3,
+      7,
+      0,
+      5
+    ]
+  },
+  {
+    "album": "The New Abnormal",
+    "artist": "The Strokes",
+    "spotify_id": "2xkZV2Hl1Omi8rk2D7t5lN",
+    "loss": 8,
+    "Yagiz": [
+      0,
+      8,
+      6,
+      2,
+      1
+    ],
+    "Tugba": [
+      8,
+      1,
+      0,
+      2,
+      6
+    ]
+  },
+  {
+    "album": "BODIES",
+    "artist": "Thornhill",
+    "spotify_id": "5bJeb7bvHrxNvZ6UskCoqm",
+    "loss": 12,
+    "Yagiz": [
+      1,
+      2,
+      10,
+      9,
+      5
+    ],
+    "Tugba": [
+      10,
+      2,
+      3,
+      5,
+      1
+    ]
+  },
+  {
+    "album": "Skinty Fia",
+    "artist": "Fontaines D.C.",
+    "spotify_id": "0aVN6rMKthfuAdDXn8RTXf",
+    "loss": 14,
+    "Yagiz": [
+      8,
+      5,
+      0,
+      7,
+      3
+    ],
+    "Tugba": [
+      8,
+      3,
+      5,
+      1,
+      4
+    ]
+  }
+]
