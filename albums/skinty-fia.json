@@ -1,0 +1,46 @@
+{
+  "album": "Skinty Fia",
+  "artist": "Fontaines D.C.",
+  "spotify_id": "0aVN6rMKthfuAdDXn8RTXf",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273b23737878e75582c2e255029",
+  "yagiz_songs": [
+    {
+      "name": "Skinty Fia",
+      "spotify_url": "https://open.spotify.com/track/6wyHzaCZNuu6fG4LlDFqvY"
+    },
+    {
+      "name": "Bloomsday",
+      "spotify_url": "https://open.spotify.com/track/7Ffrcxiv4wcIh8uD1QkGlU"
+    },
+    {
+      "name": "The Couple Across The Way",
+      "spotify_url": "https://open.spotify.com/track/2Eef5wnkwxg8d6sYJc5FQD"
+    },
+    {
+      "name": "How Cold Love Is",
+      "spotify_url": "https://open.spotify.com/track/6MJu1dz7bN79NNPdzrx6V9"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Skinty Fia",
+      "spotify_url": "https://open.spotify.com/track/6wyHzaCZNuu6fG4LlDFqvY"
+    },
+    {
+      "name": "How Cold Love Is",
+      "spotify_url": "https://open.spotify.com/track/6MJu1dz7bN79NNPdzrx6V9"
+    },
+    {
+      "name": "Bloomsday",
+      "spotify_url": "https://open.spotify.com/track/7Ffrcxiv4wcIh8uD1QkGlU"
+    },
+    {
+      "name": "In \u00e1r gCro\u00edthe go deo",
+      "spotify_url": "https://open.spotify.com/track/4SrJ7S8Zz9LShbeY7MXpZk"
+    },
+    {
+      "name": "Jackie Down The Line",
+      "spotify_url": "https://open.spotify.com/track/1MoA0TNVdveasxnR6c2JqZ"
+    }
+  ]
+}

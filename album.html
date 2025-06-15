@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Album Details</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f7f7f7;
+      padding: 2rem;
+    }
+    .container {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    a.track-link {
+      text-decoration: none;
+      color: #333;
+    }
+    a.track-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="album-title"></h1>
+    <h2 id="album-artist"></h2>
+    <a id="spotify-album-link" href="#" target="_blank">
+      <img id="album-art" src="" alt="Album Art">
+    </a>
+
+    <h3>Yagiz's Top 5</h3>
+    <ul id="yagiz-list"></ul>
+
+    <h3>Tugba's Top 5</h3>
+    <ul id="tugba-list"></ul>
+
+    <p><a href="index.html">← Back to Chart</a></p>
+  </div>
+
+  <script>
+    function getAlbumSlug() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('album');
+    }
+
+    const albumSlug = getAlbumSlug();
+
+    if (!albumSlug) {
+      document.body.innerHTML = '<p>No album specified.</p>';
+    } else {
+      fetch(`albums/${albumSlug}.json`)
+        .then(res => {
+          if (!res.ok) throw new Error('Not found');
+          return res.json();
+        })
+        .then(album => {
+          document.getElementById('album-title').innerText = album.album;
+          document.getElementById('album-artist').innerText = album.artist;
+          document.getElementById('spotify-album-link').href = `https://open.spotify.com/album/${album.spotify_id}`;
+          document.getElementById('album-art').src = album.album_art_url;
+
+          const yList = document.getElementById('yagiz-list');
+          album.yagiz_songs.forEach(track => {
+            const li = document.createElement('li');
+            li.innerHTML = `<a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
+            yList.appendChild(li);
+          });
+
+          const tList = document.getElementById('tugba-list');
+          album.tugba_songs.forEach(track => {
+            const li = document.createElement('li');
+            li.innerHTML = `<a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
+            tList.appendChild(li);
+          });
+        })
+        .catch(() => {
+          document.body.innerHTML = '<p>Album not found.</p>';
+        });
+    }
+  </script>
+</body>
+</html>

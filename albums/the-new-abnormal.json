@@ -1,0 +1,42 @@
+{
+  "album": "The New Abnormal",
+  "artist": "The Strokes",
+  "spotify_id": "2xkZV2Hl1Omi8rk2D7t5lN",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273bfa99afb5ef0d26d5064b23b",
+  "yagiz_songs": [
+    {
+      "name": "Not The Same Anymore",
+      "spotify_url": "https://open.spotify.com/track/5ncofiedz9Ej6YkvvXMKVn"
+    },
+    {
+      "name": "At The Door",
+      "spotify_url": "https://open.spotify.com/track/7lu6YLrlB1MU7HW8DJSuPa"
+    },
+    {
+      "name": "Selfless",
+      "spotify_url": "https://open.spotify.com/track/2t0wwvR15fc3K1ey8OiOaN"
+    },
+    {
+      "name": "The Adults Are Talking",
+      "spotify_url": "https://open.spotify.com/track/5ruzrDWcT0vuJIOMW7gMnW"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Not The Same Anymore",
+      "spotify_url": "https://open.spotify.com/track/5ncofiedz9Ej6YkvvXMKVn"
+    },
+    {
+      "name": "The Adults Are Talking",
+      "spotify_url": "https://open.spotify.com/track/5ruzrDWcT0vuJIOMW7gMnW"
+    },
+    {
+      "name": "Selfless",
+      "spotify_url": "https://open.spotify.com/track/2t0wwvR15fc3K1ey8OiOaN"
+    },
+    {
+      "name": "At The Door",
+      "spotify_url": "https://open.spotify.com/track/7lu6YLrlB1MU7HW8DJSuPa"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import re
 
 
 def compute_ranking_loss_df(df):
@@ -58,4 +59,10 @@ def plot_ranking_losses(ranking_loss_df):
     plt.legend()
     plt.tight_layout()
     plt.show()
+
+def make_slug(album_name):
+    slug = album_name.lower()                     # Lowercase
+    slug = slug.replace(' ', '-')                 # Replace spaces with hyphens
+    slug = re.sub(r'[^\w\-]', '', slug)           # Remove anything that's not a word char or hyphen
+    return slug
 

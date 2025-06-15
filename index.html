@@ -11,7 +11,7 @@
       padding: 2rem;
     }
     canvas {
-      max-width: 600px;
+      max-height: 600px;
       background: #fff;
       padding: 1rem;
       border-radius: 8px;
@@ -49,7 +49,7 @@
               const index = elements[0].index;
               const album = data[index];
               const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
-              window.location.href = `${albumSlug}.html`;
+              window.location.href = `album.html?album=${albumSlug}`;
             }
           },
             onHover: (event, elements) => {
