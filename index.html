@@ -11,6 +11,7 @@
       padding: 2rem;
     }
     canvas {
+      max-width: 600px;
       background: #fff;
       padding: 1rem;
       border-radius: 8px;
@@ -50,6 +51,9 @@
               const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
               window.location.href = `${albumSlug}.html`;
             }
+          },
+            onHover: (event, elements) => {
+          event.native.target.style.cursor = elements.length ? 'pointer' : 'default';
           }
         }
       });
