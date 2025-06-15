@@ -25,7 +25,7 @@ def generate_album_json(album_id, album_slug, yagiz_ranks, tugba_ranks):
     } for t in album['tracks']['items']}
 
     def track_list(rank_list):
-        return [tracks[num] for num in rank_list if num in tracks]
+        return [tracks[num + 1] for num in rank_list if (num+1) in tracks]
 
     output = {
         'album': album['name'],

@@ -5,38 +5,46 @@
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b273bfa99afb5ef0d26d5064b23b",
   "yagiz_songs": [
     {
-      "name": "Not The Same Anymore",
-      "spotify_url": "https://open.spotify.com/track/5ncofiedz9Ej6YkvvXMKVn"
+      "name": "The Adults Are Talking",
+      "spotify_url": "https://open.spotify.com/track/5ruzrDWcT0vuJIOMW7gMnW"
     },
     {
-      "name": "At The Door",
-      "spotify_url": "https://open.spotify.com/track/7lu6YLrlB1MU7HW8DJSuPa"
+      "name": "Ode To The Mets",
+      "spotify_url": "https://open.spotify.com/track/1BLOVHYYlH4JUHQGcpt75R"
+    },
+    {
+      "name": "Why Are Sundays So Depressing",
+      "spotify_url": "https://open.spotify.com/track/1aOxOpH4AkGAd8OMrKjyNY"
+    },
+    {
+      "name": "Brooklyn Bridge To Chorus",
+      "spotify_url": "https://open.spotify.com/track/2mDYYGaGd9uXKkK2YhDA3i"
     },
     {
       "name": "Selfless",
       "spotify_url": "https://open.spotify.com/track/2t0wwvR15fc3K1ey8OiOaN"
-    },
-    {
-      "name": "The Adults Are Talking",
-      "spotify_url": "https://open.spotify.com/track/5ruzrDWcT0vuJIOMW7gMnW"
     }
   ],
   "tugba_songs": [
     {
-      "name": "Not The Same Anymore",
-      "spotify_url": "https://open.spotify.com/track/5ncofiedz9Ej6YkvvXMKVn"
-    },
-    {
-      "name": "The Adults Are Talking",
-      "spotify_url": "https://open.spotify.com/track/5ruzrDWcT0vuJIOMW7gMnW"
+      "name": "Ode To The Mets",
+      "spotify_url": "https://open.spotify.com/track/1BLOVHYYlH4JUHQGcpt75R"
     },
     {
       "name": "Selfless",
       "spotify_url": "https://open.spotify.com/track/2t0wwvR15fc3K1ey8OiOaN"
     },
     {
-      "name": "At The Door",
-      "spotify_url": "https://open.spotify.com/track/7lu6YLrlB1MU7HW8DJSuPa"
+      "name": "The Adults Are Talking",
+      "spotify_url": "https://open.spotify.com/track/5ruzrDWcT0vuJIOMW7gMnW"
+    },
+    {
+      "name": "Brooklyn Bridge To Chorus",
+      "spotify_url": "https://open.spotify.com/track/2mDYYGaGd9uXKkK2YhDA3i"
+    },
+    {
+      "name": "Why Are Sundays So Depressing",
+      "spotify_url": "https://open.spotify.com/track/1aOxOpH4AkGAd8OMrKjyNY"
     }
   ]
 }

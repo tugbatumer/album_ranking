@@ -5,38 +5,46 @@
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730e48dcb579fd8e59d0a3c218",
   "yagiz_songs": [
     {
+      "name": "Emergence",
+      "spotify_url": "https://open.spotify.com/track/2OMjHcniFxzijWX7EaBrXE"
+    },
+    {
+      "name": "Dangerous",
+      "spotify_url": "https://open.spotify.com/track/105Fwh9wijwT41rrfgSnrE"
+    },
+    {
       "name": "Look To Windward",
       "spotify_url": "https://open.spotify.com/track/4Lojbtk7XNMdSKRHSFbdkm"
     },
     {
-      "name": "Past Self",
-      "spotify_url": "https://open.spotify.com/track/0Uvf2v96tJ5CuyK0LtyAgd"
+      "name": "Gethsemane",
+      "spotify_url": "https://open.spotify.com/track/29JLgNBcOky7QB68OrvYxO"
+    },
+    {
+      "name": "Even In Arcadia",
+      "spotify_url": "https://open.spotify.com/track/4IixOTCzviJgIigKleiVbo"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Emergence",
+      "spotify_url": "https://open.spotify.com/track/2OMjHcniFxzijWX7EaBrXE"
+    },
+    {
+      "name": "Dangerous",
+      "spotify_url": "https://open.spotify.com/track/105Fwh9wijwT41rrfgSnrE"
     },
     {
       "name": "Damocles",
       "spotify_url": "https://open.spotify.com/track/3enIFKYJKSVyjXVzmup28I"
     },
     {
-      "name": "Caramel",
-      "spotify_url": "https://open.spotify.com/track/1QrbZhFYlViXd60g130vw1"
-    }
-  ],
-  "tugba_songs": [
-    {
       "name": "Look To Windward",
       "spotify_url": "https://open.spotify.com/track/4Lojbtk7XNMdSKRHSFbdkm"
     },
     {
-      "name": "Past Self",
-      "spotify_url": "https://open.spotify.com/track/0Uvf2v96tJ5CuyK0LtyAgd"
-    },
-    {
-      "name": "Provider",
-      "spotify_url": "https://open.spotify.com/track/7JVAVLkkhpKOp8g4jX5Z12"
-    },
-    {
-      "name": "Caramel",
-      "spotify_url": "https://open.spotify.com/track/1QrbZhFYlViXd60g130vw1"
+      "name": "Even In Arcadia",
+      "spotify_url": "https://open.spotify.com/track/4IixOTCzviJgIigKleiVbo"
     }
   ]
 }

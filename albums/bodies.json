@@ -5,32 +5,6 @@
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b27364b7a0a4cb0d08c354ff48db",
   "yagiz_songs": [
     {
-      "name": "DIESEL",
-      "spotify_url": "https://open.spotify.com/track/62myDdLehDJdH4PG9gIt2x"
-    },
-    {
-      "name": "Revolver",
-      "spotify_url": "https://open.spotify.com/track/1OmtYfgEqFoU8EhG3IQzrF"
-    },
-    {
-      "name": "under the knife",
-      "spotify_url": "https://open.spotify.com/track/1fyHEYD5nCPYILDtsuOre9"
-    },
-    {
-      "name": "CRUSH",
-      "spotify_url": "https://open.spotify.com/track/4jM5B0X8sIZY7GVJuEOdFR"
-    },
-    {
-      "name": "fall into the wind",
-      "spotify_url": "https://open.spotify.com/track/0GdLQYVd6Yco0mY4vswMrN"
-    }
-  ],
-  "tugba_songs": [
-    {
-      "name": "under the knife",
-      "spotify_url": "https://open.spotify.com/track/1fyHEYD5nCPYILDtsuOre9"
-    },
-    {
       "name": "Revolver",
       "spotify_url": "https://open.spotify.com/track/1OmtYfgEqFoU8EhG3IQzrF"
     },
@@ -39,12 +13,38 @@
       "spotify_url": "https://open.spotify.com/track/0c5LR1RdTl6LXYVRHcGee5"
     },
     {
-      "name": "fall into the wind",
-      "spotify_url": "https://open.spotify.com/track/0GdLQYVd6Yco0mY4vswMrN"
+      "name": "For Now",
+      "spotify_url": "https://open.spotify.com/track/0Gg9krMVwwsTC3URfYb7Hc"
     },
     {
-      "name": "DIESEL",
-      "spotify_url": "https://open.spotify.com/track/62myDdLehDJdH4PG9gIt2x"
+      "name": "under the knife",
+      "spotify_url": "https://open.spotify.com/track/1fyHEYD5nCPYILDtsuOre9"
+    },
+    {
+      "name": "TONGUES",
+      "spotify_url": "https://open.spotify.com/track/48Y6xWm5ayoOPfEhKNJQxt"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "For Now",
+      "spotify_url": "https://open.spotify.com/track/0Gg9krMVwwsTC3URfYb7Hc"
+    },
+    {
+      "name": "Silver Swarm",
+      "spotify_url": "https://open.spotify.com/track/0c5LR1RdTl6LXYVRHcGee5"
+    },
+    {
+      "name": "Only Ever You",
+      "spotify_url": "https://open.spotify.com/track/5x9dHoD2FIDmfm2OPkixKR"
+    },
+    {
+      "name": "TONGUES",
+      "spotify_url": "https://open.spotify.com/track/48Y6xWm5ayoOPfEhKNJQxt"
+    },
+    {
+      "name": "Revolver",
+      "spotify_url": "https://open.spotify.com/track/1OmtYfgEqFoU8EhG3IQzrF"
     }
   ]
 }
