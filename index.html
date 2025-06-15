@@ -1,32 +1,59 @@
-<script>
-fetch('albums.json')
-  .then(response => response.json())
-  .then(data => {
-    const ctx = document.getElementById('lossChart').getContext('2d');
-    const chart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: data.map(d => d.album),
-        datasets: [{
-          label: 'Loss',
-          data: data.map(d => d.loss),
-          borderColor: '#3e95cd',
-          fill: false,
-          tension: 0.1,
-          pointBackgroundColor: '#3e95cd',
-          pointRadius: 6
-        }]
-      },
-      options: {
-        onClick: (e, elements) => {
-          if (elements.length > 0) {
-            const index = elements[0].index;
-            const album = data[index];
-            const albumPage = album.album.toLowerCase().replace(/ /g, '-') + '.html';
-            window.location.href = albumPage;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Album Disagreement Loss</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      padding: 2rem;
+    }
+    canvas {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Disagreement Loss per Album</h1>
+  <canvas id="lossChart" width="800" height="400"></canvas>
+
+  <script>
+  fetch('albums.json')
+    .then(response => response.json())
+    .then(data => {
+      const ctx = document.getElementById('lossChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: data.map(d => d.album),
+          datasets: [{
+            label: 'Loss',
+            data: data.map(d => d.loss),
+            borderColor: '#3e95cd',
+            backgroundColor: '#3e95cd',
+            fill: false,
+            tension: 0.2,
+            pointRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          onClick: (e, elements) => {
+            if (elements.length > 0) {
+              const index = elements[0].index;
+              const album = data[index];
+              const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
+              window.location.href = `${albumSlug}.html`;
+            }
           }
         }
-      }
+      });
     });
-  });
-</script>
+  </script>
+</body>
+</html>
