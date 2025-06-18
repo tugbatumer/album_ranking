@@ -1,0 +1,50 @@
+{
+  "album": "Radiant Dark",
+  "artist": "If I Were You",
+  "spotify_id": "2qGyywbFxucSBkPMPgfQ2w",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b2732c0cd8c525327473076065a2",
+  "yagiz_songs": [
+    {
+      "name": "Never There",
+      "spotify_url": "https://open.spotify.com/track/5ObTh8krefnoGyGynMje7v"
+    },
+    {
+      "name": "False Reality",
+      "spotify_url": "https://open.spotify.com/track/28LJOLq5kda5LdHHBWl8V0"
+    },
+    {
+      "name": "Radiant Dark",
+      "spotify_url": "https://open.spotify.com/track/556vFQ14v8vyWMpCO2vdAH"
+    },
+    {
+      "name": "Starting Over",
+      "spotify_url": "https://open.spotify.com/track/0I36UUMN7G3iBGunOetawK"
+    },
+    {
+      "name": "Black Heart",
+      "spotify_url": "https://open.spotify.com/track/0pWWVP7021dCmBaLCRYbVv"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "False Reality",
+      "spotify_url": "https://open.spotify.com/track/28LJOLq5kda5LdHHBWl8V0"
+    },
+    {
+      "name": "Always Searching",
+      "spotify_url": "https://open.spotify.com/track/0ohBBk9raw93dcuLfHFqgn"
+    },
+    {
+      "name": "Radiant Dark",
+      "spotify_url": "https://open.spotify.com/track/556vFQ14v8vyWMpCO2vdAH"
+    },
+    {
+      "name": "Never There",
+      "spotify_url": "https://open.spotify.com/track/5ObTh8krefnoGyGynMje7v"
+    },
+    {
+      "name": "Starting Over",
+      "spotify_url": "https://open.spotify.com/track/0I36UUMN7G3iBGunOetawK"
+    }
+  ]
+}
