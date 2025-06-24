@@ -1,0 +1,50 @@
+{
+  "album": "Take Me Back To Eden",
+  "artist": "Sleep Token",
+  "spotify_id": "1gjugH97doz3HktiEjx2vY",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730b73608b678f169d3c8f35f0",
+  "yagiz_songs": [
+    {
+      "name": "The Apparition",
+      "spotify_url": "https://open.spotify.com/track/21eMasL93nEafqRwlI851z"
+    },
+    {
+      "name": "Take Me Back To Eden",
+      "spotify_url": "https://open.spotify.com/track/2Gt7fjNlx901pPRkvBiNBZ"
+    },
+    {
+      "name": "Rain",
+      "spotify_url": "https://open.spotify.com/track/0GXwlEXCO8qeeeOIYpsR3m"
+    },
+    {
+      "name": "Vore",
+      "spotify_url": "https://open.spotify.com/track/5vJIVr0ZYo8DFbfSOY4Goa"
+    },
+    {
+      "name": "Chokehold",
+      "spotify_url": "https://open.spotify.com/track/1Uifdytv882RtTn6Gr4xAA"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Take Me Back To Eden",
+      "spotify_url": "https://open.spotify.com/track/2Gt7fjNlx901pPRkvBiNBZ"
+    },
+    {
+      "name": "The Apparition",
+      "spotify_url": "https://open.spotify.com/track/21eMasL93nEafqRwlI851z"
+    },
+    {
+      "name": "Rain",
+      "spotify_url": "https://open.spotify.com/track/0GXwlEXCO8qeeeOIYpsR3m"
+    },
+    {
+      "name": "Chokehold",
+      "spotify_url": "https://open.spotify.com/track/1Uifdytv882RtTn6Gr4xAA"
+    },
+    {
+      "name": "Granite",
+      "spotify_url": "https://open.spotify.com/track/4mxiv6HQfhqgIuN5iOONQd"
+    }
+  ]
+}
