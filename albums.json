@@ -98,5 +98,25 @@
       5,
       1
     ]
+  },
+  {
+    "album": "Boxer",
+    "artist": "The National",
+    "spotify_id": "2pG7mDkQhia2OyGE6fbkmJ",
+    "loss": 8,
+    "Yagiz": [
+      1,
+      5,
+      0,
+      6,
+      9
+    ],
+    "Tugba": [
+      1,
+      6,
+      0,
+      11,
+      5
+    ]
   }
 ]

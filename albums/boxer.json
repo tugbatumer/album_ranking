@@ -1,0 +1,50 @@
+{
+  "album": "Boxer",
+  "artist": "The National",
+  "spotify_id": "2pG7mDkQhia2OyGE6fbkmJ",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273026f3ccb0e906a5032330752",
+  "yagiz_songs": [
+    {
+      "name": "Mistaken For Strangers",
+      "spotify_url": "https://open.spotify.com/track/5bmlHGoCE6rBsGVHx7RDLi"
+    },
+    {
+      "name": "Slow Show",
+      "spotify_url": "https://open.spotify.com/track/6vmvNj64lOYWs3Vs4vZbgv"
+    },
+    {
+      "name": "Fake Empire",
+      "spotify_url": "https://open.spotify.com/track/6aUAF8JOd8zEl41B6I18xL"
+    },
+    {
+      "name": "Apartment Story",
+      "spotify_url": "https://open.spotify.com/track/1lydAZJk7RcohAWufWQhVi"
+    },
+    {
+      "name": "Racing Like a Pro",
+      "spotify_url": "https://open.spotify.com/track/5VqDfjaS0MWbmnPI4SrWvv"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Mistaken For Strangers",
+      "spotify_url": "https://open.spotify.com/track/5bmlHGoCE6rBsGVHx7RDLi"
+    },
+    {
+      "name": "Apartment Story",
+      "spotify_url": "https://open.spotify.com/track/1lydAZJk7RcohAWufWQhVi"
+    },
+    {
+      "name": "Fake Empire",
+      "spotify_url": "https://open.spotify.com/track/6aUAF8JOd8zEl41B6I18xL"
+    },
+    {
+      "name": "Gospel",
+      "spotify_url": "https://open.spotify.com/track/4AFPPswU1ffqbfW2ahIoMw"
+    },
+    {
+      "name": "Slow Show",
+      "spotify_url": "https://open.spotify.com/track/6vmvNj64lOYWs3Vs4vZbgv"
+    }
+  ]
+}
