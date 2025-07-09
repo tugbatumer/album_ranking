@@ -220,6 +220,7 @@
       });
 
       // Album list
+      console.log(rawData);
       const albumList = document.getElementById('album-list');
       albumList.innerHTML = rawData
         .map((album, idx) => {
@@ -228,11 +229,12 @@
           const color = idx % 2 === 0 ? '#4caf50' : '#e91e63';
           const slug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
           return `<li style="color: ${color};" onclick="window.location.href='album.html?album=${slug}'">
-            ${idx + 1}. ${album.album}
+            ${idx + 1}. ${album.album} <small style="color: #555;">(${album.date})</small>
           </li>`;
         })
         .join('');
-    }
+
+        }
 
     function updateChart() {
       renderChart();
