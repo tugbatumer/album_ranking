@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Album Music Taste Similarity</title>
+  <title>Music Taste Similarity</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body {
@@ -10,6 +10,7 @@
       background: #f0f0f0;
       padding: 2rem;
     }
+
     canvas {
       max-height: 600px;
       background: #fff;
@@ -17,17 +18,50 @@
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+
+    #controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      background: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    #controls label {
+      font-weight: 500;
+      margin-right: 0.5rem;
+    }
+
+    #albumFilter {
+      padding: 0.4rem 0.6rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+    }
+
+    #controls input[type="checkbox"] {
+      margin-right: 0.4rem;
+      transform: scale(1.2);
+    }
+
     #album-list {
       margin-top: 2rem;
       padding-left: 0;
       list-style: none;
       max-width: 800px;
     }
+
     #album-list li {
       font-size: 1.1rem;
       margin: 0.4rem 0;
       cursor: pointer;
     }
+
     #album-list li:hover {
       text-decoration: underline;
     }
@@ -35,137 +69,180 @@
 </head>
 <body>
   <h1>Music Taste Similarity per Album</h1>
+
+  <div id="controls">
+    <div>
+      <label for="albumFilter">Filter albums:</label>
+      <select id="albumFilter" onchange="updateChart()">
+        <option value="all">All Albums</option>
+        <option value="odd">Yagiz's Albums</option>
+        <option value="even">Tugba's Albums</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Show:</label>
+      <label><input type="checkbox" id="toggleYvsT" checked onchange="updateChart()"> Yagiz vs Tugba</label>
+      <label><input type="checkbox" id="toggleYvsS" checked onchange="updateChart()"> Yagiz vs Spotify</label>
+      <label><input type="checkbox" id="toggleTvsS" checked onchange="updateChart()"> Tugba vs Spotify</label>
+    </div>
+  </div>
+
   <canvas id="lossChart" width="800" height="400"></canvas>
 
   <h2>Album List</h2>
   <ul id="album-list"></ul>
 
   <script>
+    let rawData = [];
+    let chartInstance;
+
     fetch('albums.json')
       .then(response => response.json())
       .then(data => {
-        const ctx = document.getElementById('lossChart').getContext('2d');
+        rawData = data;
+        renderChart();
+      });
 
-        const xLabels = data.map((_, i) => i + 1);
+    function getFilteredData() {
+      const mode = document.getElementById('albumFilter').value;
+      return rawData.map((entry, i) => {
+        const show = mode === 'odd' ? (i + 1) % 2 === 1
+                   : mode === 'even' ? (i + 1) % 2 === 0
+                   : true;
+        return show ? entry : { ...entry, similarity_y_vs_t: null, similarity_y_vs_s: null, similarity_t_vs_s: null };
+      });
+    }
 
-        new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: xLabels,
-            datasets: [
-              {
-                label: 'Yagiz vs Tugba',
-                data: data.map(d => d.similarity_y_vs_t),
-                borderColor: '#3e95cd',
-                backgroundColor: '#3e95cd',
-                fill: false,
-                tension: 0.2,
-                pointRadius: 5
-              },
-              {
-                label: 'Yagiz vs Spotify',
-                data: data.map(d => d.similarity_y_vs_s),
-                borderColor: '#4caf50',
-                backgroundColor: '#4caf50',
-                fill: false,
-                tension: 0.2,
-                pointRadius: 5
-              },
-              {
-                label: 'Tugba vs Spotify',
-                data: data.map(d => d.similarity_t_vs_s),
-                borderColor: '#e91e63',
-                backgroundColor: '#e91e63',
-                fill: false,
-                tension: 0.2,
-                pointRadius: 5
-              }
-            ]
-          },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: {
-                position: 'top',
-                labels: {
-                  font: {
-                    size: 16
-                  }
-                }
-              },
-              tooltip: {
-                mode: 'nearest',
-                intersect: true,
-                callbacks: {
-                  title: function(tooltipItems) {
-                    const index = tooltipItems[0].dataIndex;
-                    return data[index].album;
-                  },
-                  label: function(tooltipItem) {
-                    const datasetLabel = tooltipItem.dataset.label;
-                    const value = tooltipItem.formattedValue;
-                    return `${datasetLabel}: ${value}`;
-                  }
-                }
+    function renderChart() {
+      const ctx = document.getElementById('lossChart').getContext('2d');
+      const mode = document.getElementById('albumFilter').value;
+
+      const labels = rawData.map((_, i) => i + 1);
+
+      function getMaskedData(key) {
+        return rawData.map((row, index) => {
+          if (mode === 'odd' && (index + 1) % 2 === 0) return null;
+          if (mode === 'even' && (index + 1) % 2 === 1) return null;
+          return row[key];
+        });
+      }
+
+      const datasets = [];
+
+      if (document.getElementById('toggleYvsT').checked) {
+        datasets.push({
+          label: 'Yagiz vs Tugba',
+          data: getMaskedData('similarity_y_vs_t'),
+          borderColor: '#3e95cd',
+          backgroundColor: '#3e95cd',
+          fill: false,
+          tension: 0.2,
+          pointRadius: 5,
+          spanGaps: true
+        });
+      }
+      if (document.getElementById('toggleYvsS').checked) {
+        datasets.push({
+          label: 'Yagiz vs Spotify',
+          data: getMaskedData('similarity_y_vs_s'),
+          borderColor: '#4caf50',
+          backgroundColor: '#4caf50',
+          fill: false,
+          tension: 0.2,
+          pointRadius: 5,
+          spanGaps: true
+        });
+      }
+      if (document.getElementById('toggleTvsS').checked) {
+        datasets.push({
+          label: 'Tugba vs Spotify',
+          data: getMaskedData('similarity_t_vs_s'),
+          borderColor: '#e91e63',
+          backgroundColor: '#e91e63',
+          fill: false,
+          tension: 0.2,
+          pointRadius: 5,
+          spanGaps: true
+        });
+      }
+
+      if (chartInstance) chartInstance.destroy();
+
+      chartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: datasets
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'top',
+              labels: {
+                font: { size: 16 }
               }
             },
-            scales: {
-              x: {
-                ticks: {
-                  callback: function(value, index) {
-                    return index + 1;
-                  },
-                  color: function(context) {
-                    return context.index % 2 === 0 ? '#4caf50' : '#e91e63';
-                  },
-                  font: {
-                    size: 18
-                  }
-                },
-                title: {
-                  display: true,
-                  text: 'Album Index',
-                  font: {
-                    size: 18,
-                    weight: 'bold'
-                  }
-                },
-                grid: {
-                  lineWidth: 2
-                }
+            tooltip: {
+              mode: 'nearest',
+              intersect: true,
+              callbacks: {
+                title: tooltipItems => rawData[tooltipItems[0].dataIndex].album,
+                label: tooltipItem => `${tooltipItem.dataset.label}: ${tooltipItem.formattedValue}`
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                font: { size: 19 },
+                callback: (_, index) => index + 1,
+                color: context => context.index % 2 === 0 ? '#4caf50' : '#e91e63'
               },
-              y: {
-                beginAtZero: false,
-                title: {
-                  display: true,
-                  text: 'Music Taste Similarity (Z-score)',
-                  font: {
-                    size: 18,
-                    weight: 'bold'
-                  }
-                },
-                ticks: {
-                  font: {
-                    size: 16
-                  }
-                },
-                grid: {
-                  lineWidth: 2
-                }
+              title: {
+                display: true,
+                text: 'Album Index',
+                font: { size: 18, weight: 'bold' }
+              },
+              grid: {
+                lineWidth: 1.5
+              }
+            },
+            y: {
+              beginAtZero: true,
+              title: {
+                display: true,
+                text: 'Music Taste Similarity',
+                font: { size: 18, weight: 'bold' }
+              },
+              ticks: {
+                font: { size: 17 }
+              },
+              grid: {
+                lineWidth: 1.5
               }
             }
           }
-        });
-
-        const albumList = document.getElementById('album-list');
-        albumList.innerHTML = data.map((album, idx) => {
-          const color = idx % 2 === 0 ? '#4caf50' : '#e91e63';
-          const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
-          return `<li style="color: ${color};" onclick="window.location.href='album.html?album=${albumSlug}'">
-            ${idx + 1}. ${album.album}
-          </li>`;
-        }).join('');
+        }
       });
+
+      // Album list
+      const albumList = document.getElementById('album-list');
+      albumList.innerHTML = rawData.map((album, idx) => {
+        const include = (mode === 'odd' && (idx + 1) % 2 === 0) || (mode === 'even' && (idx + 1) % 2 === 1);
+        if (mode !== 'all' && include) return '';
+        const color = idx % 2 === 0 ? '#4caf50' : '#e91e63';
+        const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
+        return `<li style="color: ${color};" onclick="window.location.href='album.html?album=${albumSlug}'">
+          ${idx + 1}. ${album.album}
+        </li>`;
+      }).join('');
+    }
+
+    function updateChart() {
+      renderChart();
+    }
   </script>
 </body>
 </html>
