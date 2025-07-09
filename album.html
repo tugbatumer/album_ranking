@@ -73,33 +73,33 @@
           if (!res.ok) throw new Error('Not found');
           return res.json();
         })
-        .then(album => {
-          document.getElementById('album-title').innerText = album.album;
-          document.getElementById('album-artist').innerText = album.artist;
-          document.getElementById('spotify-album-link').href = `https://open.spotify.com/album/${album.spotify_id}`;
-          document.getElementById('album-art').src = album.album_art_url;
+            .then(album => {
+              document.getElementById('album-title').innerText = album.album;
+              document.getElementById('album-artist').innerText = album.artist;
+              document.getElementById('spotify-album-link').href = `https://open.spotify.com/album/${album.spotify_id}`;
+              document.getElementById('album-art').src = album.album_art_url;
 
-          const yList = document.getElementById('yagiz-list');
-          album.yagiz_songs.forEach(track => {
-            const li = document.createElement('li');
-            li.innerHTML = `<a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
-            yList.appendChild(li);
-          });
+              const yList = document.getElementById('yagiz-list');
+              album.yagiz_songs.forEach(track => {
+                const li = document.createElement('li');
+                li.innerHTML = `<a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
+                yList.appendChild(li);
+              });
 
-          const tList = document.getElementById('tugba-list');
-          album.tugba_songs.forEach(track => {
-            const li = document.createElement('li');
-            li.innerHTML = `<a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
-            tList.appendChild(li);
-          });
+              const tList = document.getElementById('tugba-list');
+              album.tugba_songs.forEach(track => {
+                const li = document.createElement('li');
+                li.innerHTML = `<a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
+                tList.appendChild(li);
+              });
 
-          const sList = document.getElementById('spotify-list');
-          album.spotify_songs.forEach(track => {
-          const li = document.createElement('li');
-          li.innerHTML = <a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>;
-          sList.appendChild(li);
-          });
-        })
+              const sList = document.getElementById('spotify-list');
+              album.spotify_songs.forEach(track => {
+                const li = document.createElement('li');
+                li.innerHTML = `<a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
+                sList.appendChild(li);
+              });
+            })
         .catch(() => {
           document.body.innerHTML = '<p>Album not found.</p>';
         });
