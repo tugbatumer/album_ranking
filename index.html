@@ -10,7 +10,6 @@
       background: #f0f0f0;
       padding: 2rem;
     }
-
     canvas {
       max-height: 600px;
       background: #fff;
@@ -18,37 +17,18 @@
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-
     #album-list {
-      margin-top: 3rem;
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      max-width: 400px;
-    }
-
-    #album-list h2 {
-      margin-top: 0;
-    }
-
-    #album-list ul {
+      margin-top: 2rem;
+      padding-left: 0;
       list-style: none;
-      padding: 0;
-      margin: 0;
+      max-width: 800px;
     }
-
     #album-list li {
-      margin: 0.5rem 0;
+      font-size: 1.1rem;
+      margin: 0.4rem 0;
+      cursor: pointer;
     }
-
-    #album-list a {
-      text-decoration: none;
-      color: #3e95cd;
-      font-weight: bold;
-    }
-
-    #album-list a:hover {
+    #album-list li:hover {
       text-decoration: underline;
     }
   </style>
@@ -57,75 +37,98 @@
   <h1>Disagreement Loss per Album</h1>
   <canvas id="lossChart" width="800" height="400"></canvas>
 
-  <div id="album-list">
-    <h2>Albums</h2>
-    <ul id="album-links"></ul>
-  </div>
+  <h2>Album List</h2>
+  <ul id="album-list"></ul>
 
-<script>
-  fetch('albums.json')
-    .then(response => response.json())
-    .then(data => {
-      // Chart
-      const ctx = document.getElementById('lossChart').getContext('2d');
-      new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: data.map(d => d.album),
-          datasets: [
-            {
-              label: 'Yagiz vs Tugba',
-              data: data.map(d => d.loss_y_vs_t),
-              borderColor: '#3e95cd',
-              fill: false,
-              tension: 0.2,
-              pointRadius: 5
-            },
-            {
-              label: 'Yagiz vs Spotify',
-              data: data.map(d => d.loss_y_vs_s),
-              borderColor: '#e91e63',
-              fill: false,
-              tension: 0.2,
-              pointRadius: 5
-            },
-            {
-              label: 'Tugba vs Spotify',
-              data: data.map(d => d.loss_t_vs_s),
-              borderColor: '#4caf50',
-              fill: false,
-              tension: 0.2,
-              pointRadius: 5
-            }
-          ]
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: {
-              position: 'top'
-            }
+  <script>
+    fetch('albums.json')
+      .then(response => response.json())
+      .then(data => {
+        const ctx = document.getElementById('lossChart').getContext('2d');
+
+        // Use numerical x-axis labels: 1, 2, 3...
+        const xLabels = data.map((_, i) => i + 1);
+
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: xLabels,
+            datasets: [
+              {
+                label: 'Yagiz vs Tugba',
+                data: data.map(d => d.loss_y_vs_t),
+                borderColor: '#3e95cd',
+                backgroundColor: '#3e95cd',
+                fill: false,
+                tension: 0.2,
+                pointRadius: 5
+              },
+              {
+                label: 'Yagiz vs Spotify',
+                data: data.map(d => d.loss_y_vs_s),
+                borderColor: '#e91e63', // red
+                backgroundColor: '#e91e63',
+                fill: false,
+                tension: 0.2,
+                pointRadius: 5
+              },
+              {
+                label: 'Tugba vs Spotify',
+                data: data.map(d => d.loss_t_vs_s),
+                borderColor: '#4caf50', // green
+                backgroundColor: '#4caf50',
+                fill: false,
+                tension: 0.2,
+                pointRadius: 5
+              }
+            ]
           },
-          scales: {
-            x: {
-              ticks: {
-                maxRotation: 90,
-                minRotation: 45
+          options: {
+            responsive: true,
+            plugins: {
+              legend: { position: 'top' },
+              tooltip: { mode: 'index' }
+            },
+            scales: {
+              x: {
+                ticks: {
+                  callback: function(value, index) {
+                    return index % 2 === 0
+                      ? `${index + 1}` // Red
+                      : `${index + 1}`; // Green
+                  },
+                  color: function(context) {
+                    return context.index % 2 === 0 ? '#e91e63' : '#4caf50';
+                  }
+                },
+                title: {
+                  display: true,
+                  text: 'Album Index',
+                  font: { weight: 'bold' }
+                }
+              },
+              y: {
+                beginAtZero: true,
+                title: {
+                  display: true,
+                  text: 'Loss Value',
+                  font: { weight: 'bold' }
+                }
               }
             }
           }
-        }
-      });
+        });
 
-      // Vertical clickable album list
-      const albumList = document.getElementById('album-links');
-      data.forEach(album => {
-        const li = document.createElement('li');
-        const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
-        li.innerHTML = `<a href="album.html?album=${albumSlug}">${album.album}</a>`;
-        albumList.appendChild(li);
+        // Build album list
+        const albumList = document.getElementById('album-list');
+        albumList.innerHTML = data.map((album, idx) => {
+          const color = idx % 2 === 0 ? '#e91e63' : '#4caf50';
+          const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
+          return `<li style="color: ${color};" onclick="window.location.href='album.html?album=${albumSlug}'">
+            ${idx + 1}. ${album.album}
+          </li>`;
+        }).join('');
       });
-    });
-</script>
+  </script>
 </body>
 </html>
