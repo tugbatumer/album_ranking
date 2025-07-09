@@ -51,6 +51,9 @@
     <h3>Tugba's Top 5</h3>
     <ul id="tugba-list"></ul>
 
+    <h3>Spotify's Top 5</h3>
+    <ul id="spotify-list"></ul>
+
     <p><a href="index.html">← Back to Chart</a></p>
   </div>
 
@@ -88,6 +91,13 @@
             const li = document.createElement('li');
             li.innerHTML = `<a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
             tList.appendChild(li);
+          });
+
+          const sList = document.getElementById('spotify-list');
+          album.spotify_songs.forEach(track => {
+          const li = document.createElement('li');
+          li.innerHTML = <a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>;
+          sList.appendChild(li);
           });
         })
         .catch(() => {

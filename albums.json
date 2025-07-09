@@ -3,7 +3,6 @@
     "album": "Even in Arcadia",
     "artist": "Sleep Token",
     "spotify_id": "1lS7FeRcSUuIGqyg99UGpj",
-    "loss": 6,
     "Yagiz": [
       1,
       3,
@@ -17,13 +16,22 @@
       7,
       0,
       5
-    ]
+    ],
+    "Spotify": [
+      3,
+      4,
+      0,
+      1,
+      2
+    ],
+    "loss_y_vs_t": 6,
+    "loss_y_vs_s": 14,
+    "loss_t_vs_s": 16
   },
   {
     "album": "The New Abnormal",
     "artist": "The Strokes",
     "spotify_id": "2xkZV2Hl1Omi8rk2D7t5lN",
-    "loss": 8,
     "Yagiz": [
       0,
       8,
@@ -37,13 +45,22 @@
       0,
       2,
       6
-    ]
+    ],
+    "Spotify": [
+      0,
+      1,
+      8,
+      6,
+      2
+    ],
+    "loss_y_vs_t": 8,
+    "loss_y_vs_s": 6,
+    "loss_t_vs_s": 6
   },
   {
     "album": "BODIES",
     "artist": "Thornhill",
     "spotify_id": "5bJeb7bvHrxNvZ6UskCoqm",
-    "loss": 12,
     "Yagiz": [
       1,
       2,
@@ -57,13 +74,22 @@
       3,
       5,
       1
-    ]
+    ],
+    "Spotify": [
+      7,
+      2,
+      6,
+      5,
+      1
+    ],
+    "loss_y_vs_t": 12,
+    "loss_y_vs_s": 20,
+    "loss_t_vs_s": 18
   },
   {
     "album": "Skinty Fia",
     "artist": "Fontaines D.C.",
     "spotify_id": "0aVN6rMKthfuAdDXn8RTXf",
-    "loss": 14,
     "Yagiz": [
       8,
       5,
@@ -77,13 +103,22 @@
       5,
       1,
       4
-    ]
+    ],
+    "Spotify": [
+      8,
+      3,
+      5,
+      1,
+      7
+    ],
+    "loss_y_vs_t": 14,
+    "loss_y_vs_s": 10,
+    "loss_t_vs_s": 2
   },
   {
     "album": "Radiant Dark",
     "artist": "If I Were You",
     "spotify_id": "2qGyywbFxucSBkPMPgfQ2w",
-    "loss": 10,
     "Yagiz": [
       5,
       2,
@@ -97,13 +132,22 @@
       9,
       5,
       1
-    ]
+    ],
+    "Spotify": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ],
+    "loss_y_vs_t": 10,
+    "loss_y_vs_s": 18,
+    "loss_t_vs_s": 14
   },
   {
     "album": "Boxer",
     "artist": "The National",
     "spotify_id": "2pG7mDkQhia2OyGE6fbkmJ",
-    "loss": 8,
     "Yagiz": [
       1,
       5,
@@ -117,13 +161,22 @@
       0,
       11,
       5
-    ]
+    ],
+    "Spotify": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "loss_y_vs_t": 8,
+    "loss_y_vs_s": 22,
+    "loss_t_vs_s": 22
   },
   {
     "album": "Take Me Back To Eden",
     "artist": "Sleep Token",
     "spotify_id": "1gjugH97doz3HktiEjx2vY",
-    "loss": 6,
     "Yagiz": [
       7,
       10,
@@ -137,6 +190,16 @@
       9,
       0,
       2
-    ]
+    ],
+    "Spotify": [
+      1,
+      9,
+      2,
+      10,
+      0
+    ],
+    "loss_y_vs_t": 6,
+    "loss_y_vs_s": 20,
+    "loss_t_vs_s": 16
   }
 ]

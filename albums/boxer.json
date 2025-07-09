@@ -46,5 +46,27 @@
       "name": "Slow Show",
       "spotify_url": "https://open.spotify.com/track/6vmvNj64lOYWs3Vs4vZbgv"
     }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Fake Empire",
+      "spotify_url": "https://open.spotify.com/track/6aUAF8JOd8zEl41B6I18xL"
+    },
+    {
+      "name": "Mistaken For Strangers",
+      "spotify_url": "https://open.spotify.com/track/5bmlHGoCE6rBsGVHx7RDLi"
+    },
+    {
+      "name": "Brainy",
+      "spotify_url": "https://open.spotify.com/track/2xUUm8k0aIiqemI7NXk7Km"
+    },
+    {
+      "name": "Squalor Victoria",
+      "spotify_url": "https://open.spotify.com/track/6Zj7JELwJbNb74ZI6l6ZT5"
+    },
+    {
+      "name": "Green Gloves",
+      "spotify_url": "https://open.spotify.com/track/0EI0bOj38coiFWWAq0XlhF"
+    }
   ]
 }

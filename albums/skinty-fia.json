@@ -46,5 +46,27 @@
       "name": "Bloomsday",
       "spotify_url": "https://open.spotify.com/track/7Ffrcxiv4wcIh8uD1QkGlU"
     }
+  ],
+  "spotify_songs": [
+    {
+      "name": "I Love You",
+      "spotify_url": "https://open.spotify.com/track/5XhMgAWzou6EjDmQtoyoZE"
+    },
+    {
+      "name": "Jackie Down The Line",
+      "spotify_url": "https://open.spotify.com/track/1MoA0TNVdveasxnR6c2JqZ"
+    },
+    {
+      "name": "Roman Holiday",
+      "spotify_url": "https://open.spotify.com/track/4GKJALTXTwhZgLPp0usd5C"
+    },
+    {
+      "name": "Big Shot",
+      "spotify_url": "https://open.spotify.com/track/0lZDud7crMjAppinCIGgOM"
+    },
+    {
+      "name": "Skinty Fia",
+      "spotify_url": "https://open.spotify.com/track/6wyHzaCZNuu6fG4LlDFqvY"
+    }
   ]
 }

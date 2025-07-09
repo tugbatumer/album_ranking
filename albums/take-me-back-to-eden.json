@@ -46,5 +46,27 @@
       "name": "Granite",
       "spotify_url": "https://open.spotify.com/track/4mxiv6HQfhqgIuN5iOONQd"
     }
+  ],
+  "spotify_songs": [
+    {
+      "name": "The Summoning",
+      "spotify_url": "https://open.spotify.com/track/0S38Oso3I9vpDXcTb7kYt9"
+    },
+    {
+      "name": "Rain",
+      "spotify_url": "https://open.spotify.com/track/0GXwlEXCO8qeeeOIYpsR3m"
+    },
+    {
+      "name": "Granite",
+      "spotify_url": "https://open.spotify.com/track/4mxiv6HQfhqgIuN5iOONQd"
+    },
+    {
+      "name": "Take Me Back To Eden",
+      "spotify_url": "https://open.spotify.com/track/2Gt7fjNlx901pPRkvBiNBZ"
+    },
+    {
+      "name": "Chokehold",
+      "spotify_url": "https://open.spotify.com/track/1Uifdytv882RtTn6Gr4xAA"
+    }
   ]
 }

@@ -46,5 +46,27 @@
       "name": "Why Are Sundays So Depressing",
       "spotify_url": "https://open.spotify.com/track/1aOxOpH4AkGAd8OMrKjyNY"
     }
+  ],
+  "spotify_songs": [
+    {
+      "name": "The Adults Are Talking",
+      "spotify_url": "https://open.spotify.com/track/5ruzrDWcT0vuJIOMW7gMnW"
+    },
+    {
+      "name": "Selfless",
+      "spotify_url": "https://open.spotify.com/track/2t0wwvR15fc3K1ey8OiOaN"
+    },
+    {
+      "name": "Ode To The Mets",
+      "spotify_url": "https://open.spotify.com/track/1BLOVHYYlH4JUHQGcpt75R"
+    },
+    {
+      "name": "Why Are Sundays So Depressing",
+      "spotify_url": "https://open.spotify.com/track/1aOxOpH4AkGAd8OMrKjyNY"
+    },
+    {
+      "name": "Brooklyn Bridge To Chorus",
+      "spotify_url": "https://open.spotify.com/track/2mDYYGaGd9uXKkK2YhDA3i"
+    }
   ]
 }
