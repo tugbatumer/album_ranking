@@ -40,13 +40,12 @@
   <h2>Album List</h2>
   <ul id="album-list"></ul>
 
-  <script>
+   <script>
     fetch('albums.json')
       .then(response => response.json())
       .then(data => {
         const ctx = document.getElementById('lossChart').getContext('2d');
 
-        // Use numerical x-axis labels: 1, 2, 3...
         const xLabels = data.map((_, i) => i + 1);
 
         new Chart(ctx, {
@@ -66,7 +65,7 @@
               {
                 label: 'Yagiz vs Spotify',
                 data: data.map(d => d.loss_y_vs_s),
-                borderColor: '#e91e63', // red
+                borderColor: '#e91e63',
                 backgroundColor: '#e91e63',
                 fill: false,
                 tension: 0.2,
@@ -75,7 +74,7 @@
               {
                 label: 'Tugba vs Spotify',
                 data: data.map(d => d.loss_t_vs_s),
-                borderColor: '#4caf50', // green
+                borderColor: '#4caf50',
                 backgroundColor: '#4caf50',
                 fill: false,
                 tension: 0.2,
@@ -93,12 +92,10 @@
               x: {
                 ticks: {
                   callback: function(value, index) {
-                    return index % 2 === 0
-                      ? `${index + 1}` // Red
-                      : `${index + 1}`; // Green
+                    return index + 1;
                   },
                   color: function(context) {
-                    return context.index % 2 === 0 ? '#e91e63' : '#4caf50';
+                    return context.index % 2 === 0 ? '#4caf50' : '#e91e63';  // Start with green
                   }
                 },
                 title: {
@@ -119,10 +116,10 @@
           }
         });
 
-        // Build album list
+        // Album list (also starting with green)
         const albumList = document.getElementById('album-list');
         albumList.innerHTML = data.map((album, idx) => {
-          const color = idx % 2 === 0 ? '#e91e63' : '#4caf50';
+          const color = idx % 2 === 0 ? '#4caf50' : '#e91e63';  // Green first
           const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
           return `<li style="color: ${color};" onclick="window.location.href='album.html?album=${albumSlug}'">
             ${idx + 1}. ${album.album}
