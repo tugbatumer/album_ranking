@@ -74,7 +74,7 @@
   <canvas id="lossChart" width="800" height="400"></canvas>
 
   <h2>Album List</h2>
-  <ul id="album-list"></ul>
+  <div id="album-list"></div>
 
   <script>
     let rawData = [];
@@ -218,21 +218,43 @@
           }
         }
       });
-
-      // Album list
-      console.log(rawData);
       const albumList = document.getElementById('album-list');
-      albumList.innerHTML = rawData
-        .map((album, idx) => {
-          if (mode === 'odd' && (idx + 1) % 2 === 0) return '';
-          if (mode === 'even' && (idx + 1) % 2 === 1) return '';
-          const color = idx % 2 === 0 ? '#4caf50' : '#e91e63';
-          const slug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
-          return `<li style="color: ${color};" onclick="window.location.href='album.html?album=${slug}'">
-            ${idx + 1}. ${album.album} <small style="color: #555;">(${album.date})</small>
-          </li>`;
-        })
-        .join('');
+
+      let tableHTML = `
+        <table style="width: 100%; border-collapse: collapse; font-size: 1rem;">
+          <thead>
+            <tr style="background-color: #ddd;">
+              <th style="padding: 0.5rem;">#</th>
+              <th style="padding: 0.5rem;">Album</th>
+              <th style="padding: 0.5rem;">Date</th>
+              <th style="padding: 0.5rem;">Yagiz Score</th>
+              <th style="padding: 0.5rem;">Tugba Score</th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+
+      rawData.forEach((album, idx) => {
+        if (mode === 'odd' && (idx + 1) % 2 === 0) return;
+        if (mode === 'even' && (idx + 1) % 2 === 1) return;
+
+        const color = idx % 2 === 0 ? '#4caf50' : '#e91e63';
+        const slug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
+
+        tableHTML += `
+          <tr style="cursor: pointer;" onclick="window.location.href='album.html?album=${slug}'">
+            <td style="padding: 0.5rem; color: ${color}; text-align: center;">${idx + 1}</td>
+            <td style="padding: 0.5rem; color: ${color}; text-align: center;">${album.album}</td>
+            <td style="padding: 0.5rem; color: #555; text-align: center;">${album.date}</td>
+            <td style="padding: 0.5rem; color: #333; text-align: center;">${album.yagiz_score.toFixed(1)}</td>
+            <td style="padding: 0.5rem; color: #333; text-align: center;">${album.tugba_score.toFixed(1)}</td>
+          </tr>
+        `;
+      });
+
+      tableHTML += `</tbody></table>`;
+      albumList.innerHTML = tableHTML;
+
 
         }
 
