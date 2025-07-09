@@ -48,7 +48,8 @@ def generate_album_json(album_id, album_slug, yagiz_ranks, tugba_ranks):
         'album_art_url': album['images'][0]['url'],
         'yagiz_songs': track_list(yagiz_ranks),
         'tugba_songs': track_list(tugba_ranks),
-        'spotify_songs': track_list(spotify_ranks)
+        'spotify_songs': track_list(spotify_ranks),
+        'total_songs': album['total_tracks']
     }
 
     os.makedirs('albums', exist_ok=True)

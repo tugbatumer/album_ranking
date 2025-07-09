@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Album Disagreement Loss</title>
+  <title>Album Music Taste Similarity</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body {
@@ -34,13 +34,13 @@
   </style>
 </head>
 <body>
-  <h1>Disagreement Loss per Album</h1>
+  <h1>Music Taste Similarity per Album</h1>
   <canvas id="lossChart" width="800" height="400"></canvas>
 
   <h2>Album List</h2>
   <ul id="album-list"></ul>
 
-   <script>
+  <script>
     fetch('albums.json')
       .then(response => response.json())
       .then(data => {
@@ -55,7 +55,7 @@
             datasets: [
               {
                 label: 'Yagiz vs Tugba',
-                data: data.map(d => d.loss_y_vs_t),
+                data: data.map(d => d.similarity_y_vs_t),
                 borderColor: '#3e95cd',
                 backgroundColor: '#3e95cd',
                 fill: false,
@@ -64,7 +64,7 @@
               },
               {
                 label: 'Yagiz vs Spotify',
-                data: data.map(d => d.loss_y_vs_s),
+                data: data.map(d => d.similarity_y_vs_s),
                 borderColor: '#4caf50',
                 backgroundColor: '#4caf50',
                 fill: false,
@@ -73,7 +73,7 @@
               },
               {
                 label: 'Tugba vs Spotify',
-                data: data.map(d => d.loss_t_vs_s),
+                data: data.map(d => d.similarity_t_vs_s),
                 borderColor: '#e91e63',
                 backgroundColor: '#e91e63',
                 fill: false,
@@ -82,58 +82,84 @@
               }
             ]
           },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: { position: 'top' },
-            tooltip: {
-              mode: 'nearest',
-              intersect: true,
-              callbacks: {
-                title: function(tooltipItems) {
-                  const index = tooltipItems[0].dataIndex;
-                  return data[index].album;
-                },
-                label: function(tooltipItem) {
-                  const datasetLabel = tooltipItem.dataset.label;
-                  const value = tooltipItem.formattedValue;
-                  return `${datasetLabel}: ${value}`;
-                }
-              }
-            }
-          },
-          scales: {
-            x: {
-              ticks: {
-                callback: function(value, index) {
-                  return index + 1;
-                },
-                color: function(context) {
-                  return context.index % 2 === 0 ? '#4caf50' : '#e91e63';
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'top',
+                labels: {
+                  font: {
+                    size: 16
+                  }
                 }
               },
-              title: {
-                display: true,
-                text: 'Album Index',
-                font: { weight: 'bold' }
+              tooltip: {
+                mode: 'nearest',
+                intersect: true,
+                callbacks: {
+                  title: function(tooltipItems) {
+                    const index = tooltipItems[0].dataIndex;
+                    return data[index].album;
+                  },
+                  label: function(tooltipItem) {
+                    const datasetLabel = tooltipItem.dataset.label;
+                    const value = tooltipItem.formattedValue;
+                    return `${datasetLabel}: ${value}`;
+                  }
+                }
               }
             },
-            y: {
-              beginAtZero: true,
-              title: {
-                display: true,
-                text: 'Loss Value',
-                font: { weight: 'bold' }
+            scales: {
+              x: {
+                ticks: {
+                  callback: function(value, index) {
+                    return index + 1;
+                  },
+                  color: function(context) {
+                    return context.index % 2 === 0 ? '#4caf50' : '#e91e63';
+                  },
+                  font: {
+                    size: 16
+                  }
+                },
+                title: {
+                  display: true,
+                  text: 'Album Index',
+                  font: {
+                    size: 18,
+                    weight: 'bold'
+                  }
+                },
+                grid: {
+                  lineWidth: 2
+                }
+              },
+              y: {
+                beginAtZero: false,
+                title: {
+                  display: true,
+                  text: 'Music Taste Similarity (Z-score)',
+                  font: {
+                    size: 18,
+                    weight: 'bold'
+                  }
+                },
+                ticks: {
+                  font: {
+                    size: 16
+                  }
+                },
+                grid: {
+                  lineWidth: 2
+                }
               }
             }
           }
-        }
         });
 
-        // Album list (also starting with green)
         const albumList = document.getElementById('album-list');
         albumList.innerHTML = data.map((album, idx) => {
-          const color = idx % 2 === 0 ? '#4caf50' : '#e91e63';  // Green first
+          const color = idx % 2 === 0 ? '#4caf50' : '#e91e63';
           const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
           return `<li style="color: ${color};" onclick="window.location.href='album.html?album=${albumSlug}'">
             ${idx + 1}. ${album.album}
