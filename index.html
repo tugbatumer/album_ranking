@@ -62,27 +62,29 @@
         options: {
           responsive: true,
           onClick: (e) => {
-            const xAxis = chart.scales.x;
+            const chartArea = chart.chartArea;
+            const xScale = chart.scales.x;
             const clickX = e.offsetX;
-            const labelIndex = xAxis.getValueForPixel(clickX);
 
-            const roundedIndex = Math.round(labelIndex);
-            const album = data[roundedIndex];
-
-            if (album) {
-              const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
-              window.location.href = `album.html?album=${albumSlug}`;
-            }
+            xScale.ticks.forEach((tick, i) => {
+              const pixel = xScale.getPixelForTick(i);
+              if (Math.abs(pixel - clickX) < 20) {
+                const album = data[i];
+                const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
+                window.location.href = `album.html?album=${albumSlug}`;
+              }
+            });
           },
-          onHover: (event) => {
-            const xAxis = chart.scales.x;
-            const labelIndex = xAxis.getValueForPixel(event.offsetX);
-            const roundedIndex = Math.round(labelIndex);
-            if (data[roundedIndex]) {
-              event.native.target.style.cursor = 'pointer';
-            } else {
-              event.native.target.style.cursor = 'default';
-            }
+          onHover: (e) => {
+            const xScale = chart.scales.x;
+            const hoverX = e.offsetX;
+
+            const hoveringLabel = xScale.ticks.some((_, i) => {
+              const pixel = xScale.getPixelForTick(i);
+              return Math.abs(pixel - hoverX) < 20;
+            });
+
+            e.native.target.style.cursor = hoveringLabel ? 'pointer' : 'default';
           },
           plugins: {
             legend: {
