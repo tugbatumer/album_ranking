@@ -23,41 +23,83 @@
   <h1>Disagreement Loss per Album</h1>
   <canvas id="lossChart" width="800" height="400"></canvas>
 
-  <script>
+<script>
   fetch('albums.json')
     .then(response => response.json())
     .then(data => {
       const ctx = document.getElementById('lossChart').getContext('2d');
-      new Chart(ctx, {
+      const chart = new Chart(ctx, {
         type: 'line',
         data: {
           labels: data.map(d => d.album),
-          datasets: [{
-            label: 'Loss',
-            data: data.map(d => d.loss),
-            borderColor: '#3e95cd',
-            backgroundColor: '#3e95cd',
-            fill: false,
-            tension: 0.2,
-            pointRadius: 6
-          }]
+          datasets: [
+            {
+              label: 'Yagiz vs Tugba',
+              data: data.map(d => d.loss_y_vs_t),
+              borderColor: '#3e95cd',
+              fill: false,
+              tension: 0.2,
+              pointRadius: 5
+            },
+            {
+              label: 'Yagiz vs Spotify',
+              data: data.map(d => d.loss_y_vs_s),
+              borderColor: '#e91e63',
+              fill: false,
+              tension: 0.2,
+              pointRadius: 5
+            },
+            {
+              label: 'Tugba vs Spotify',
+              data: data.map(d => d.loss_t_vs_s),
+              borderColor: '#4caf50',
+              fill: false,
+              tension: 0.2,
+              pointRadius: 5
+            }
+          ]
         },
         options: {
           responsive: true,
-          onClick: (e, elements) => {
-            if (elements.length > 0) {
-              const index = elements[0].index;
-              const album = data[index];
+          onClick: (e) => {
+            const xAxis = chart.scales.x;
+            const clickX = e.offsetX;
+            const labelIndex = xAxis.getValueForPixel(clickX);
+
+            const roundedIndex = Math.round(labelIndex);
+            const album = data[roundedIndex];
+
+            if (album) {
               const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
               window.location.href = `album.html?album=${albumSlug}`;
             }
           },
-            onHover: (event, elements) => {
-          event.native.target.style.cursor = elements.length ? 'pointer' : 'default';
+          onHover: (event) => {
+            const xAxis = chart.scales.x;
+            const labelIndex = xAxis.getValueForPixel(event.offsetX);
+            const roundedIndex = Math.round(labelIndex);
+            if (data[roundedIndex]) {
+              event.native.target.style.cursor = 'pointer';
+            } else {
+              event.native.target.style.cursor = 'default';
+            }
+          },
+          plugins: {
+            legend: {
+              position: 'top'
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                maxRotation: 90,
+                minRotation: 45
+              }
+            }
           }
         }
       });
     });
-  </script>
+</script>
 </body>
 </html>
