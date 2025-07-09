@@ -1,0 +1,73 @@
+{
+  "album": "Disintegration (Remastered)",
+  "artist": "The Cure",
+  "spotify_id": "6DZNOsLXIU2zOQfQDwDpIS",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273858ed9e2832801189187391a",
+  "yagiz_songs": [
+    {
+      "name": "Lullaby - Remastered",
+      "spotify_url": "https://open.spotify.com/track/4N54VofLAv0gNeSL1rwoeq"
+    },
+    {
+      "name": "Lovesong - Remastered",
+      "spotify_url": "https://open.spotify.com/track/1y6XHeNN5DSX5PYy7gT0qL"
+    },
+    {
+      "name": "Fascination Street - Remastered",
+      "spotify_url": "https://open.spotify.com/track/3lDAJbYBmCoWbQx93JTrea"
+    },
+    {
+      "name": "Pictures Of You - Remastered",
+      "spotify_url": "https://open.spotify.com/track/72gg0bqrLCCyomkfunyiuU"
+    },
+    {
+      "name": "Disintegration - Remastered",
+      "spotify_url": "https://open.spotify.com/track/08Hncs1L3PYHpfsb8sYdmQ"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Lovesong - Remastered",
+      "spotify_url": "https://open.spotify.com/track/1y6XHeNN5DSX5PYy7gT0qL"
+    },
+    {
+      "name": "Disintegration - Remastered",
+      "spotify_url": "https://open.spotify.com/track/08Hncs1L3PYHpfsb8sYdmQ"
+    },
+    {
+      "name": "Lullaby - Remastered",
+      "spotify_url": "https://open.spotify.com/track/4N54VofLAv0gNeSL1rwoeq"
+    },
+    {
+      "name": "Pictures Of You - Remastered",
+      "spotify_url": "https://open.spotify.com/track/72gg0bqrLCCyomkfunyiuU"
+    },
+    {
+      "name": "Last Dance - Remastered",
+      "spotify_url": "https://open.spotify.com/track/5wogpGnbWL89uAlRviQWJL"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Pictures Of You - Remastered",
+      "spotify_url": "https://open.spotify.com/track/72gg0bqrLCCyomkfunyiuU"
+    },
+    {
+      "name": "Lovesong - Remastered",
+      "spotify_url": "https://open.spotify.com/track/1y6XHeNN5DSX5PYy7gT0qL"
+    },
+    {
+      "name": "Lullaby - Remastered",
+      "spotify_url": "https://open.spotify.com/track/4N54VofLAv0gNeSL1rwoeq"
+    },
+    {
+      "name": "Prayers For Rain - Remastered",
+      "spotify_url": "https://open.spotify.com/track/7mJ8LgmL8VX9jJGgqbbzFv"
+    },
+    {
+      "name": "Last Dance - Remastered",
+      "spotify_url": "https://open.spotify.com/track/5wogpGnbWL89uAlRviQWJL"
+    }
+  ],
+  "total_songs": 12
+}

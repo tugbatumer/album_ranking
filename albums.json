@@ -277,5 +277,36 @@
     "similarity_t_vs_s": 1.631193345862139,
     "total_songs": 11,
     "date": "06.07.2025"
+  },
+  {
+    "album": "Disintegration",
+    "artist": "The Cure",
+    "spotify_id": "6DZNOsLXIU2zOQfQDwDpIS",
+    "Yagiz": [
+      5,
+      3,
+      6,
+      1,
+      9
+    ],
+    "Tugba": [
+      3,
+      9,
+      5,
+      1,
+      4
+    ],
+    "Spotify": [
+      1,
+      3,
+      5,
+      7,
+      4
+    ],
+    "similarity_y_vs_t": 1.986940425297882,
+    "similarity_y_vs_s": 1.5250061213701993,
+    "similarity_t_vs_s": 1.986940425297882,
+    "total_songs": 12,
+    "date": "09.07.2025"
   }
 ]
