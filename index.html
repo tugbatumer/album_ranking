@@ -23,85 +23,93 @@
   <h1>Disagreement Loss per Album</h1>
   <canvas id="lossChart" width="800" height="400"></canvas>
 
-<script>
-  fetch('albums.json')
-    .then(response => response.json())
-    .then(data => {
-      const ctx = document.getElementById('lossChart').getContext('2d');
-      const chart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: data.map(d => d.album),
-          datasets: [
-            {
-              label: 'Yagiz vs Tugba',
-              data: data.map(d => d.loss_y_vs_t),
-              borderColor: '#3e95cd',
-              fill: false,
-              tension: 0.2,
-              pointRadius: 5
-            },
-            {
-              label: 'Yagiz vs Spotify',
-              data: data.map(d => d.loss_y_vs_s),
-              borderColor: '#e91e63',
-              fill: false,
-              tension: 0.2,
-              pointRadius: 5
-            },
-            {
-              label: 'Tugba vs Spotify',
-              data: data.map(d => d.loss_t_vs_s),
-              borderColor: '#4caf50',
-              fill: false,
-              tension: 0.2,
-              pointRadius: 5
-            }
-          ]
-        },
-        options: {
-          responsive: true,
-          onClick: (e) => {
-            const chartArea = chart.chartArea;
-            const xScale = chart.scales.x;
-            const clickX = e.offsetX;
+  <script>
+    fetch('albums.json')
+      .then(response => response.json())
+      .then(data => {
+        const ctx = document.getElementById('lossChart').getContext('2d');
 
-            xScale.ticks.forEach((tick, i) => {
-              const pixel = xScale.getPixelForTick(i);
-              if (Math.abs(pixel - clickX) < 20) {
-                const album = data[i];
-                const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
-                window.location.href = `album.html?album=${albumSlug}`;
+        const chart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: data.map(d => d.album),
+            datasets: [
+              {
+                label: 'Yagiz vs Tugba',
+                data: data.map(d => d.loss_y_vs_t),
+                borderColor: '#3e95cd',
+                fill: false,
+                tension: 0.2,
+                pointRadius: 5
+              },
+              {
+                label: 'Yagiz vs Spotify',
+                data: data.map(d => d.loss_y_vs_s),
+                borderColor: '#e91e63',
+                fill: false,
+                tension: 0.2,
+                pointRadius: 5
+              },
+              {
+                label: 'Tugba vs Spotify',
+                data: data.map(d => d.loss_t_vs_s),
+                borderColor: '#4caf50',
+                fill: false,
+                tension: 0.2,
+                pointRadius: 5
               }
-            });
+            ]
           },
-          onHover: (e) => {
-            const xScale = chart.scales.x;
-            const hoverX = e.offsetX;
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'top'
+              }
+            },
+            scales: {
+              x: {
+                ticks: {
+                  maxRotation: 90,
+                  minRotation: 45
+                }
+              }
+            },
+            onClick: (event) => {
+              const x = event.offsetX;
+              const y = event.offsetY;
+              const xAxis = chart.scales.x;
+              const yAxis = chart.scales.y;
 
-            const hoveringLabel = xScale.ticks.some((_, i) => {
-              const pixel = xScale.getPixelForTick(i);
-              return Math.abs(pixel - hoverX) < 20;
-            });
+              // Click must be below the chart line (in the tick label area)
+              if (y > yAxis.bottom && y < yAxis.bottom + 40) {
+                const labelIndex = xAxis.getValueForPixel(x);
+                const roundedIndex = Math.round(labelIndex);
+                const album = data[roundedIndex];
 
-            e.native.target.style.cursor = hoveringLabel ? 'pointer' : 'default';
-          },
-          plugins: {
-            legend: {
-              position: 'top'
-            }
-          },
-          scales: {
-            x: {
-              ticks: {
-                maxRotation: 90,
-                minRotation: 45
+                if (album) {
+                  const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
+                  window.location.href = `album.html?album=${albumSlug}`;
+                }
+              }
+            },
+            onHover: (event) => {
+              const x = event.offsetX;
+              const y = event.offsetY;
+              const xAxis = chart.scales.x;
+              const yAxis = chart.scales.y;
+
+              const labelIndex = xAxis.getValueForPixel(x);
+              const roundedIndex = Math.round(labelIndex);
+              if (y > yAxis.bottom && y < yAxis.bottom + 40 && data[roundedIndex]) {
+                event.native.target.style.cursor = 'pointer';
+              } else {
+                event.native.target.style.cursor = 'default';
               }
             }
           }
-        }
+        });
       });
-    });
-</script>
+  </script>
 </body>
 </html>
