@@ -82,38 +82,52 @@
               }
             ]
           },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: { position: 'top' },
-              tooltip: { mode: 'index' }
-            },
-            scales: {
-              x: {
-                ticks: {
-                  callback: function(value, index) {
-                    return index + 1;
-                  },
-                  color: function(context) {
-                    return context.index % 2 === 0 ? '#4caf50' : '#e91e63';  // Start with green
-                  }
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { position: 'top' },
+            tooltip: {
+              mode: 'nearest',
+              intersect: true,
+              callbacks: {
+                title: function(tooltipItems) {
+                  const index = tooltipItems[0].dataIndex;
+                  return data[index].album;
                 },
-                title: {
-                  display: true,
-                  text: 'Album Index',
-                  font: { weight: 'bold' }
-                }
-              },
-              y: {
-                beginAtZero: true,
-                title: {
-                  display: true,
-                  text: 'Loss Value',
-                  font: { weight: 'bold' }
+                label: function(tooltipItem) {
+                  const datasetLabel = tooltipItem.dataset.label;
+                  const value = tooltipItem.formattedValue;
+                  return `${datasetLabel}: ${value}`;
                 }
               }
             }
+          },
+          scales: {
+            x: {
+              ticks: {
+                callback: function(value, index) {
+                  return index + 1;
+                },
+                color: function(context) {
+                  return context.index % 2 === 0 ? '#4caf50' : '#e91e63';
+                }
+              },
+              title: {
+                display: true,
+                text: 'Album Index',
+                font: { weight: 'bold' }
+              }
+            },
+            y: {
+              beginAtZero: true,
+              title: {
+                display: true,
+                text: 'Loss Value',
+                font: { weight: 'bold' }
+              }
+            }
           }
+        }
         });
 
         // Album list (also starting with green)
