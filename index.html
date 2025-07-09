@@ -10,6 +10,7 @@
       background: #f0f0f0;
       padding: 2rem;
     }
+
     canvas {
       max-height: 600px;
       background: #fff;
@@ -17,21 +18,37 @@
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    .labels-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 1rem;
+
+    #album-list {
+      margin-top: 3rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 400px;
     }
-    .album-label {
-      margin: 0.4rem 0.7rem;
-      font-size: 0.9rem;
+
+    #album-list h2 {
+      margin-top: 0;
     }
-    .album-label a {
-      color: #0066cc;
+
+    #album-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #album-list li {
+      margin: 0.5rem 0;
+    }
+
+    #album-list a {
       text-decoration: none;
+      color: #3e95cd;
+      font-weight: bold;
     }
-    .album-label a:hover {
+
+    #album-list a:hover {
       text-decoration: underline;
     }
   </style>
@@ -39,13 +56,17 @@
 <body>
   <h1>Disagreement Loss per Album</h1>
   <canvas id="lossChart" width="800" height="400"></canvas>
-  <div class="labels-container" id="album-labels"></div>
+
+  <div id="album-list">
+    <h2>Albums</h2>
+    <ul id="album-links"></ul>
+  </div>
 
 <script>
   fetch('albums.json')
     .then(response => response.json())
     .then(data => {
-      // Create the chart
+      // Chart
       const ctx = document.getElementById('lossChart').getContext('2d');
       new Chart(ctx, {
         type: 'line',
@@ -88,21 +109,21 @@
           scales: {
             x: {
               ticks: {
-                display: false // hide x-axis labels (we’ll display them as HTML below)
+                maxRotation: 90,
+                minRotation: 45
               }
             }
           }
         }
       });
 
-      // Generate clickable album labels below the chart
-      const labelContainer = document.getElementById('album-labels');
+      // Vertical clickable album list
+      const albumList = document.getElementById('album-links');
       data.forEach(album => {
-        const slug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
-        const div = document.createElement('div');
-        div.className = 'album-label';
-        div.innerHTML = `<a href="album.html?album=${slug}">${album.album}</a>`;
-        labelContainer.appendChild(div);
+        const li = document.createElement('li');
+        const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
+        li.innerHTML = `<a href="album.html?album=${albumSlug}">${album.album}</a>`;
+        albumList.appendChild(li);
       });
     });
 </script>
