@@ -17,99 +17,94 @@
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+    .labels-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .album-label {
+      margin: 0.4rem 0.7rem;
+      font-size: 0.9rem;
+    }
+    .album-label a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .album-label a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <h1>Disagreement Loss per Album</h1>
   <canvas id="lossChart" width="800" height="400"></canvas>
+  <div class="labels-container" id="album-labels"></div>
 
-  <script>
-    fetch('albums.json')
-      .then(response => response.json())
-      .then(data => {
-        const ctx = document.getElementById('lossChart').getContext('2d');
-
-        const chart = new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: data.map(d => d.album),
-            datasets: [
-              {
-                label: 'Yagiz vs Tugba',
-                data: data.map(d => d.loss_y_vs_t),
-                borderColor: '#3e95cd',
-                fill: false,
-                tension: 0.2,
-                pointRadius: 5
-              },
-              {
-                label: 'Yagiz vs Spotify',
-                data: data.map(d => d.loss_y_vs_s),
-                borderColor: '#e91e63',
-                fill: false,
-                tension: 0.2,
-                pointRadius: 5
-              },
-              {
-                label: 'Tugba vs Spotify',
-                data: data.map(d => d.loss_t_vs_s),
-                borderColor: '#4caf50',
-                fill: false,
-                tension: 0.2,
-                pointRadius: 5
-              }
-            ]
+<script>
+  fetch('albums.json')
+    .then(response => response.json())
+    .then(data => {
+      // Create the chart
+      const ctx = document.getElementById('lossChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: data.map(d => d.album),
+          datasets: [
+            {
+              label: 'Yagiz vs Tugba',
+              data: data.map(d => d.loss_y_vs_t),
+              borderColor: '#3e95cd',
+              fill: false,
+              tension: 0.2,
+              pointRadius: 5
+            },
+            {
+              label: 'Yagiz vs Spotify',
+              data: data.map(d => d.loss_y_vs_s),
+              borderColor: '#e91e63',
+              fill: false,
+              tension: 0.2,
+              pointRadius: 5
+            },
+            {
+              label: 'Tugba vs Spotify',
+              data: data.map(d => d.loss_t_vs_s),
+              borderColor: '#4caf50',
+              fill: false,
+              tension: 0.2,
+              pointRadius: 5
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'top'
+            }
           },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: {
-                position: 'top'
-              }
-            },
-            scales: {
-              x: {
-                ticks: {
-                  maxRotation: 90,
-                  minRotation: 45
-                }
-              }
-            },
-            onClick: (event) => {
-              const x = event.offsetX;
-              const y = event.offsetY;
-              const xAxis = chart.scales.x;
-              const yAxis = chart.scales.y;
-
-              // Click must be below the chart line (in the tick label area)
-              if (y > yAxis.bottom && y < yAxis.bottom + 40) {
-                const labelIndex = xAxis.getValueForPixel(x);
-                const roundedIndex = Math.round(labelIndex);
-                const album = data[roundedIndex];
-
-                if (album) {
-                  const albumSlug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
-                  window.location.href = `album.html?album=${albumSlug}`;
-                }
-              }
-            },
-            onHover: (event) => {
-              const x = event.offsetX;
-              const y = event.offsetY;
-              const xAxis = chart.scales.x;
-              const yAxis = chart.scales.y;
-
-              const labelIndex = xAxis.getValueForPixel(x);
-              const roundedIndex = Math.round(labelIndex);
-              if (y > yAxis.bottom && y < yAxis.bottom + 40 && data[roundedIndex]) {
-                event.native.target.style.cursor = 'pointer';
-              } else {
-                event.native.target.style.cursor = 'default';
+          scales: {
+            x: {
+              ticks: {
+                display: false // hide x-axis labels (we’ll display them as HTML below)
               }
             }
           }
-        });
+        }
       });
-  </script>
+
+      // Generate clickable album labels below the chart
+      const labelContainer = document.getElementById('album-labels');
+      data.forEach(album => {
+        const slug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
+        const div = document.createElement('div');
+        div.className = 'album-label';
+        div.innerHTML = `<a href="album.html?album=${slug}">${album.album}</a>`;
+        labelContainer.appendChild(div);
+      });
+    });
+</script>
 </body>
 </html>
