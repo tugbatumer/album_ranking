@@ -104,8 +104,8 @@
 
     function getMaskedData(key, mode) {
       return rawData.map((row, index) => {
-        if (mode === 'odd' && (index + 1) % 2 === 0) return null;
-        if (mode === 'even' && (index + 1) % 2 === 1) return null;
+        if (mode === 'odd' && (row.index + 1) % 2 === 0) return null;
+        if (mode === 'even' && (row.index + 1) % 2 === 1) return null;
         return row[key];
       });
     }
@@ -113,9 +113,6 @@
     function renderChart() {
       const ctx = document.getElementById('lossChart').getContext('2d');
       const mode = document.getElementById('albumFilter').value;
-
-      const labels = rawData.map((_, i) => i + 1);
-      const datasets = [];
 
       const sortOption = document.getElementById('albumSort').value;
       if (sortOption === 'date') {
@@ -127,6 +124,9 @@
     } else if (sortOption === 'tugba-score') {
       rawData.sort((a, b) => b.tugba_score - a.tugba_score);
     }
+
+      const labels = rawData.map((_, i) => i + 1);
+      const datasets = [];
 
       if (document.getElementById('toggleYvsT').checked) {
         datasets.push({
@@ -222,6 +222,7 @@
                   return albumIndex;
                 },
                 font: { size: 19 },
+
                 color: ctx => ctx.index % 2 === 0 ? '#4caf50' : '#e91e63'
               },
               title: {
