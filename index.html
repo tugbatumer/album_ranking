@@ -55,6 +55,16 @@
   <h1>Music Taste Similarity per Album</h1>
 
   <div id="controls">
+
+    <label for="albumSort">Sort albums:
+      <select id="albumSort" onchange="updateChart()">
+        <option value="date">By Date</option>
+        <option value="mean">By Mean Score</option>
+        <option value="yagiz-score">By Yagiz Score</option>
+        <option value="tugba-score">By Tugba Score</option>
+      </select>
+    </label>
+
     <label for="albumFilter">Filter albums:
       <select id="albumFilter" onchange="updateChart()">
         <option value="all">All Albums</option>
@@ -87,6 +97,11 @@
         renderChart();
       });
 
+    function parseDDMMYYYY(dateStr) {
+      const [day, month, year] = dateStr.split('.').map(Number);
+      return new Date(year, month - 1, day);
+    }
+
     function getMaskedData(key, mode) {
       return rawData.map((row, index) => {
         if (mode === 'odd' && (index + 1) % 2 === 0) return null;
@@ -101,6 +116,17 @@
 
       const labels = rawData.map((_, i) => i + 1);
       const datasets = [];
+
+      const sortOption = document.getElementById('albumSort').value;
+      if (sortOption === 'date') {
+      rawData.sort((a, b) => parseDDMMYYYY(a.date) - parseDDMMYYYY(b.date));
+    } else if (sortOption === 'mean') {
+      rawData.sort((a, b) => b.mean_score - a.mean_score);
+    } else if (sortOption === 'yagiz-score') {
+      rawData.sort((a, b) => b.yagiz_score - a.yagiz_score);
+    } else if (sortOption === 'tugba-score') {
+      rawData.sort((a, b) => b.tugba_score - a.tugba_score);
+    }
 
       if (document.getElementById('toggleYvsT').checked) {
         datasets.push({
@@ -225,29 +251,33 @@
           <thead>
             <tr style="background-color: #ddd;">
               <th style="padding: 0.5rem;">#</th>
+              <th style="padding: 0.5rem;">Artist</th>
               <th style="padding: 0.5rem;">Album</th>
               <th style="padding: 0.5rem;">Date</th>
               <th style="padding: 0.5rem;">Yagiz Score</th>
               <th style="padding: 0.5rem;">Tugba Score</th>
+              <th style="padding: 0.5rem;">Mean Score</th>
             </tr>
           </thead>
           <tbody>
       `;
 
       rawData.forEach((album, idx) => {
-        if (mode === 'odd' && (idx + 1) % 2 === 0) return;
-        if (mode === 'even' && (idx + 1) % 2 === 1) return;
+        if (mode === 'odd' && (album.index + 1) % 2 === 0) return;
+        if (mode === 'even' && (album.index + 1) % 2 === 1) return;
 
-        const color = idx % 2 === 0 ? '#4caf50' : '#e91e63';
+        const color = album.index % 2 === 0 ? '#4caf50' : '#e91e63';
         const slug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
 
         tableHTML += `
           <tr style="cursor: pointer;" onclick="window.location.href='album.html?album=${slug}'">
             <td style="padding: 0.5rem; color: ${color}; text-align: center;">${idx + 1}</td>
+            <td style="padding: 0.5rem; color: ${color}; text-align: center;">${album.artist}</td>
             <td style="padding: 0.5rem; color: ${color}; text-align: center;">${album.album}</td>
-            <td style="padding: 0.5rem; color: #555; text-align: center;">${album.date}</td>
-            <td style="padding: 0.5rem; color: #333; text-align: center;">${album.yagiz_score.toFixed(1)}</td>
-            <td style="padding: 0.5rem; color: #333; text-align: center;">${album.tugba_score.toFixed(1)}</td>
+            <td style="padding: 0.5rem; color: ${color}; text-align: center;">${album.date}</td>
+            <td style="padding: 0.5rem; color: ${color}; text-align: center;">${album.yagiz_score.toFixed(1)}</td>
+            <td style="padding: 0.5rem; color: ${color}; text-align: center;">${album.tugba_score.toFixed(1)}</td>
+            <td style="padding: 0.5rem; color: ${color}; text-align: center;">${album.mean_score.toFixed(1)}</td>
           </tr>
         `;
       });

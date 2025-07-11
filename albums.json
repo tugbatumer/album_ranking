@@ -22,15 +22,17 @@
       4,
       0,
       1,
-      2
+      8
     ],
     "similarity_y_vs_t": 2.268469469399488,
-    "similarity_y_vs_s": 1.2281509935672859,
+    "similarity_y_vs_s": 1.748310231483387,
     "similarity_t_vs_s": 0.9680713746092353,
     "total_songs": 10,
     "date": "29.05.2025",
     "yagiz_score": 8.0,
-    "tugba_score": 8.0
+    "tugba_score": 8.0,
+    "mean_score": 8.0,
+    "index": 0
   },
   {
     "album": "The New Abnormal",
@@ -63,7 +65,9 @@
     "total_songs": 9,
     "date": "31.05.2025",
     "yagiz_score": 7.8,
-    "tugba_score": 9.2
+    "tugba_score": 9.2,
+    "mean_score": 8.5,
+    "index": 1
   },
   {
     "album": "BODIES",
@@ -96,7 +100,9 @@
     "total_songs": 11,
     "date": "11.06.2025",
     "yagiz_score": 9.2,
-    "tugba_score": 9.0
+    "tugba_score": 9.0,
+    "mean_score": 9.1,
+    "index": 2
   },
   {
     "album": "Skinty Fia",
@@ -129,7 +135,9 @@
     "total_songs": 10,
     "date": "12.06.2025",
     "yagiz_score": 8.3,
-    "tugba_score": 8.7
+    "tugba_score": 8.7,
+    "mean_score": 8.5,
+    "index": 3
   },
   {
     "album": "Radiant Dark",
@@ -162,7 +170,9 @@
     "total_songs": 10,
     "date": "18.06.2025",
     "yagiz_score": 8.3,
-    "tugba_score": 7.5
+    "tugba_score": 7.5,
+    "mean_score": 7.9,
+    "index": 4
   },
   {
     "album": "Boxer",
@@ -195,7 +205,9 @@
     "total_songs": 12,
     "date": "24.06.2025",
     "yagiz_score": 7.5,
-    "tugba_score": 7.7
+    "tugba_score": 7.7,
+    "mean_score": 7.6,
+    "index": 5
   },
   {
     "album": "Take Me Back To Eden",
@@ -226,9 +238,11 @@
     "similarity_y_vs_s": 0.8321046654786752,
     "similarity_t_vs_s": 1.2940389694063579,
     "total_songs": 12,
-    "date": "24.06.2025",
+    "date": "25.06.2025",
     "yagiz_score": 8.5,
-    "tugba_score": 8.1
+    "tugba_score": 8.1,
+    "mean_score": 8.3,
+    "index": 6
   },
   {
     "album": "Origin of Symmetry",
@@ -261,7 +275,9 @@
     "total_songs": 12,
     "date": "02.07.2025",
     "yagiz_score": 7.2,
-    "tugba_score": 7.9
+    "tugba_score": 7.9,
+    "mean_score": 7.550000000000001,
+    "index": 7
   },
   {
     "album": "Fatalism",
@@ -294,7 +310,9 @@
     "total_songs": 11,
     "date": "06.07.2025",
     "yagiz_score": 8.7,
-    "tugba_score": 8.3
+    "tugba_score": 8.3,
+    "mean_score": 8.5,
+    "index": 8
   },
   {
     "album": "Disintegration",
@@ -327,6 +345,8 @@
     "total_songs": 12,
     "date": "09.07.2025",
     "yagiz_score": 7.7,
-    "tugba_score": 8.5
+    "tugba_score": 8.5,
+    "mean_score": 8.1,
+    "index": 9
   }
 ]
