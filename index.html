@@ -103,11 +103,13 @@
     }
 
     function getMaskedData(key, mode) {
-      return rawData.map((row, index) => {
-        if (mode === 'odd' && (row.index + 1) % 2 === 0) return null;
-        if (mode === 'even' && (row.index + 1) % 2 === 1) return null;
-        return row[key];
-      });
+      return rawData
+        .filter(row => {
+          if (mode === 'odd') return (row.index + 1) % 2 === 1;
+          if (mode === 'even') return (row.index + 1) % 2 === 0;
+          return true; // for 'all'
+        })
+        .map(row => row[key]);
     }
 
     function renderChart() {
@@ -125,7 +127,14 @@
       rawData.sort((a, b) => b.tugba_score - a.tugba_score);
     }
 
-      const labels = rawData.map((_, i) => i + 1);
+      const labels = rawData
+        .filter(row => {
+          const albumIndex = row.index + 1;
+          if (mode === 'odd') return albumIndex % 2 === 1;
+          if (mode === 'even') return albumIndex % 2 === 0;
+          return true; // 'all' mode
+        })
+        .map(row => row.index + 1);
       const datasets = [];
 
       if (document.getElementById('toggleYvsT').checked) {
@@ -167,6 +176,8 @@
           borderDash: [6, 6]
         });
       }
+
+      console.log(datasets);
 
       if (chartInstance) chartInstance.destroy();
 
@@ -216,14 +227,11 @@
             x: {
               ticks: {
                 callback: function(value, index) {
-                  const albumIndex = index + 1;
-                  if (mode === 'odd' && albumIndex % 2 === 0) return '';
-                  if (mode === 'even' && albumIndex % 2 === 1) return '';
-                  return albumIndex;
+                  return labels[index]; // Use the filtered labels
                 },
                 font: { size: 19 },
 
-                color: ctx => ctx.index % 2 === 0 ? '#4caf50' : '#e91e63'
+                color: ctx => rawData.find(row => row.index + 1 === labels[ctx.index]).index % 2 === 0 ? '#4caf50' : '#e91e63'
               },
               title: {
                 display: true,
@@ -272,7 +280,7 @@
 
         tableHTML += `
           <tr style="cursor: pointer;" onclick="window.location.href='album.html?album=${slug}'">
-            <td style="padding: 0.5rem; color: ${color}; text-align: center;">${idx + 1}</td>
+            <td style="padding: 0.5rem; color: ${color}; text-align: center;">${album.index + 1}</td>
             <td style="padding: 0.5rem; color: ${color}; text-align: center;">${album.artist}</td>
             <td style="padding: 0.5rem; color: ${color}; text-align: center;">${album.album}</td>
             <td style="padding: 0.5rem; color: ${color}; text-align: center;">${album.date}</td>
