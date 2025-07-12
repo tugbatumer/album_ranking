@@ -1,0 +1,73 @@
+{
+  "album": "The Silver Scream",
+  "artist": "Ice Nine Kills",
+  "spotify_id": "3DVjLNjzyZBVc8eZcJoulz",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b27348fbb2aab19d588bb9153580",
+  "yagiz_songs": [
+    {
+      "name": "Stabbing In The Dark",
+      "spotify_url": "https://open.spotify.com/track/7H5q9RsWBDRrKq2qCdv2HG"
+    },
+    {
+      "name": "IT Is The End (ft. JR Wasilewski & Buddy Schaub of Less Than Jake and Will Salazar of Fenix TX)",
+      "spotify_url": "https://open.spotify.com/track/19u5pVvN3Ud0u3bPaq6Lnn"
+    },
+    {
+      "name": "Rocking The Boat",
+      "spotify_url": "https://open.spotify.com/track/0SE4Gr2tOynUanztsaqnZl"
+    },
+    {
+      "name": "Enjoy Your Slay",
+      "spotify_url": "https://open.spotify.com/track/20WSWrWhZgiEMvVWu5XuFl"
+    },
+    {
+      "name": "The American Nightmare",
+      "spotify_url": "https://open.spotify.com/track/04K2bMi2vyOBwxr5EjDq5O"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "A Grave Mistake",
+      "spotify_url": "https://open.spotify.com/track/2mMNBgFRyEiRoGvrdoONeq"
+    },
+    {
+      "name": "Stabbing In The Dark",
+      "spotify_url": "https://open.spotify.com/track/7H5q9RsWBDRrKq2qCdv2HG"
+    },
+    {
+      "name": "IT Is The End (ft. JR Wasilewski & Buddy Schaub of Less Than Jake and Will Salazar of Fenix TX)",
+      "spotify_url": "https://open.spotify.com/track/19u5pVvN3Ud0u3bPaq6Lnn"
+    },
+    {
+      "name": "The American Nightmare",
+      "spotify_url": "https://open.spotify.com/track/04K2bMi2vyOBwxr5EjDq5O"
+    },
+    {
+      "name": "Love Bites",
+      "spotify_url": "https://open.spotify.com/track/14dW3sfyW0RtSPYmv3Ol48"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "A Grave Mistake",
+      "spotify_url": "https://open.spotify.com/track/2mMNBgFRyEiRoGvrdoONeq"
+    },
+    {
+      "name": "The American Nightmare",
+      "spotify_url": "https://open.spotify.com/track/04K2bMi2vyOBwxr5EjDq5O"
+    },
+    {
+      "name": "Stabbing In The Dark",
+      "spotify_url": "https://open.spotify.com/track/7H5q9RsWBDRrKq2qCdv2HG"
+    },
+    {
+      "name": "Thank God It's Friday",
+      "spotify_url": "https://open.spotify.com/track/6eHkHIGGcGatFhhqeuRWFN"
+    },
+    {
+      "name": "IT Is The End (ft. JR Wasilewski & Buddy Schaub of Less Than Jake and Will Salazar of Fenix TX)",
+      "spotify_url": "https://open.spotify.com/track/19u5pVvN3Ud0u3bPaq6Lnn"
+    }
+  ],
+  "total_songs": 13
+}
