@@ -1,0 +1,73 @@
+{
+  "album": "(What's The Story) Morning Glory?",
+  "artist": "Oasis",
+  "spotify_id": "6Srtm8a14PDdrpRUdvUdEO",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273644ca85c2ca67b901d7b5bb4",
+  "yagiz_songs": [
+    {
+      "name": "Champagne Supernova",
+      "spotify_url": "https://open.spotify.com/track/4DHuZPe5EmOueMoPXC1BKJ"
+    },
+    {
+      "name": "Don't Look Back in Anger",
+      "spotify_url": "https://open.spotify.com/track/6qkIxHddw8eqVefnJwo4YM"
+    },
+    {
+      "name": "Wonderwall",
+      "spotify_url": "https://open.spotify.com/track/35EfXlRKogBr1RvrkFBMHr"
+    },
+    {
+      "name": "Morning Glory",
+      "spotify_url": "https://open.spotify.com/track/17AvbUjwymZs2hNBHT06ob"
+    },
+    {
+      "name": "Roll with It",
+      "spotify_url": "https://open.spotify.com/track/0TIfkp5gMB1dQbiA6ORubQ"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Champagne Supernova",
+      "spotify_url": "https://open.spotify.com/track/4DHuZPe5EmOueMoPXC1BKJ"
+    },
+    {
+      "name": "Don't Look Back in Anger",
+      "spotify_url": "https://open.spotify.com/track/6qkIxHddw8eqVefnJwo4YM"
+    },
+    {
+      "name": "Wonderwall",
+      "spotify_url": "https://open.spotify.com/track/35EfXlRKogBr1RvrkFBMHr"
+    },
+    {
+      "name": "Morning Glory",
+      "spotify_url": "https://open.spotify.com/track/17AvbUjwymZs2hNBHT06ob"
+    },
+    {
+      "name": "Some Might Say",
+      "spotify_url": "https://open.spotify.com/track/7m4Goi2h7EOYoxmQkhHSv1"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Don't Look Back in Anger",
+      "spotify_url": "https://open.spotify.com/track/6qkIxHddw8eqVefnJwo4YM"
+    },
+    {
+      "name": "Hello",
+      "spotify_url": "https://open.spotify.com/track/6RYOFeJmhmb6RRtoPjMCai"
+    },
+    {
+      "name": "Wonderwall",
+      "spotify_url": "https://open.spotify.com/track/35EfXlRKogBr1RvrkFBMHr"
+    },
+    {
+      "name": "She's Electric",
+      "spotify_url": "https://open.spotify.com/track/7zstmK6nTu4S1fWNAwoyAl"
+    },
+    {
+      "name": "Morning Glory",
+      "spotify_url": "https://open.spotify.com/track/17AvbUjwymZs2hNBHT06ob"
+    }
+  ],
+  "total_songs": 12
+}

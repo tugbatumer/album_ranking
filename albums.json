@@ -90,8 +90,8 @@
     "Spotify": [
       7,
       2,
-      6,
       5,
+      6,
       1
     ],
     "similarity_y_vs_t": 1.631193345862139,
@@ -230,13 +230,13 @@
     "Spotify": [
       1,
       9,
-      2,
       10,
+      2,
       0
     ],
     "similarity_y_vs_t": 2.448874729225565,
-    "similarity_y_vs_s": 0.8321046654786752,
-    "similarity_t_vs_s": 1.2940389694063579,
+    "similarity_y_vs_s": 1.0630718174425164,
+    "similarity_t_vs_s": 1.5250061213701993,
     "total_songs": 12,
     "date": "25.06.2025",
     "yagiz_score": 8.5,
@@ -267,10 +267,10 @@
       9,
       0,
       1,
-      5
+      2
     ],
     "similarity_y_vs_t": 1.2940389694063579,
-    "similarity_y_vs_s": 2.217907577261723,
+    "similarity_y_vs_s": 1.7559732733340407,
     "similarity_t_vs_s": 1.986940425297882,
     "total_songs": 12,
     "date": "02.07.2025",
@@ -301,11 +301,11 @@
       7,
       1,
       5,
-      3,
-      0
+      0,
+      3
     ],
     "similarity_y_vs_t": 1.1463072405759571,
-    "similarity_y_vs_s": 2.1160794511483214,
+    "similarity_y_vs_s": 2.3585225037914124,
     "similarity_t_vs_s": 1.631193345862139,
     "total_songs": 11,
     "date": "06.07.2025",
@@ -383,5 +383,40 @@
     "tugba_score": 8.8,
     "mean_score": 8.95,
     "index": 10
+  },
+  {
+    "album": "(What's the Story) Morning Glory?",
+    "artist": "Oasis",
+    "spotify_id": "6Srtm8a14PDdrpRUdvUdEO",
+    "Yagiz": [
+      11,
+      3,
+      2,
+      9,
+      1
+    ],
+    "Tugba": [
+      11,
+      3,
+      2,
+      9,
+      6
+    ],
+    "Spotify": [
+      3,
+      0,
+      2,
+      8,
+      9
+    ],
+    "similarity_y_vs_t": 2.9108090331532472,
+    "similarity_y_vs_s": 1.2940389694063579,
+    "similarity_t_vs_s": 1.2940389694063579,
+    "total_songs": 12,
+    "date": "23.07.2025",
+    "yagiz_score": 8.1,
+    "tugba_score": 8.8,
+    "mean_score": 8.45,
+    "index": 11
   }
 ]
