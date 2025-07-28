@@ -1,0 +1,73 @@
+{
+  "album": "Stargazer",
+  "artist": "Moodring",
+  "spotify_id": "6xKM5VYZoDt0H0mPu2Blru",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273143e8c71cd881c9d0255d402",
+  "yagiz_songs": [
+    {
+      "name": "Xeno (Foreign Love)",
+      "spotify_url": "https://open.spotify.com/track/3ygTuvrmEI0gZiwZtrrJrb"
+    },
+    {
+      "name": "N.I.K.E.",
+      "spotify_url": "https://open.spotify.com/track/3mY1RzGRLWeWFkjZfx9jSZ"
+    },
+    {
+      "name": "Novocaine Bones",
+      "spotify_url": "https://open.spotify.com/track/5nx7rbYIf1Ba1F0NunZ8gc"
+    },
+    {
+      "name": "Disintegrate",
+      "spotify_url": "https://open.spotify.com/track/56iX37c3jvxDKJ5WaXrPRG"
+    },
+    {
+      "name": "Head In The Clouds",
+      "spotify_url": "https://open.spotify.com/track/1nYSXcVFjIcbTRjhjGlQd9"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Disintegrate",
+      "spotify_url": "https://open.spotify.com/track/56iX37c3jvxDKJ5WaXrPRG"
+    },
+    {
+      "name": "Peel",
+      "spotify_url": "https://open.spotify.com/track/2KFn5RerPgfKiGm1JJYNVj"
+    },
+    {
+      "name": "Stargazer",
+      "spotify_url": "https://open.spotify.com/track/4InvNLj8brRi6bKZtSEWTk"
+    },
+    {
+      "name": "SYNC.wav",
+      "spotify_url": "https://open.spotify.com/track/1FpgsQLiN83iR3fVV25gg0"
+    },
+    {
+      "name": "Constrict",
+      "spotify_url": "https://open.spotify.com/track/7CwlHKnU6EtNna9mLlo6n8"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "How To Leave Painlessly",
+      "spotify_url": "https://open.spotify.com/track/4qKHN1n5CAdufsdU5guBPZ"
+    },
+    {
+      "name": "Disintegrate",
+      "spotify_url": "https://open.spotify.com/track/56iX37c3jvxDKJ5WaXrPRG"
+    },
+    {
+      "name": "Constrict",
+      "spotify_url": "https://open.spotify.com/track/7CwlHKnU6EtNna9mLlo6n8"
+    },
+    {
+      "name": "Red Light Gossip",
+      "spotify_url": "https://open.spotify.com/track/76PD2oTPXDgtqrK1cMgFka"
+    },
+    {
+      "name": "Peel",
+      "spotify_url": "https://open.spotify.com/track/2KFn5RerPgfKiGm1JJYNVj"
+    }
+  ],
+  "total_songs": 11
+}
