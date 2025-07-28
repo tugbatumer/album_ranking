@@ -239,9 +239,9 @@
     "similarity_t_vs_s": 1.5250061213701993,
     "total_songs": 12,
     "date": "25.06.2025",
-    "yagiz_score": 8.5,
+    "yagiz_score": 8.4,
     "tugba_score": 8.1,
-    "mean_score": 8.3,
+    "mean_score": 8.25,
     "index": 6
   },
   {
@@ -309,9 +309,9 @@
     "similarity_t_vs_s": 1.631193345862139,
     "total_songs": 11,
     "date": "06.07.2025",
-    "yagiz_score": 8.7,
+    "yagiz_score": 8.8,
     "tugba_score": 8.3,
-    "mean_score": 8.5,
+    "mean_score": 8.55,
     "index": 8
   },
   {
@@ -418,5 +418,40 @@
     "tugba_score": 8.8,
     "mean_score": 8.45,
     "index": 11
+  },
+  {
+    "album": "Stargazer",
+    "artist": "Moodring",
+    "spotify_id": "6xKM5VYZoDt0H0mPu2Blru",
+    "Yagiz": [
+      10,
+      6,
+      9,
+      1,
+      8
+    ],
+    "Tugba": [
+      1,
+      4,
+      5,
+      7,
+      2
+    ],
+    "Spotify": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "similarity_y_vs_t": -1.5205663384980441,
+    "similarity_y_vs_s": -1.5205663384980441,
+    "similarity_t_vs_s": 0.6614211352897751,
+    "total_songs": 11,
+    "date": "29.07.2025",
+    "yagiz_score": 8.7,
+    "tugba_score": 8.6,
+    "mean_score": 8.649999999999999,
+    "index": 12
   }
 ]
