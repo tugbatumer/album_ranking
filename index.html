@@ -26,6 +26,11 @@
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    #control-row {
+      display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 1.5rem;
@@ -37,117 +42,137 @@
       transform: scale(1.2);
       margin-right: 0.4rem;
     }
+    #slider-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
     #slider-range {
       width: 300px;
-      margin-right: 1rem;
-    }
-    #range-values {
-      font-size: 1rem;
     }
     #album-list {
       margin-top: 2rem;
-      padding-left: 0;
-      list-style: none;
-      max-width: 800px;
+      max-width: 1000px;
     }
-    #album-list li {
-      font-size: 1.1rem;
-      margin: 0.4rem 0;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1rem;
+    }
+    th, td {
+      padding: 0.5rem;
+      text-align: center;
+    }
+    th {
+      background-color: #ddd;
+    }
+    tr:hover {
+      background-color: #f5f5f5;
       cursor: pointer;
-    }
-    #album-list li:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <h1>Music Taste Similarity per Album</h1>
-
   <div id="controls">
-    <label for="albumFilter">Filter albums:
-      <select id="albumFilter" onchange="updateChart()">
-        <option value="all">All Albums</option>
-        <option value="odd">Yagiz’s Albums</option>
-        <option value="even">Tugba’s Albums</option>
-      </select>
-    </label>
+    <div id="control-row">
+      <label for="albumSort">Sort albums:
+        <select id="albumSort" onchange="updateChart()">
+          <option value="date">By Date</option>
+          <option value="mean">By Mean Score</option>
+          <option value="yagiz-score">By Yagiz Score</option>
+          <option value="tugba-score">By Tugba Score</option>
+        </select>
+      </label>
 
-    <div>
-      <strong>Show:</strong>
-      <label><input type="checkbox" id="toggleYvsT" checked onchange="updateChart()"> Yagiz vs Tugba</label>
-      <label><input type="checkbox" id="toggleYvsS" checked onchange="updateChart()"> Yagiz vs Spotify</label>
-      <label><input type="checkbox" id="toggleTvsS" checked onchange="updateChart()"> Tugba vs Spotify</label>
-    </div>
+      <label for="albumFilter">Filter albums:
+        <select id="albumFilter" onchange="updateChart()">
+          <option value="all">All Albums</option>
+          <option value="odd">Yagiz's Albums</option>
+          <option value="even">Tugba's Albums</option>
+        </select>
+      </label>
 
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <div style="margin-right: 0.5rem;">Filter by range:</div>
-      <div id="slider-range"></div>
-      <div id="range-values" style="display: none;">
-        <span id="rangeStartTxt">1</span><span id="rangeEndTxt">1</span>
+      <div>
+        <strong>Show:</strong>
+        <label><input type="checkbox" id="toggleYvsT" checked onchange="updateChart()"> Yagiz vs Tugba</label>
+        <label><input type="checkbox" id="toggleYvsS" checked onchange="updateChart()"> Yagiz vs Spotify</label>
+        <label><input type="checkbox" id="toggleTvsS" checked onchange="updateChart()"> Tugba vs Spotify</label>
       </div>
     </div>
 
-    <div>
+    <div id="slider-container">
+      <div>Filter by range:</div>
+      <div id="slider-range"></div>
       <label><input type="checkbox" id="toggleCumulative" onchange="updateChart()"> Show cumulative means within the selected range</label>
     </div>
   </div>
 
   <canvas id="lossChart" width="800" height="400"></canvas>
-
   <h2>Album List</h2>
-  <ul id="album-list"></ul>
+  <div id="album-list"></div>
 
   <script>
     let rawData = [], chartInstance;
 
     fetch('albums.json')
-      .then(r => r.json())
+      .then(res => res.json())
       .then(data => {
         rawData = data.map((d, i) => ({ ...d, index: i }));
         initSlider(rawData.length);
         updateChart();
       });
 
-    function initSlider(maxCount) {
+    function parseDDMMYYYY(dateStr) {
+      const [d, m, y] = dateStr.split('.').map(Number);
+      return new Date(y, m - 1, d);
+    }
+
+    function initSlider(max) {
       const slider = document.getElementById('slider-range');
       noUiSlider.create(slider, {
-        start: [1, maxCount],
+        start: [1, max],
         connect: true,
         step: 1,
-        range: { min: 1, max: maxCount },
+        range: { min: 1, max },
         tooltips: [true, true],
         format: {
           to: v => parseInt(v),
           from: v => parseInt(v)
         }
       });
-      slider.noUiSlider.on('update', (values) => {
-        document.getElementById('rangeStartTxt').innerText = values[0];
-        document.getElementById('rangeEndTxt').innerText = values[1];
-      });
       slider.noUiSlider.on('change', updateChart);
     }
 
     function updateChart() {
-      const [start, end] = document.getElementById('slider-range').noUiSlider.get();
-      const mode = document.getElementById('albumFilter').value;
-      const isCumulative = document.getElementById('toggleCumulative').checked;
+      const [start, end] = document.getElementById('slider-range').noUiSlider.get().map(Number);
+      const filter = document.getElementById('albumFilter').value;
+      const sort = document.getElementById('albumSort')?.value || 'date';
+      const cumulative = document.getElementById('toggleCumulative').checked;
 
-      const filtered = rawData.slice(start - 1, end).filter(r => {
-        if (mode === 'odd') return (r.index + 1) % 2 === 1;
-        if (mode === 'even') return (r.index + 1) % 2 === 0;
+      let dataInRange = rawData.slice(start - 1, end);
+
+      if (sort === 'date') dataInRange.sort((a, b) => parseDDMMYYYY(a.date) - parseDDMMYYYY(b.date));
+      else if (sort === 'mean') dataInRange.sort((a, b) => b.mean_score - a.mean_score);
+      else if (sort === 'yagiz-score') dataInRange.sort((a, b) => b.yagiz_score - a.yagiz_score);
+      else if (sort === 'tugba-score') dataInRange.sort((a, b) => b.tugba_score - a.tugba_score);
+
+      const filtered = dataInRange.filter(row => {
+        if (filter === 'odd') return (row.index + 1) % 2 === 1;
+        if (filter === 'even') return (row.index + 1) % 2 === 0;
         return true;
       });
 
       const labels = filtered.map(r => r.index + 1);
-      const datasets = [];
 
+      const datasets = [];
       if (document.getElementById('toggleYvsT').checked)
-        datasets.push(buildDataset('similarity_y_vs_t', '#3e95cd', filtered, 'Yagiz vs Tugba', isCumulative));
+        datasets.push(buildDataset(filtered, 'similarity_y_vs_t', '#3e95cd', 'Yagiz vs Tugba', cumulative));
       if (document.getElementById('toggleYvsS').checked)
-        datasets.push(buildDataset('similarity_y_vs_s', '#4caf50', filtered, 'Yagiz vs Spotify', isCumulative));
+        datasets.push(buildDataset(filtered, 'similarity_y_vs_s', '#4caf50', 'Yagiz vs Spotify', cumulative));
       if (document.getElementById('toggleTvsS').checked)
-        datasets.push(buildDataset('similarity_t_vs_s', '#e91e63', filtered, 'Tugba vs Spotify', isCumulative));
+        datasets.push(buildDataset(filtered, 'similarity_t_vs_s', '#e91e63', 'Tugba vs Spotify', cumulative));
 
       if (chartInstance) chartInstance.destroy();
       chartInstance = new Chart(document.getElementById('lossChart').getContext('2d'), {
@@ -156,14 +181,11 @@
         options: {
           responsive: true,
           plugins: {
-            legend: {
-              position: 'top',
-              labels: { font: { size: 16 } }
-            },
+            legend: { position: 'top', labels: { font: { size: 16 } } },
             tooltip: {
               callbacks: {
-                title: ti => filtered[ti[0].dataIndex].album,
-                label: t => `${t.dataset.label}: ${t.formattedValue}`
+                title: ctx => filtered[ctx[0].dataIndex].album,
+                label: ctx => `${ctx.dataset.label}: ${ctx.formattedValue}`
               }
             }
           },
@@ -171,25 +193,16 @@
             x: {
               ticks: {
                 callback: (_, i) => labels[i],
-                color: (context) => {
-                  const label = labels[context.index];
-                  return label % 2 === 1 ? '#4caf50' : '#e91e63'; // Green for odd, pink for even
-                },
+                color: ctx => labels[ctx.index] % 2 === 1 ? '#4caf50' : '#e91e63',
                 font: { size: 14 }
               },
-              title: {
-                display: true,
-                text: 'Album Index',
-                font: { size: 16, weight: 'bold' }
-              }
+              title: { display: true, text: 'Album Index', font: { size: 16, weight: 'bold' } }
             },
             y: {
               beginAtZero: true,
               title: {
                 display: true,
-                text: isCumulative
-                  ? 'Music Taste Similarity (Cumulative Mean Within the Range)'
-                  : 'Music Taste Similarity',
+                text: cumulative ? 'Music Taste Similarity (Cumulative Mean)' : 'Music Taste Similarity',
                 font: { size: 16, weight: 'bold' }
               },
               ticks: { font: { size: 14 } }
@@ -198,21 +211,42 @@
         }
       });
 
-      document.getElementById('album-list').innerHTML = filtered.map(r => {
-        const clr = r.index % 2 === 0 ? '#4caf50' : '#e91e63';
-        const slug = r.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
-        return `<li style="color:${clr}" onclick="location='album.html?album=${slug}'">${r.index + 1}. ${r.album}</li>`;
-      }).join('');
+      document.getElementById('album-list').innerHTML = `
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Artist</th>
+              <th>Album</th>
+              <th>Date</th>
+              <th>Yagiz Score</th>
+              <th>Tugba Score</th>
+              <th>Mean Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${filtered.map(album => {
+              const c = album.index % 2 === 0 ? '#4caf50' : '#e91e63';
+              const slug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
+              return `<tr onclick="location='album.html?album=${slug}'">
+                <td style="color:${c}">${album.index + 1}</td>
+                <td style="color:${c}">${album.artist}</td>
+                <td style="color:${c}">${album.album}</td>
+                <td style="color:${c}">${album.date}</td>
+                <td style="color:${c}">${album.yagiz_score.toFixed(1)}</td>
+                <td style="color:${c}">${album.tugba_score.toFixed(1)}</td>
+                <td style="color:${c}">${album.mean_score.toFixed(1)}</td>
+              </tr>`;
+            }).join('')}
+          </tbody>
+        </table>`;
     }
 
-    function buildDataset(key, color, filtered, label, isCumulative) {
-      let values = filtered.map(r => r[key]);
+    function buildDataset(data, key, color, label, isCumulative) {
+      let values = data.map(r => r[key]);
       if (isCumulative) {
-        let cumSum = 0;
-        values = values.map((val, idx) => {
-          cumSum += val;
-          return cumSum / (idx + 1);
-        });
+        let sum = 0;
+        values = values.map((v, i) => (sum += v) / (i + 1));
       }
       return {
         label,
