@@ -49,20 +49,20 @@
   ],
   "spotify_songs": [
     {
-      "name": "Don't Look Back in Anger",
-      "spotify_url": "https://open.spotify.com/track/6qkIxHddw8eqVefnJwo4YM"
-    },
-    {
       "name": "Hello",
       "spotify_url": "https://open.spotify.com/track/6RYOFeJmhmb6RRtoPjMCai"
     },
     {
-      "name": "Wonderwall",
-      "spotify_url": "https://open.spotify.com/track/35EfXlRKogBr1RvrkFBMHr"
-    },
-    {
       "name": "She's Electric",
       "spotify_url": "https://open.spotify.com/track/7zstmK6nTu4S1fWNAwoyAl"
+    },
+    {
+      "name": "Don't Look Back in Anger",
+      "spotify_url": "https://open.spotify.com/track/6qkIxHddw8eqVefnJwo4YM"
+    },
+    {
+      "name": "Wonderwall",
+      "spotify_url": "https://open.spotify.com/track/35EfXlRKogBr1RvrkFBMHr"
     },
     {
       "name": "Morning Glory",

@@ -1,0 +1,73 @@
+{
+  "album": "Humbug",
+  "artist": "Arctic Monkeys",
+  "spotify_id": "5IEoiwkThhRmSMBANhpxl2",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273f65d720a5d70dbb93e96d528",
+  "yagiz_songs": [
+    {
+      "name": "Crying Lightning",
+      "spotify_url": "https://open.spotify.com/track/6wVWJl64yoTzU27EI8ep20"
+    },
+    {
+      "name": "Pretty Visitors",
+      "spotify_url": "https://open.spotify.com/track/45n7uujqwmMyBMjBu9SwRu"
+    },
+    {
+      "name": "Dangerous Animals",
+      "spotify_url": "https://open.spotify.com/track/0pdp3VrR4WQaswf0GyT0Y0"
+    },
+    {
+      "name": "The Jeweller's Hands",
+      "spotify_url": "https://open.spotify.com/track/4PDPn7HosIycoXeoeibFc5"
+    },
+    {
+      "name": "My Propeller",
+      "spotify_url": "https://open.spotify.com/track/2hmHlBM0kPBm17Y7nVIW9f"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Crying Lightning",
+      "spotify_url": "https://open.spotify.com/track/6wVWJl64yoTzU27EI8ep20"
+    },
+    {
+      "name": "Pretty Visitors",
+      "spotify_url": "https://open.spotify.com/track/45n7uujqwmMyBMjBu9SwRu"
+    },
+    {
+      "name": "Secret Door",
+      "spotify_url": "https://open.spotify.com/track/4dtP86vkhzwNXCFpCtizce"
+    },
+    {
+      "name": "Dance Little Liar",
+      "spotify_url": "https://open.spotify.com/track/3u16Clmxz7dJpnQWXXynok"
+    },
+    {
+      "name": "My Propeller",
+      "spotify_url": "https://open.spotify.com/track/2hmHlBM0kPBm17Y7nVIW9f"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Crying Lightning",
+      "spotify_url": "https://open.spotify.com/track/6wVWJl64yoTzU27EI8ep20"
+    },
+    {
+      "name": "Secret Door",
+      "spotify_url": "https://open.spotify.com/track/4dtP86vkhzwNXCFpCtizce"
+    },
+    {
+      "name": "Cornerstone",
+      "spotify_url": "https://open.spotify.com/track/5bsnLiT00hG37qd8p2jdVl"
+    },
+    {
+      "name": "My Propeller",
+      "spotify_url": "https://open.spotify.com/track/2hmHlBM0kPBm17Y7nVIW9f"
+    },
+    {
+      "name": "Pretty Visitors",
+      "spotify_url": "https://open.spotify.com/track/45n7uujqwmMyBMjBu9SwRu"
+    }
+  ],
+  "total_songs": 10
+}

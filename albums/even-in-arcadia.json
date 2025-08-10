@@ -49,24 +49,24 @@
   ],
   "spotify_songs": [
     {
-      "name": "Dangerous",
-      "spotify_url": "https://open.spotify.com/track/105Fwh9wijwT41rrfgSnrE"
-    },
-    {
       "name": "Caramel",
       "spotify_url": "https://open.spotify.com/track/1QrbZhFYlViXd60g130vw1"
-    },
-    {
-      "name": "Look To Windward",
-      "spotify_url": "https://open.spotify.com/track/4Lojbtk7XNMdSKRHSFbdkm"
     },
     {
       "name": "Emergence",
       "spotify_url": "https://open.spotify.com/track/2OMjHcniFxzijWX7EaBrXE"
     },
     {
+      "name": "Dangerous",
+      "spotify_url": "https://open.spotify.com/track/105Fwh9wijwT41rrfgSnrE"
+    },
+    {
       "name": "Gethsemane",
       "spotify_url": "https://open.spotify.com/track/29JLgNBcOky7QB68OrvYxO"
+    },
+    {
+      "name": "Look To Windward",
+      "spotify_url": "https://open.spotify.com/track/4Lojbtk7XNMdSKRHSFbdkm"
     }
   ],
   "total_songs": 10

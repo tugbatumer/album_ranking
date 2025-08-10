@@ -49,12 +49,12 @@
   ],
   "spotify_songs": [
     {
-      "name": "Pictures Of You - Remastered",
-      "spotify_url": "https://open.spotify.com/track/72gg0bqrLCCyomkfunyiuU"
-    },
-    {
       "name": "Lovesong - Remastered",
       "spotify_url": "https://open.spotify.com/track/1y6XHeNN5DSX5PYy7gT0qL"
+    },
+    {
+      "name": "Pictures Of You - Remastered",
+      "spotify_url": "https://open.spotify.com/track/72gg0bqrLCCyomkfunyiuU"
     },
     {
       "name": "Lullaby - Remastered",
