@@ -1,0 +1,73 @@
+{
+  "album": "People Watching",
+  "artist": "156/Silence",
+  "spotify_id": "1PRvYCv9h0rlR4AP54yOnN",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273049b3adcd9d9f926e91df19c",
+  "yagiz_songs": [
+    {
+      "name": "Better Written Villain",
+      "spotify_url": "https://open.spotify.com/track/6BuRHBZMDfvvp87RCvc1fA"
+    },
+    {
+      "name": "Target Acquired",
+      "spotify_url": "https://open.spotify.com/track/1ypsN0FjjCt3gHrZzDd2ux"
+    },
+    {
+      "name": "Wants I Need",
+      "spotify_url": "https://open.spotify.com/track/5jVjdpMcY4DJUYP6fQm7YF"
+    },
+    {
+      "name": "Unreasonable Doubt",
+      "spotify_url": "https://open.spotify.com/track/4VpVNoJcQofPzaFAm6vGfz"
+    },
+    {
+      "name": "Healing Process (Leave of Absence)",
+      "spotify_url": "https://open.spotify.com/track/4RaLqzk6V1MrwUMhlBlYo6"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Product Placement",
+      "spotify_url": "https://open.spotify.com/track/0SQg8JQfiNucPIXSjDIHq7"
+    },
+    {
+      "name": "Better Written Villain",
+      "spotify_url": "https://open.spotify.com/track/6BuRHBZMDfvvp87RCvc1fA"
+    },
+    {
+      "name": "Funeral Arrangements",
+      "spotify_url": "https://open.spotify.com/track/1jq2XTor1ewpKnzkaNDMvZ"
+    },
+    {
+      "name": "Character Development (Cold Start)",
+      "spotify_url": "https://open.spotify.com/track/0BRvW4hfXMNBQoK6OAQPsa"
+    },
+    {
+      "name": "Healing Process (Leave of Absence)",
+      "spotify_url": "https://open.spotify.com/track/4RaLqzk6V1MrwUMhlBlYo6"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Better Written Villain",
+      "spotify_url": "https://open.spotify.com/track/6BuRHBZMDfvvp87RCvc1fA"
+    },
+    {
+      "name": "Character Development (Cold Start)",
+      "spotify_url": "https://open.spotify.com/track/0BRvW4hfXMNBQoK6OAQPsa"
+    },
+    {
+      "name": "Product Placement",
+      "spotify_url": "https://open.spotify.com/track/0SQg8JQfiNucPIXSjDIHq7"
+    },
+    {
+      "name": "Target Acquired",
+      "spotify_url": "https://open.spotify.com/track/1ypsN0FjjCt3gHrZzDd2ux"
+    },
+    {
+      "name": "Blood Loss",
+      "spotify_url": "https://open.spotify.com/track/74D5Eh39xzIr0oT25iHPO8"
+    }
+  ],
+  "total_songs": 14
+}

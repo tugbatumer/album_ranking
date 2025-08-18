@@ -49,12 +49,12 @@
   ],
   "spotify_songs": [
     {
-      "name": "Crying Lightning",
-      "spotify_url": "https://open.spotify.com/track/6wVWJl64yoTzU27EI8ep20"
-    },
-    {
       "name": "Secret Door",
       "spotify_url": "https://open.spotify.com/track/4dtP86vkhzwNXCFpCtizce"
+    },
+    {
+      "name": "Crying Lightning",
+      "spotify_url": "https://open.spotify.com/track/6wVWJl64yoTzU27EI8ep20"
     },
     {
       "name": "Cornerstone",
