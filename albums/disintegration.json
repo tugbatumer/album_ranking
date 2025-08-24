@@ -3,6 +3,15 @@
   "artist": "The Cure",
   "spotify_id": "6DZNOsLXIU2zOQfQDwDpIS",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b273858ed9e2832801189187391a",
+  "release_date": "02.05.1989",
+  "date": "09.07.2025",
+  "total_songs": 12,
+  "yagiz_score": 7.8,
+  "tugba_score": 8.5,
+  "mean_score": 8.15,
+  "similarity_y_vs_t": 1.986940425297882,
+  "similarity_y_vs_s": 1.5250061213701993,
+  "similarity_t_vs_s": 1.986940425297882,
   "yagiz_songs": [
     {
       "name": "Lullaby - Remastered",
@@ -49,12 +58,12 @@
   ],
   "spotify_songs": [
     {
-      "name": "Lovesong - Remastered",
-      "spotify_url": "https://open.spotify.com/track/1y6XHeNN5DSX5PYy7gT0qL"
-    },
-    {
       "name": "Pictures Of You - Remastered",
       "spotify_url": "https://open.spotify.com/track/72gg0bqrLCCyomkfunyiuU"
+    },
+    {
+      "name": "Lovesong - Remastered",
+      "spotify_url": "https://open.spotify.com/track/1y6XHeNN5DSX5PYy7gT0qL"
     },
     {
       "name": "Lullaby - Remastered",
@@ -68,6 +77,5 @@
       "name": "Last Dance - Remastered",
       "spotify_url": "https://open.spotify.com/track/5wogpGnbWL89uAlRviQWJL"
     }
-  ],
-  "total_songs": 12
+  ]
 }

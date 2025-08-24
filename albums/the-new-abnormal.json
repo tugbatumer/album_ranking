@@ -3,6 +3,15 @@
   "artist": "The Strokes",
   "spotify_id": "2xkZV2Hl1Omi8rk2D7t5lN",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b273bfa99afb5ef0d26d5064b23b",
+  "release_date": "10.04.2020",
+  "date": "31.05.2025",
+  "total_songs": 9,
+  "yagiz_score": 7.9,
+  "tugba_score": 9.2,
+  "mean_score": 8.55,
+  "similarity_y_vs_t": 1.8896309099128716,
+  "similarity_y_vs_s": 2.1778802404546647,
+  "similarity_t_vs_s": 2.1778802404546647,
   "yagiz_songs": [
     {
       "name": "The Adults Are Talking",
@@ -68,6 +77,5 @@
       "name": "Brooklyn Bridge To Chorus",
       "spotify_url": "https://open.spotify.com/track/2mDYYGaGd9uXKkK2YhDA3i"
     }
-  ],
-  "total_songs": 9
+  ]
 }

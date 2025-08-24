@@ -87,6 +87,7 @@
       <label for="albumSort">Sort albums:
         <select id="albumSort" onchange="updateChart()">
           <option value="date">By Date</option>
+          <option value="release-date">By Release Date</option>
           <option value="mean">By Mean Score</option>
           <option value="yagiz-score">By Yagiz Score</option>
           <option value="tugba-score">By Tugba Score</option>
@@ -181,6 +182,7 @@
       let dataInRange = rawData.slice(start - 1, end);
 
       if (sort === 'date') dataInRange.sort((a, b) => parseDDMMYYYY(a.date) - parseDDMMYYYY(b.date));
+      if (sort === 'release-date') dataInRange.sort((a, b) => parseDDMMYYYY(a.release_date) - parseDDMMYYYY(b.release_date));
       else if (sort === 'mean') dataInRange.sort((a, b) => b.mean_score - a.mean_score);
       else if (sort === 'yagiz-score') dataInRange.sort((a, b) => b.yagiz_score - a.yagiz_score);
       else if (sort === 'tugba-score') dataInRange.sort((a, b) => b.tugba_score - a.tugba_score);
@@ -256,6 +258,7 @@
               <th>#</th>
               <th>Artist</th>
               <th>Album</th>
+              <th>Release Date</th>
               <th>Date</th>
               <th>Yagiz Score</th>
               <th>Tugba Score</th>
@@ -270,6 +273,7 @@
                 <td style="color:${c}">${album.index + 1}</td>
                 <td style="color:${c}">${album.artist}</td>
                 <td style="color:${c}">${album.album}</td>
+                <td style="color:${c}">${album.release_date}</td>
                 <td style="color:${c}">${album.date}</td>
                 <td style="color:${c}">${album.yagiz_score.toFixed(1)}</td>
                 <td style="color:${c}">${album.tugba_score.toFixed(1)}</td>

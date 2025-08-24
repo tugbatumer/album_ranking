@@ -1,0 +1,81 @@
+{
+  "album": "X&Y",
+  "artist": "Coldplay",
+  "spotify_id": "4E7bV0pzG0LciBSWTszra6",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651",
+  "release_date": "07.06.2005",
+  "date": "24.08.2025",
+  "total_songs": 13,
+  "yagiz_score": 8.3,
+  "tugba_score": 9.1,
+  "mean_score": 8.7,
+  "similarity_y_vs_t": 0.5273647767060448,
+  "similarity_y_vs_s": 0.7508860003728034,
+  "similarity_t_vs_s": 2.3155345660401143,
+  "yagiz_songs": [
+    {
+      "name": "The Hardest Part",
+      "spotify_url": "https://open.spotify.com/track/4Tw9JYF9HOuPRyccNWMgwf"
+    },
+    {
+      "name": "What If",
+      "spotify_url": "https://open.spotify.com/track/39qRdHcl2tizWbzlM9kUlN"
+    },
+    {
+      "name": "Square One",
+      "spotify_url": "https://open.spotify.com/track/2zQIITgo6sc5ppOfPcH205"
+    },
+    {
+      "name": "Speed of Sound",
+      "spotify_url": "https://open.spotify.com/track/7clUVcSOtkNWa58Gw5RfD4"
+    },
+    {
+      "name": "Fix You",
+      "spotify_url": "https://open.spotify.com/track/7LVHVU3tWfcxj5aiPFEW4Q"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Fix You",
+      "spotify_url": "https://open.spotify.com/track/7LVHVU3tWfcxj5aiPFEW4Q"
+    },
+    {
+      "name": "Speed of Sound",
+      "spotify_url": "https://open.spotify.com/track/7clUVcSOtkNWa58Gw5RfD4"
+    },
+    {
+      "name": "Talk",
+      "spotify_url": "https://open.spotify.com/track/4wzt5Rrk3W98pHXAqutuJw"
+    },
+    {
+      "name": "X&Y",
+      "spotify_url": "https://open.spotify.com/track/2rxp56vVQp1zzumJ0eHLmw"
+    },
+    {
+      "name": "Square One",
+      "spotify_url": "https://open.spotify.com/track/2zQIITgo6sc5ppOfPcH205"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Fix You",
+      "spotify_url": "https://open.spotify.com/track/7LVHVU3tWfcxj5aiPFEW4Q"
+    },
+    {
+      "name": "Speed of Sound",
+      "spotify_url": "https://open.spotify.com/track/7clUVcSOtkNWa58Gw5RfD4"
+    },
+    {
+      "name": "Talk",
+      "spotify_url": "https://open.spotify.com/track/4wzt5Rrk3W98pHXAqutuJw"
+    },
+    {
+      "name": "The Hardest Part",
+      "spotify_url": "https://open.spotify.com/track/4Tw9JYF9HOuPRyccNWMgwf"
+    },
+    {
+      "name": "A Message",
+      "spotify_url": "https://open.spotify.com/track/2w3eXFL86RgxGtDr8bzwgK"
+    }
+  ]
+}

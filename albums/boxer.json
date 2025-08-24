@@ -3,6 +3,15 @@
   "artist": "The National",
   "spotify_id": "2pG7mDkQhia2OyGE6fbkmJ",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b273026f3ccb0e906a5032330752",
+  "release_date": "21.05.2007",
+  "date": "24.06.2025",
+  "total_songs": 12,
+  "yagiz_score": 7.3,
+  "tugba_score": 7.7,
+  "mean_score": 7.5,
+  "similarity_y_vs_t": 2.217907577261723,
+  "similarity_y_vs_s": 0.6011375135148338,
+  "similarity_t_vs_s": 0.6011375135148338,
   "yagiz_songs": [
     {
       "name": "Mistaken For Strangers",
@@ -68,6 +77,5 @@
       "name": "Green Gloves",
       "spotify_url": "https://open.spotify.com/track/0EI0bOj38coiFWWAq0XlhF"
     }
-  ],
-  "total_songs": 12
+  ]
 }

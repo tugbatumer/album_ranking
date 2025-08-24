@@ -3,6 +3,15 @@
   "artist": "Sleep Token",
   "spotify_id": "1lS7FeRcSUuIGqyg99UGpj",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730e48dcb579fd8e59d0a3c218",
+  "release_date": "09.05.2025",
+  "date": "29.05.2025",
+  "total_songs": 10,
+  "yagiz_score": 8.1,
+  "tugba_score": 8.0,
+  "mean_score": 8.05,
+  "similarity_y_vs_t": 2.268469469399488,
+  "similarity_y_vs_s": 0.9680713746092353,
+  "similarity_t_vs_s": 0.7079917556511849,
   "yagiz_songs": [
     {
       "name": "Emergence",
@@ -53,10 +62,6 @@
       "spotify_url": "https://open.spotify.com/track/1QrbZhFYlViXd60g130vw1"
     },
     {
-      "name": "Emergence",
-      "spotify_url": "https://open.spotify.com/track/2OMjHcniFxzijWX7EaBrXE"
-    },
-    {
       "name": "Dangerous",
       "spotify_url": "https://open.spotify.com/track/105Fwh9wijwT41rrfgSnrE"
     },
@@ -65,9 +70,12 @@
       "spotify_url": "https://open.spotify.com/track/29JLgNBcOky7QB68OrvYxO"
     },
     {
-      "name": "Look To Windward",
-      "spotify_url": "https://open.spotify.com/track/4Lojbtk7XNMdSKRHSFbdkm"
+      "name": "Emergence",
+      "spotify_url": "https://open.spotify.com/track/2OMjHcniFxzijWX7EaBrXE"
+    },
+    {
+      "name": "Damocles",
+      "spotify_url": "https://open.spotify.com/track/3enIFKYJKSVyjXVzmup28I"
     }
-  ],
-  "total_songs": 10
+  ]
 }

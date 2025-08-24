@@ -3,6 +3,15 @@
   "artist": "Moodring",
   "spotify_id": "6xKM5VYZoDt0H0mPu2Blru",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b273143e8c71cd881c9d0255d402",
+  "release_date": "10.06.2022",
+  "date": "29.07.2025",
+  "total_songs": 11,
+  "yagiz_score": 8.6,
+  "tugba_score": 8.6,
+  "mean_score": 8.6,
+  "similarity_y_vs_t": -1.89280443392932,
+  "similarity_y_vs_s": -1.89280443392932,
+  "similarity_t_vs_s": 0.4479121366931344,
   "yagiz_songs": [
     {
       "name": "Xeno (Foreign Love)",
@@ -68,6 +77,5 @@
       "name": "Peel",
       "spotify_url": "https://open.spotify.com/track/2KFn5RerPgfKiGm1JJYNVj"
     }
-  ],
-  "total_songs": 11
+  ]
 }

@@ -3,6 +3,15 @@
   "artist": "Oasis",
   "spotify_id": "6Srtm8a14PDdrpRUdvUdEO",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b273644ca85c2ca67b901d7b5bb4",
+  "release_date": "02.10.1995",
+  "date": "23.07.2025",
+  "total_songs": 12,
+  "yagiz_score": 8.1,
+  "tugba_score": 8.8,
+  "mean_score": 8.45,
+  "similarity_y_vs_t": 2.788628707315589,
+  "similarity_y_vs_s": 0.4479121366931344,
+  "similarity_t_vs_s": 0.4479121366931344,
   "yagiz_songs": [
     {
       "name": "Champagne Supernova",
@@ -68,6 +77,5 @@
       "name": "Morning Glory",
       "spotify_url": "https://open.spotify.com/track/17AvbUjwymZs2hNBHT06ob"
     }
-  ],
-  "total_songs": 12
+  ]
 }

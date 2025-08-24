@@ -3,6 +3,15 @@
   "artist": "Polaris",
   "spotify_id": "6yMmUKkAfVoHJT71ZpoBi5",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b273dcc4dcf2f48f7a97da2ff39f",
+  "release_date": "01.09.2023",
+  "date": "06.07.2025",
+  "total_songs": 11,
+  "yagiz_score": 8.8,
+  "tugba_score": 8.3,
+  "mean_score": 8.55,
+  "similarity_y_vs_t": 1.1463072405759571,
+  "similarity_y_vs_s": 2.3585225037914124,
+  "similarity_t_vs_s": 1.631193345862139,
   "yagiz_songs": [
     {
       "name": "Inhumane",
@@ -68,6 +77,5 @@
       "name": "Overflow",
       "spotify_url": "https://open.spotify.com/track/5pov1EJLn3GtjnfVjHyNHs"
     }
-  ],
-  "total_songs": 11
+  ]
 }

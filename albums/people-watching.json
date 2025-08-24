@@ -3,6 +3,15 @@
   "artist": "156/Silence",
   "spotify_id": "1PRvYCv9h0rlR4AP54yOnN",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b273049b3adcd9d9f926e91df19c",
+  "release_date": "13.09.2024",
+  "date": "17.08.2025",
+  "total_songs": 14,
+  "yagiz_score": 8.6,
+  "tugba_score": 8.2,
+  "mean_score": 8.399999999999999,
+  "similarity_y_vs_t": 0.1392032095871511,
+  "similarity_y_vs_s": 0.6011375135148338,
+  "similarity_t_vs_s": 1.5250061213701993,
   "yagiz_songs": [
     {
       "name": "Better Written Villain",
@@ -68,6 +77,5 @@
       "name": "Blood Loss",
       "spotify_url": "https://open.spotify.com/track/74D5Eh39xzIr0oT25iHPO8"
     }
-  ],
-  "total_songs": 14
+  ]
 }

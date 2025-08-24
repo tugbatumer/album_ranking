@@ -3,6 +3,15 @@
   "artist": "If I Were You",
   "spotify_id": "2qGyywbFxucSBkPMPgfQ2w",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b2732c0cd8c525327473076065a2",
+  "release_date": "17.07.2020",
+  "date": "18.06.2025",
+  "total_songs": 10,
+  "yagiz_score": 8.4,
+  "tugba_score": 7.5,
+  "mean_score": 7.95,
+  "similarity_y_vs_t": 1.748310231483387,
+  "similarity_y_vs_s": 0.7079917556511849,
+  "similarity_t_vs_s": 1.2281509935672859,
   "yagiz_songs": [
     {
       "name": "Never There",
@@ -68,6 +77,5 @@
       "name": "Black Heart",
       "spotify_url": "https://open.spotify.com/track/0pWWVP7021dCmBaLCRYbVv"
     }
-  ],
-  "total_songs": 10
+  ]
 }

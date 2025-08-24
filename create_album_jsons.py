@@ -29,33 +29,52 @@ def get_top_5_popular_tracks(album_id, sp):
     return top_5
 
 
-def generate_album_json(album_id, album_slug, yagiz_ranks, tugba_ranks):
+def generate_album_json(album_row, album_slug):
+    album_id = album_row['spotify_id']
     album = sp.album(album_id)
-    tracks = {t['track_number']: {
-        'name': t['name'],
-        'spotify_url': t['external_urls']['spotify']
-    } for t in album['tracks']['items']}
+
+    # Map Spotify tracks by track number
+    tracks = {
+        t['track_number']: {
+            'name': t['name'],
+            'spotify_url': t['external_urls']['spotify']
+        }
+        for t in album['tracks']['items']
+    }
 
     def track_list(rank_list):
-        return [tracks[num + 1] for num in rank_list if (num+1) in tracks]
+        # rank_list has 0-based indices → add +1 to match Spotify track_number
+        return [tracks[num + 1] for num in rank_list if (num + 1) in tracks]
 
+    # Spotify’s own popular ranking
     spotify_ranks = get_top_5_popular_tracks(album_id, sp)
 
+    # Build JSON output
     output = {
         'album': album['name'],
         'artist': album['artists'][0]['name'],
         'spotify_id': album_id,
         'album_art_url': album['images'][0]['url'],
-        'yagiz_songs': track_list(yagiz_ranks),
-        'tugba_songs': track_list(tugba_ranks),
-        'spotify_songs': track_list(spotify_ranks),
-        'total_songs': album['total_tracks']
+        'release_date': album_row['release_date'],
+        'date': album_row['date'],   # ranking date (from your DataFrame)
+        'total_songs': album['total_tracks'],
+        'yagiz_score': album_row['yagiz_score'],
+        'tugba_score': album_row['tugba_score'],
+        'mean_score': (album_row['yagiz_score'] + album_row['tugba_score']) / 2,
+        'similarity_y_vs_t': album_row['similarity_y_vs_t'],
+        'similarity_y_vs_s': album_row['similarity_y_vs_s'],
+        'similarity_t_vs_s': album_row['similarity_t_vs_s'],
+        'yagiz_songs': track_list(album_row['Yagiz']),
+        'tugba_songs': track_list(album_row['Tugba']),
+        'spotify_songs': track_list(spotify_ranks)
     }
 
+    # Save file
     os.makedirs('albums', exist_ok=True)
     with open(f'albums/{album_slug}.json', 'w') as f:
         json.dump(output, f, indent=2)
 
     print(f'Saved albums/{album_slug}.json')
+
 
 

@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import re
@@ -82,28 +84,39 @@ def compute_ranking_losses_extended(df):
 
 def extend_df_with_spotify(df):
     """
-    Adds 'Spotify' and 'total_songs' columns to the given DataFrame:
+    Adds 'Spotify', 'total_songs', and 'release_date' columns to the given DataFrame:
     - 'Spotify' contains the top-5 most popular track indices.
     - 'total_songs' is the number of tracks on the album.
+    - 'release_date' is the album's release date (YYYY-MM-DD or less precise).
     """
     spotify_rankings = []
     total_song_counts = []
+    release_dates = []
 
     for _, row in df.iterrows():
         album_id = row['spotify_id']
         album = sp.album(album_id)
 
-        # Get popular track indices (as before)
+        # Get popular track indices
         spotify_top5 = get_top_5_popular_tracks(album_id, sp)
         spotify_rankings.append(spotify_top5)
 
         # Count the number of songs
         total_song_counts.append(len(album['tracks']['items']))
 
+        if not pd.isna(row['release_date']):
+            release_dates.append(row['release_date'])
+        else:
+            date_obj = datetime.strptime(album.get('release_date'), "%Y-%m-%d")
+            release_dates.append(date_obj.strftime("%d.%m.%Y"))
+
     df = df.copy()
     df['Spotify'] = spotify_rankings
     df['total_songs'] = total_song_counts
+    df['release_date'] = release_dates
+
     return df
+
 
 
 def plot_ranking_losses(ranking_loss_df):

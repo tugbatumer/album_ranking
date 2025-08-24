@@ -3,6 +3,15 @@
   "artist": "Fontaines D.C.",
   "spotify_id": "0aVN6rMKthfuAdDXn8RTXf",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b273b23737878e75582c2e255029",
+  "release_date": "22.04.2022",
+  "date": "12.06.2025",
+  "total_songs": 10,
+  "yagiz_score": 8.4,
+  "tugba_score": 8.7,
+  "mean_score": 8.55,
+  "similarity_y_vs_t": 1.2281509935672859,
+  "similarity_y_vs_s": 1.748310231483387,
+  "similarity_t_vs_s": 2.788628707315589,
   "yagiz_songs": [
     {
       "name": "I Love You",
@@ -68,6 +77,5 @@
       "name": "Skinty Fia",
       "spotify_url": "https://open.spotify.com/track/6wyHzaCZNuu6fG4LlDFqvY"
     }
-  ],
-  "total_songs": 10
+  ]
 }

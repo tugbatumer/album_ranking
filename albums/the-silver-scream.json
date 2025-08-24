@@ -3,6 +3,15 @@
   "artist": "Ice Nine Kills",
   "spotify_id": "3DVjLNjzyZBVc8eZcJoulz",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b27348fbb2aab19d588bb9153580",
+  "release_date": "05.10.2018",
+  "date": "13.07.2025",
+  "total_songs": 13,
+  "yagiz_score": 9.0,
+  "tugba_score": 8.8,
+  "mean_score": 8.9,
+  "similarity_y_vs_t": 1.4214496713730795,
+  "similarity_y_vs_s": 0.7508860003728034,
+  "similarity_t_vs_s": 2.3155345660401143,
   "yagiz_songs": [
     {
       "name": "Stabbing In The Dark",
@@ -68,6 +77,5 @@
       "name": "IT Is The End (ft. JR Wasilewski & Buddy Schaub of Less Than Jake and Will Salazar of Fenix TX)",
       "spotify_url": "https://open.spotify.com/track/19u5pVvN3Ud0u3bPaq6Lnn"
     }
-  ],
-  "total_songs": 13
+  ]
 }

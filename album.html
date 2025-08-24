@@ -5,28 +5,87 @@
   <title>Album Details</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: system-ui, sans-serif;
       background: #f7f7f7;
       padding: 2rem;
+      line-height: 1.4;
     }
     .container {
       background: #fff;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      max-width: 600px;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 1000px;
       margin: auto;
     }
     img {
       max-width: 100%;
-      border-radius: 8px;
+      border-radius: 12px;
     }
+
+    /* Header: album art + info */
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .album-info h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .album-info h2 {
+      margin: 0.2rem 0 1rem;
+      color: #555;
+      font-weight: normal;
+    }
+    .album-meta p {
+      margin: 0.2rem 0;
+    }
+
+    /* Metrics section */
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .metric-card {
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .metric-card h3 {
+      margin-top: 0;
+      font-size: 1rem;
+      color: #333;
+    }
+    .metric-card p {
+      margin: 0.3rem 0;
+      font-size: 0.9rem;
+    }
+
+    /* Lists */
+    .lists {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(260px, 1fr)); /* remove 1fr to avoid full stretch */
+      gap: 2rem;
+      justify-content: center;  /* center the grid */
+      margin-top: 2rem;
+      text-align: center;
+    }
+    h3.yagiz { color: #4caf50; }
+    h3.tugba { color: #e91e63; }
+    h3.spotify { color: #3e95cd; }
+
     ul {
       list-style: none;
       padding: 0;
     }
     li {
-      margin: 0.5rem 0;
+      margin: 0.4rem 0;
     }
     a.track-link {
       text-decoration: none;
@@ -35,35 +94,76 @@
     a.track-link:hover {
       text-decoration: underline;
     }
-    h3.yagiz {
-      color: #4caf50;
+
+    /* Back link */
+    .back {
+      display: inline-block;
+      margin-bottom: 1.5rem;  /* space below the link */
+      padding: 0.5rem 1rem;
+      background: #3e95cd;    /* nice blue */
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.2s ease;
     }
-    h3.tugba {
-      color: #e91e63;
-    }
-    h3.spotify {
-      color: #3e95cd;
+
+    .back:hover {
+      background: #357ab8;    /* slightly darker on hover */
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1 id="album-title"></h1>
-    <h2 id="album-artist"></h2>
-    <a id="spotify-album-link" href="#" target="_blank">
-      <img id="album-art" src="" alt="Album Art">
-    </a>
+    <a href="index.html" class="back">← Back to Chart</a>
+    <!-- Header -->
+    <div class="header">
+      <a id="spotify-album-link" href="#" target="_blank">
+        <img id="album-art" src="" alt="Album Art">
+      </a>
+      <div class="album-info">
+        <h1 id="album-title"></h1>
+        <h2 id="album-artist"></h2>
+        <div class="album-meta">
+          <p><strong>Release Date:</strong> <span id="release-date"></span></p>
+          <p><strong>Rank Date:</strong> <span id="rank-date"></span></p>
+          <p><strong>Total Songs:</strong> <span id="total-songs"></span></p>
+        </div>
 
-    <h3 class="yagiz">Yagiz's Top 5</h3>
-    <ul id="yagiz-list"></ul>
+        <!-- Metrics -->
+        <div class="metrics">
+          <div class="metric-card">
+            <h3>Scores</h3>
+            <p><strong>Yagiz:</strong> <span id="yagiz-score"></span></p>
+            <p><strong>Tugba:</strong> <span id="tugba-score"></span></p>
+            <p><strong>Mean:</strong> <span id="mean-score"></span></p>
+          </div>
+          <div class="metric-card">
+            <h3>Similarity</h3>
+            <p><strong>Yagiz vs Tugba:</strong> <span id="sim-y-t"></span></p>
+            <p><strong>Yagiz vs Spotify:</strong> <span id="sim-y-s"></span></p>
+            <p><strong>Tugba vs Spotify:</strong> <span id="sim-t-s"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <h3 class="tugba">Tugba's Top 5</h3>
-    <ul id="tugba-list"></ul>
+    <!-- Top 5 Lists -->
+    <div class="lists">
+      <div>
+        <h3 class="yagiz">Yagiz's Top 5</h3>
+        <ul id="yagiz-list"></ul>
+      </div>
+      <div>
+        <h3 class="tugba">Tugba's Top 5</h3>
+        <ul id="tugba-list"></ul>
+      </div>
+      <div>
+        <h3 class="spotify">Spotify's Top 5</h3>
+        <ul id="spotify-list"></ul>
+      </div>
+    </div>
 
-    <h3 class="spotify">Spotify's Top 5</h3>
-    <ul id="spotify-list"></ul>
-
-    <p><a href="index.html">← Back to Chart</a></p>
   </div>
 
   <script>
@@ -83,29 +183,45 @@
           return res.json();
         })
         .then(album => {
+          // Header Info
           document.getElementById('album-title').innerText = album.album;
           document.getElementById('album-artist').innerText = album.artist;
           document.getElementById('spotify-album-link').href = `https://open.spotify.com/album/${album.spotify_id}`;
           document.getElementById('album-art').src = album.album_art_url;
 
+          document.getElementById('release-date').innerText = album.release_date;
+          document.getElementById('rank-date').innerText = album.date;
+          document.getElementById('total-songs').innerText = album.total_songs;
+
+          // Scores
+          document.getElementById('yagiz-score').innerText = album.yagiz_score;
+          document.getElementById('tugba-score').innerText = album.tugba_score;
+          document.getElementById('mean-score').innerText = album.mean_score;
+
+          // Similarities
+          document.getElementById('sim-y-t').innerText = Number(album.similarity_y_vs_t).toPrecision(3);
+          document.getElementById('sim-y-s').innerText = Number(album.similarity_y_vs_s).toPrecision(3);
+          document.getElementById('sim-t-s').innerText = Number(album.similarity_t_vs_s).toPrecision(3);
+
+          // Song Lists
           const yList = document.getElementById('yagiz-list');
-          album.yagiz_songs.forEach(track => {
+          album.yagiz_songs.forEach((track, i) => {
             const li = document.createElement('li');
-            li.innerHTML = `<a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
+            li.innerHTML = `${i+1}. <a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
             yList.appendChild(li);
           });
 
           const tList = document.getElementById('tugba-list');
-          album.tugba_songs.forEach(track => {
+          album.tugba_songs.forEach((track, i) => {
             const li = document.createElement('li');
-            li.innerHTML = `<a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
+            li.innerHTML = `${i+1}. <a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
             tList.appendChild(li);
           });
 
           const sList = document.getElementById('spotify-list');
-          album.spotify_songs.forEach(track => {
+          album.spotify_songs.forEach((track, i) => {
             const li = document.createElement('li');
-            li.innerHTML = `<a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
+            li.innerHTML = `${i+1}. <a class="track-link" href="${track.spotify_url}" target="_blank">${track.name}</a>`;
             sList.appendChild(li);
           });
         })

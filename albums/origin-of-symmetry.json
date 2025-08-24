@@ -3,6 +3,15 @@
   "artist": "Muse",
   "spotify_id": "1Dh27pjT3IEdiRG9Se5uQn",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b2735225e9931a558f6d2f541a7d",
+  "release_date": "18.06.2001",
+  "date": "02.07.2025",
+  "total_songs": 12,
+  "yagiz_score": 7.4,
+  "tugba_score": 7.9,
+  "mean_score": 7.65,
+  "similarity_y_vs_t": 1.2940389694063579,
+  "similarity_y_vs_s": 1.7559732733340407,
+  "similarity_t_vs_s": 1.986940425297882,
   "yagiz_songs": [
     {
       "name": "Plug in Baby",
@@ -68,6 +77,5 @@
       "name": "Space Dementia",
       "spotify_url": "https://open.spotify.com/track/00jXDm9BLNZdf2QC3Br0r7"
     }
-  ],
-  "total_songs": 12
+  ]
 }

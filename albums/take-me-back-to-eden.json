@@ -3,6 +3,15 @@
   "artist": "Sleep Token",
   "spotify_id": "1gjugH97doz3HktiEjx2vY",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730b73608b678f169d3c8f35f0",
+  "release_date": "19.05.2023",
+  "date": "25.06.2025",
+  "total_songs": 12,
+  "yagiz_score": 8.5,
+  "tugba_score": 8.1,
+  "mean_score": 8.3,
+  "similarity_y_vs_t": 2.448874729225565,
+  "similarity_y_vs_s": 1.0630718174425164,
+  "similarity_t_vs_s": 1.5250061213701993,
   "yagiz_songs": [
     {
       "name": "The Apparition",
@@ -68,6 +77,5 @@
       "name": "Chokehold",
       "spotify_url": "https://open.spotify.com/track/1Uifdytv882RtTn6Gr4xAA"
     }
-  ],
-  "total_songs": 12
+  ]
 }

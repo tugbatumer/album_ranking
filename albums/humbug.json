@@ -3,6 +3,15 @@
   "artist": "Arctic Monkeys",
   "spotify_id": "5IEoiwkThhRmSMBANhpxl2",
   "album_art_url": "https://i.scdn.co/image/ab67616d0000b273f65d720a5d70dbb93e96d528",
+  "release_date": "20.08.2009",
+  "date": "10.08.2025",
+  "total_songs": 10,
+  "yagiz_score": 8.0,
+  "tugba_score": 8.7,
+  "mean_score": 8.35,
+  "similarity_y_vs_t": 1.4882306125253364,
+  "similarity_y_vs_s": 0.4479121366931344,
+  "similarity_t_vs_s": 1.4882306125253364,
   "yagiz_songs": [
     {
       "name": "Crying Lightning",
@@ -68,6 +77,5 @@
       "name": "Pretty Visitors",
       "spotify_url": "https://open.spotify.com/track/45n7uujqwmMyBMjBu9SwRu"
     }
-  ],
-  "total_songs": 10
+  ]
 }
