@@ -10,8 +10,8 @@
   "tugba_score": 8.7,
   "mean_score": 8.55,
   "similarity_y_vs_t": 1.2281509935672859,
-  "similarity_y_vs_s": 1.748310231483387,
-  "similarity_t_vs_s": 2.788628707315589,
+  "similarity_y_vs_s": 2.0083898504414375,
+  "similarity_t_vs_s": 2.528549088357538,
   "yagiz_songs": [
     {
       "name": "I Love You",
@@ -62,12 +62,12 @@
       "spotify_url": "https://open.spotify.com/track/5XhMgAWzou6EjDmQtoyoZE"
     },
     {
-      "name": "Jackie Down The Line",
-      "spotify_url": "https://open.spotify.com/track/1MoA0TNVdveasxnR6c2JqZ"
-    },
-    {
       "name": "Roman Holiday",
       "spotify_url": "https://open.spotify.com/track/4GKJALTXTwhZgLPp0usd5C"
+    },
+    {
+      "name": "Jackie Down The Line",
+      "spotify_url": "https://open.spotify.com/track/1MoA0TNVdveasxnR6c2JqZ"
     },
     {
       "name": "Big Shot",

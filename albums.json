@@ -19,14 +19,14 @@
     ],
     "Spotify": [
       4,
+      1,
       3,
       8,
-      1,
-      7
+      0
     ],
     "similarity_y_vs_t": 2.268469469399488,
-    "similarity_y_vs_s": 0.9680713746092353,
-    "similarity_t_vs_s": 0.7079917556511849,
+    "similarity_y_vs_s": 1.748310231483387,
+    "similarity_t_vs_s": 0.9680713746092353,
     "total_songs": 10,
     "date": "29.05.2025",
     "release_date": "09.05.2025",
@@ -92,8 +92,8 @@
     "Spotify": [
       7,
       2,
-      5,
       6,
+      5,
       1
     ],
     "similarity_y_vs_t": 1.4882306125253364,
@@ -127,14 +127,14 @@
     ],
     "Spotify": [
       8,
-      3,
       5,
+      3,
       1,
       7
     ],
     "similarity_y_vs_t": 1.2281509935672859,
-    "similarity_y_vs_s": 1.748310231483387,
-    "similarity_t_vs_s": 2.788628707315589,
+    "similarity_y_vs_s": 2.0083898504414375,
+    "similarity_t_vs_s": 2.528549088357538,
     "total_songs": 10,
     "date": "12.06.2025",
     "release_date": "22.04.2022",
@@ -165,11 +165,11 @@
       2,
       3,
       4,
-      1,
-      0
+      0,
+      1
     ],
     "similarity_y_vs_t": 1.748310231483387,
-    "similarity_y_vs_s": 0.7079917556511849,
+    "similarity_y_vs_s": 0.4479121366931344,
     "similarity_t_vs_s": 1.2281509935672859,
     "total_songs": 10,
     "date": "18.06.2025",
@@ -342,15 +342,15 @@
       4
     ],
     "Spotify": [
-      1,
       3,
+      1,
       5,
       7,
       4
     ],
     "similarity_y_vs_t": 1.986940425297882,
     "similarity_y_vs_s": 1.5250061213701993,
-    "similarity_t_vs_s": 1.986940425297882,
+    "similarity_t_vs_s": 2.217907577261723,
     "total_songs": 12,
     "date": "09.07.2025",
     "release_date": "02.05.1989",
@@ -574,5 +574,41 @@
     "tugba_score": 9.1,
     "mean_score": 8.7,
     "index": 15
+  },
+  {
+    "album": "Tsunami Sea",
+    "artist": "Spiritbox",
+    "spotify_id": "79sg58t1vRpcxudpP9uPtg",
+    "Yagiz": [
+      6,
+      9,
+      8,
+      5,
+      2
+    ],
+    "Tugba": [
+      6,
+      2,
+      8,
+      9,
+      5
+    ],
+    "Spotify": [
+      2,
+      4,
+      3,
+      0,
+      5
+    ],
+    "similarity_y_vs_t": 2.3585225037914124,
+    "similarity_y_vs_s": -0.793237180568771,
+    "similarity_t_vs_s": -0.06590802263949799,
+    "total_songs": 11,
+    "date": "31.08.2025",
+    "release_date": "07.03.2025",
+    "yagiz_score": 8.6,
+    "tugba_score": 8.3,
+    "mean_score": 8.45,
+    "index": 16
   }
 ]

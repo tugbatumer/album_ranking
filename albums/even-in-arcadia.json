@@ -10,8 +10,8 @@
   "tugba_score": 8.0,
   "mean_score": 8.05,
   "similarity_y_vs_t": 2.268469469399488,
-  "similarity_y_vs_s": 0.9680713746092353,
-  "similarity_t_vs_s": 0.7079917556511849,
+  "similarity_y_vs_s": 1.748310231483387,
+  "similarity_t_vs_s": 0.9680713746092353,
   "yagiz_songs": [
     {
       "name": "Emergence",
@@ -62,6 +62,10 @@
       "spotify_url": "https://open.spotify.com/track/1QrbZhFYlViXd60g130vw1"
     },
     {
+      "name": "Emergence",
+      "spotify_url": "https://open.spotify.com/track/2OMjHcniFxzijWX7EaBrXE"
+    },
+    {
       "name": "Dangerous",
       "spotify_url": "https://open.spotify.com/track/105Fwh9wijwT41rrfgSnrE"
     },
@@ -70,12 +74,8 @@
       "spotify_url": "https://open.spotify.com/track/29JLgNBcOky7QB68OrvYxO"
     },
     {
-      "name": "Emergence",
-      "spotify_url": "https://open.spotify.com/track/2OMjHcniFxzijWX7EaBrXE"
-    },
-    {
-      "name": "Damocles",
-      "spotify_url": "https://open.spotify.com/track/3enIFKYJKSVyjXVzmup28I"
+      "name": "Look To Windward",
+      "spotify_url": "https://open.spotify.com/track/4Lojbtk7XNMdSKRHSFbdkm"
     }
   ]
 }

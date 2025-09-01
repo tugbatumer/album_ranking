@@ -11,7 +11,7 @@
   "mean_score": 8.15,
   "similarity_y_vs_t": 1.986940425297882,
   "similarity_y_vs_s": 1.5250061213701993,
-  "similarity_t_vs_s": 1.986940425297882,
+  "similarity_t_vs_s": 2.217907577261723,
   "yagiz_songs": [
     {
       "name": "Lullaby - Remastered",
@@ -58,12 +58,12 @@
   ],
   "spotify_songs": [
     {
-      "name": "Pictures Of You - Remastered",
-      "spotify_url": "https://open.spotify.com/track/72gg0bqrLCCyomkfunyiuU"
-    },
-    {
       "name": "Lovesong - Remastered",
       "spotify_url": "https://open.spotify.com/track/1y6XHeNN5DSX5PYy7gT0qL"
+    },
+    {
+      "name": "Pictures Of You - Remastered",
+      "spotify_url": "https://open.spotify.com/track/72gg0bqrLCCyomkfunyiuU"
     },
     {
       "name": "Lullaby - Remastered",

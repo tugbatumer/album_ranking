@@ -1,0 +1,81 @@
+{
+  "album": "Tsunami Sea",
+  "artist": "Spiritbox",
+  "spotify_id": "79sg58t1vRpcxudpP9uPtg",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273ca5c3280d995a78c34bdf210",
+  "release_date": "07.03.2025",
+  "date": "31.08.2025",
+  "total_songs": 11,
+  "yagiz_score": 8.6,
+  "tugba_score": 8.3,
+  "mean_score": 8.45,
+  "similarity_y_vs_t": 2.3585225037914124,
+  "similarity_y_vs_s": -0.793237180568771,
+  "similarity_t_vs_s": -0.06590802263949799,
+  "yagiz_songs": [
+    {
+      "name": "A Haven With Two Faces",
+      "spotify_url": "https://open.spotify.com/track/7z5VyHN6KeN1xF7y4uJ5Nq"
+    },
+    {
+      "name": "Ride The Wave",
+      "spotify_url": "https://open.spotify.com/track/3Fk6MqQs8k1pGV3PJ8jrkY"
+    },
+    {
+      "name": "Crystal Roses",
+      "spotify_url": "https://open.spotify.com/track/24sCYoOyqR880pCFfQsika"
+    },
+    {
+      "name": "Tsunami Sea",
+      "spotify_url": "https://open.spotify.com/track/7bGzUyc4a949g2c0EIzMpx"
+    },
+    {
+      "name": "Perfect Soul",
+      "spotify_url": "https://open.spotify.com/track/7CoiOXsrfI58wUZBt45HgL"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "A Haven With Two Faces",
+      "spotify_url": "https://open.spotify.com/track/7z5VyHN6KeN1xF7y4uJ5Nq"
+    },
+    {
+      "name": "Perfect Soul",
+      "spotify_url": "https://open.spotify.com/track/7CoiOXsrfI58wUZBt45HgL"
+    },
+    {
+      "name": "Crystal Roses",
+      "spotify_url": "https://open.spotify.com/track/24sCYoOyqR880pCFfQsika"
+    },
+    {
+      "name": "Ride The Wave",
+      "spotify_url": "https://open.spotify.com/track/3Fk6MqQs8k1pGV3PJ8jrkY"
+    },
+    {
+      "name": "Tsunami Sea",
+      "spotify_url": "https://open.spotify.com/track/7bGzUyc4a949g2c0EIzMpx"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Perfect Soul",
+      "spotify_url": "https://open.spotify.com/track/7CoiOXsrfI58wUZBt45HgL"
+    },
+    {
+      "name": "Soft Spine",
+      "spotify_url": "https://open.spotify.com/track/4bkPAARkDov1lV05emEF7a"
+    },
+    {
+      "name": "Keep Sweet",
+      "spotify_url": "https://open.spotify.com/track/0Sd7nAZakCLRPxAqfiFd9m"
+    },
+    {
+      "name": "Fata Morgana",
+      "spotify_url": "https://open.spotify.com/track/14iSCO87Qveq9UXCtN48Vm"
+    },
+    {
+      "name": "Tsunami Sea",
+      "spotify_url": "https://open.spotify.com/track/7bGzUyc4a949g2c0EIzMpx"
+    }
+  ]
+}
