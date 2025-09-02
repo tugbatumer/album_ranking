@@ -8,69 +8,143 @@
   <link href="https://cdn.jsdelivr.net/npm/nouislider@15.7.0/dist/nouislider.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
-      background: #f0f0f0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: #f8f9fb;
       padding: 2rem;
+      color: #222;
+      line-height: 1.6;
     }
-    canvas {
-      max-height: 600px;
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    #controls {
+
+    /* Headings */
+    h1 {
+      font-size: 2rem;
       margin-bottom: 1rem;
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+      font-weight: 700;
+      color: #333;
     }
+    h2 {
+      font-size: 1.5rem;
+      margin: 1.5rem 0 1rem;
+      font-weight: 600;
+      color: #444;
+    }
+
+    /* Card-like containers */
+    #controls, canvas, #album-list {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Controls */
     #control-row {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 1.5rem;
     }
+
     select, label {
       font-size: 1rem;
+      font-weight: 500;
+      color: #333;
     }
+
+    select {
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      background: #fff;
+      transition: border 0.2s ease;
+    }
+    select:hover {
+      border-color: #4caf50;
+      cursor: pointer;
+    }
+
     input[type="checkbox"] {
       transform: scale(1.2);
       margin-right: 0.4rem;
+      cursor: pointer;
+      accent-color: #4caf50;
     }
+
+    /* Slider */
     #slider-container {
       display: flex;
       align-items: center;
       gap: 2rem;
-      margin-top: 2.2rem;
+      margin-top: 1.5rem;
     }
     #slider-range {
       width: 300px;
     }
-    #album-list {
-      margin-top: 2rem;
-      max-width: 1000px;
+    .noUi-connect {
+      background: linear-gradient(90deg, #4caf50, #e91e63);
     }
+    .noUi-handle {
+      background: #fff;
+      border: 2px solid #4caf50;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      cursor: grab;
+    }
+    .noUi-handle:active {
+      cursor: grabbing;
+    }
+    .noUi-tooltip {
+      bottom: -100px;  /* adjust spacing */
+      top: auto;
+    }
+
+    /* Optional: make the font match your style */
+    .noUi-tooltip {
+      font-size: 0.85rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 2px 6px;
+      color: #333;
+    }
+
+    /* Canvas */
+    canvas {
+      max-height: 600px;
+    }
+
+    /* Album list / Table */
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
     th, td {
-      padding: 0.5rem;
+      padding: 0.6rem;
       text-align: center;
     }
     th {
-      background-color: #ddd;
+      background-color: #f1f1f1;
+      font-weight: 600;
     }
-    tr:hover {
-      background-color: #f5f5f5;
+    tbody tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+    tbody tr:hover {
+      background-color: #f0f8ff;
+      transform: scale(1.01);
+      transition: background 0.2s ease, transform 0.15s ease;
       cursor: pointer;
     }
+
+    /* Smooth transitions */
+    #controls, canvas, #album-list, select {
+      transition: all 0.25s ease;
+    }
+
   </style>
 </head>
 <body>
@@ -91,6 +165,9 @@
           <option value="mean">By Mean Score</option>
           <option value="yagiz-score">By Yagiz Score</option>
           <option value="tugba-score">By Tugba Score</option>
+          <option value="yagba-similarity">By Yagiz vs Tugba</option>
+          <option value="tugba-similarity">By Tugba vs Spotify</option>
+          <option value="yagiz-similarity">By Yagiz vs Spotify</option>
         </select>
       </label>
 
@@ -101,20 +178,6 @@
           <option value="even">Tugba's Albums</option>
         </select>
       </label>
-
-        <div id="similarityCheckboxes">
-          <strong>Show:</strong>
-          <label><input type="checkbox" id="toggleYvsT" checked onchange="updateChart()"> Yagiz vs Tugba</label>
-          <label><input type="checkbox" id="toggleYvsS" checked onchange="updateChart()"> Yagiz vs Spotify</label>
-          <label><input type="checkbox" id="toggleTvsS" checked onchange="updateChart()"> Tugba vs Spotify</label>
-        </div>
-
-        <div id="ratingCheckboxes" style="display: none;">
-          <strong>Show:</strong>
-          <label><input type="checkbox" id="toggleYR" checked onchange="updateChart()"> Yagiz's Rating</label>
-          <label><input type="checkbox" id="toggleTR" checked onchange="updateChart()"> Tugba's Rating</label>
-          <label><input type="checkbox" id="toggleAR" checked onchange="updateChart()"> Average Rating</label>
-        </div>
     </div>
 
     <div id="slider-container">
@@ -168,16 +231,6 @@
       const mode = document.getElementById('modeSelect').value;
 
       const showSim = mode === 'similarity';
-      document.getElementById('toggleYvsT').style.display = showSim ? '' : 'none';
-      document.getElementById('toggleYvsS').style.display = showSim ? '' : 'none';
-      document.getElementById('toggleTvsS').style.display = showSim ? '' : 'none';
-
-      document.getElementById('toggleYR').style.display = !showSim ? '' : 'none';
-      document.getElementById('toggleTR').style.display = !showSim ? '' : 'none';
-      document.getElementById('toggleAR').style.display = !showSim ? '' : 'none';
-
-      document.getElementById('similarityCheckboxes').style.display = mode === 'similarity' ? 'block' : 'none';
-      document.getElementById('ratingCheckboxes').style.display = mode === 'ratings' ? 'block' : 'none';
 
       let dataInRange = rawData.slice(start - 1, end);
 
@@ -186,6 +239,9 @@
       else if (sort === 'mean') dataInRange.sort((a, b) => b.mean_score - a.mean_score);
       else if (sort === 'yagiz-score') dataInRange.sort((a, b) => b.yagiz_score - a.yagiz_score);
       else if (sort === 'tugba-score') dataInRange.sort((a, b) => b.tugba_score - a.tugba_score);
+      else if (sort === 'yagba-similarity') dataInRange.sort((a, b) => b.similarity_y_vs_t - a.similarity_y_vs_t);
+      else if (sort === 'tugba-similarity') dataInRange.sort((a, b) => b.similarity_t_vs_s - a.similarity_t_vs_s);
+      else if (sort === 'yagiz-similarity') dataInRange.sort((a, b) => b.similarity_y_vs_s - a.similarity_y_vs_s);
 
       const filtered = dataInRange.filter(row => {
         if (filter === 'odd') return (row.index + 1) % 2 === 1;
@@ -197,19 +253,13 @@
       const datasets = [];
 
       if (mode === 'similarity') {
-        if (document.getElementById('toggleYvsT').checked)
-          datasets.push(buildDataset(filtered, 'similarity_y_vs_t', '#3e95cd', 'Yagiz vs Tugba', cumulative));
-        if (document.getElementById('toggleYvsS').checked)
-          datasets.push(buildDataset(filtered, 'similarity_y_vs_s', '#4caf50', 'Yagiz vs Spotify', cumulative));
-        if (document.getElementById('toggleTvsS').checked)
-          datasets.push(buildDataset(filtered, 'similarity_t_vs_s', '#e91e63', 'Tugba vs Spotify', cumulative));
+        datasets.push(buildDataset(filtered, 'similarity_y_vs_t', '#3e95cd', 'Yagiz vs Tugba', cumulative));
+        datasets.push(buildDataset(filtered, 'similarity_y_vs_s', '#4caf50', 'Yagiz vs Spotify', cumulative));
+        datasets.push(buildDataset(filtered, 'similarity_t_vs_s', '#e91e63', 'Tugba vs Spotify', cumulative));
       } else {
-        if (document.getElementById('toggleYR').checked)
-          datasets.push(buildDataset(filtered, 'yagiz_score', '#4caf50', "Yagiz's Rating", cumulative));
-        if (document.getElementById('toggleTR').checked)
-          datasets.push(buildDataset(filtered, 'tugba_score', '#e91e63', "Tugba's Rating", cumulative));
-        if (document.getElementById('toggleAR').checked)
-          datasets.push(buildDataset(filtered, 'mean_score', '#555', 'Average Rating', cumulative));
+        datasets.push(buildDataset(filtered, 'yagiz_score', '#4caf50', "Yagiz's Rating", cumulative));
+        datasets.push(buildDataset(filtered, 'tugba_score', '#e91e63', "Tugba's Rating", cumulative));
+        datasets.push(buildDataset(filtered, 'mean_score', '#555', 'Average Rating', cumulative));
       }
 
       if (chartInstance) chartInstance.destroy();
@@ -263,6 +313,9 @@
               <th>Yagiz Score</th>
               <th>Tugba Score</th>
               <th>Mean Score</th>
+              <th>Yagiz vs Tugba</th>
+              <th>Yagiz vs Spotify</th>
+              <th>Tugba vs Spotify</th>
             </tr>
           </thead>
           <tbody>
@@ -278,7 +331,11 @@
                 <td style="color:${c}">${album.yagiz_score.toFixed(1)}</td>
                 <td style="color:${c}">${album.tugba_score.toFixed(1)}</td>
                 <td style="color:${c}">${album.mean_score.toFixed(1)}</td>
+                <td style="color:${c}">${album.similarity_y_vs_t.toFixed(3)}</td>
+                <td style="color:${c}">${album.similarity_y_vs_s.toFixed(3)}</td>
+                <td style="color:${c}">${album.similarity_t_vs_s.toFixed(3)}</td>
               </tr>`;
+
             }).join('')}
           </tbody>
         </table>`;
