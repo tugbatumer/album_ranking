@@ -1,0 +1,81 @@
+{
+  "album": "Hit It!",
+  "artist": "vianova",
+  "spotify_id": "7jcC7erlgmd9QbhooPY4bt",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273daeb2cc78f4a1335ffe9ea6f",
+  "release_date": "05.09.2025",
+  "date": "14.09.2025",
+  "total_songs": 11,
+  "yagiz_score": 8.6,
+  "tugba_score": 7.6,
+  "mean_score": 8.1,
+  "similarity_y_vs_t": -0.5924063391390676,
+  "similarity_y_vs_s": -0.3323267201810171,
+  "similarity_t_vs_s": 0.1878325177350839,
+  "yagiz_songs": [
+    {
+      "name": "Melanchronic",
+      "spotify_url": "https://open.spotify.com/track/0QQaWDSoCn6Lq78n8xaA6R"
+    },
+    {
+      "name": "Oh No (Believer)",
+      "spotify_url": "https://open.spotify.com/track/0eiNN3JjLIe2Nu07RNdRrl"
+    },
+    {
+      "name": "Obsolete",
+      "spotify_url": "https://open.spotify.com/track/0yqM66AvJlmfjF44FTVO5l"
+    },
+    {
+      "name": "Whatever Alright",
+      "spotify_url": "https://open.spotify.com/track/18orpkCnIdbjRFgL09wvIn"
+    },
+    {
+      "name": "Squier Talk",
+      "spotify_url": "https://open.spotify.com/track/19LMSiPAc1Prev4mLWdDFt"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Obsolete",
+      "spotify_url": "https://open.spotify.com/track/0yqM66AvJlmfjF44FTVO5l"
+    },
+    {
+      "name": "M\u00e1s R\u00e1pido",
+      "spotify_url": "https://open.spotify.com/track/4PQrriLa0NasnTnkjBe9dp"
+    },
+    {
+      "name": "Wheel of Fortune",
+      "spotify_url": "https://open.spotify.com/track/4gk6m8cWtKjRipD897z35S"
+    },
+    {
+      "name": "Future Nostalgia",
+      "spotify_url": "https://open.spotify.com/track/4xXWzbxT5vmuLrbBM5Kfmm"
+    },
+    {
+      "name": "Squier Talk",
+      "spotify_url": "https://open.spotify.com/track/19LMSiPAc1Prev4mLWdDFt"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Squier Talk",
+      "spotify_url": "https://open.spotify.com/track/19LMSiPAc1Prev4mLWdDFt"
+    },
+    {
+      "name": "Oh No (Believer)",
+      "spotify_url": "https://open.spotify.com/track/0eiNN3JjLIe2Nu07RNdRrl"
+    },
+    {
+      "name": "M\u00e1s R\u00e1pido",
+      "spotify_url": "https://open.spotify.com/track/4PQrriLa0NasnTnkjBe9dp"
+    },
+    {
+      "name": "Marimba",
+      "spotify_url": "https://open.spotify.com/track/0wmf2QVw3EXnvDO2OIs86A"
+    },
+    {
+      "name": "Wheel of Fortune",
+      "spotify_url": "https://open.spotify.com/track/4gk6m8cWtKjRipD897z35S"
+    }
+  ]
+}
