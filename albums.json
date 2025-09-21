@@ -653,8 +653,8 @@
     "spotify_id": "7jcC7erlgmd9QbhooPY4bt",
     "Yagiz": [
       5,
-      3,
       10,
+      1,
       6,
       0
     ],
@@ -672,8 +672,8 @@
       4,
       2
     ],
-    "similarity_y_vs_t": -0.5924063391390676,
-    "similarity_y_vs_s": -0.3323267201810171,
+    "similarity_y_vs_t": 0.9680713746092353,
+    "similarity_y_vs_s": -0.5924063391390676,
     "similarity_t_vs_s": 0.1878325177350839,
     "total_songs": 11,
     "date": "14.09.2025",
