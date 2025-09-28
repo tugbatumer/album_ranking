@@ -10,8 +10,8 @@
   "tugba_score": 8.0,
   "mean_score": 8.05,
   "similarity_y_vs_t": 2.268469469399488,
-  "similarity_y_vs_s": 0.9680713746092353,
-  "similarity_t_vs_s": 1.2281509935672859,
+  "similarity_y_vs_s": 1.2281509935672859,
+  "similarity_t_vs_s": 0.9680713746092353,
   "yagiz_songs": [
     {
       "name": "Emergence",
@@ -62,20 +62,20 @@
       "spotify_url": "https://open.spotify.com/track/1QrbZhFYlViXd60g130vw1"
     },
     {
-      "name": "Dangerous",
-      "spotify_url": "https://open.spotify.com/track/105Fwh9wijwT41rrfgSnrE"
-    },
-    {
       "name": "Emergence",
       "spotify_url": "https://open.spotify.com/track/2OMjHcniFxzijWX7EaBrXE"
     },
     {
-      "name": "Damocles",
-      "spotify_url": "https://open.spotify.com/track/3enIFKYJKSVyjXVzmup28I"
+      "name": "Dangerous",
+      "spotify_url": "https://open.spotify.com/track/105Fwh9wijwT41rrfgSnrE"
     },
     {
       "name": "Gethsemane",
       "spotify_url": "https://open.spotify.com/track/29JLgNBcOky7QB68OrvYxO"
+    },
+    {
+      "name": "Damocles",
+      "spotify_url": "https://open.spotify.com/track/3enIFKYJKSVyjXVzmup28I"
     }
   ]
 }

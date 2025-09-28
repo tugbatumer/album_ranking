@@ -19,14 +19,14 @@
     ],
     "Spotify": [
       4,
-      3,
       1,
-      7,
-      8
+      3,
+      8,
+      7
     ],
     "similarity_y_vs_t": 2.268469469399488,
-    "similarity_y_vs_s": 0.9680713746092353,
-    "similarity_t_vs_s": 1.2281509935672859,
+    "similarity_y_vs_s": 1.2281509935672859,
+    "similarity_t_vs_s": 0.9680713746092353,
     "total_songs": 10,
     "date": "29.05.2025",
     "release_date": "09.05.2025",
@@ -165,11 +165,11 @@
       2,
       3,
       4,
-      0,
-      1
+      1,
+      0
     ],
     "similarity_y_vs_t": 1.748310231483387,
-    "similarity_y_vs_s": 0.4479121366931344,
+    "similarity_y_vs_s": 0.7079917556511849,
     "similarity_t_vs_s": 1.2281509935672859,
     "total_songs": 10,
     "date": "18.06.2025",
@@ -238,7 +238,7 @@
       9,
       10,
       2,
-      0
+      7
     ],
     "similarity_y_vs_t": 2.448874729225565,
     "similarity_y_vs_s": 1.0630718174425164,
@@ -414,8 +414,8 @@
       6
     ],
     "Spotify": [
-      0,
       8,
+      0,
       3,
       9,
       1
@@ -670,11 +670,11 @@
       3,
       1,
       4,
-      2
+      5
     ],
     "similarity_y_vs_t": 0.9680713746092353,
-    "similarity_y_vs_s": -0.5924063391390676,
-    "similarity_t_vs_s": 0.1878325177350839,
+    "similarity_y_vs_s": 0.1878325177350839,
+    "similarity_t_vs_s": -0.5924063391390676,
     "total_songs": 11,
     "date": "14.09.2025",
     "release_date": "05.09.2025",
@@ -718,5 +718,41 @@
     "tugba_score": 8.3,
     "mean_score": 7.95,
     "index": 19
+  },
+  {
+    "album": "Melancholy",
+    "artist": "Shadow of Intent",
+    "spotify_id": "5IgHVlikizQFBPieV1uk8v",
+    "Yagiz": [
+      9,
+      4,
+      1,
+      7,
+      6
+    ],
+    "Tugba": [
+      0,
+      4,
+      9,
+      1,
+      2
+    ],
+    "Spotify": [
+      2,
+      1,
+      0,
+      3,
+      9
+    ],
+    "similarity_y_vs_t": 1.2281509935672859,
+    "similarity_y_vs_s": -0.5924063391390676,
+    "similarity_t_vs_s": 0.9680713746092353,
+    "total_songs": 10,
+    "date": "28.09.2025",
+    "release_date": "16.08.2019",
+    "yagiz_score": 8.7,
+    "tugba_score": 8.2,
+    "mean_score": 8.45,
+    "index": 20
   }
 ]
