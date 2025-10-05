@@ -10,8 +10,8 @@
   "tugba_score": 8.2,
   "mean_score": 8.399999999999999,
   "similarity_y_vs_t": 0.1392032095871511,
-  "similarity_y_vs_s": 0.6011375135148338,
-  "similarity_t_vs_s": 1.5250061213701993,
+  "similarity_y_vs_s": 0.8321046654786752,
+  "similarity_t_vs_s": 1.2940389694063579,
   "yagiz_songs": [
     {
       "name": "Better Written Villain",
@@ -66,12 +66,12 @@
       "spotify_url": "https://open.spotify.com/track/0BRvW4hfXMNBQoK6OAQPsa"
     },
     {
-      "name": "Product Placement",
-      "spotify_url": "https://open.spotify.com/track/0SQg8JQfiNucPIXSjDIHq7"
-    },
-    {
       "name": "Target Acquired",
       "spotify_url": "https://open.spotify.com/track/1ypsN0FjjCt3gHrZzDd2ux"
+    },
+    {
+      "name": "Product Placement",
+      "spotify_url": "https://open.spotify.com/track/0SQg8JQfiNucPIXSjDIHq7"
     },
     {
       "name": "Blood Loss",

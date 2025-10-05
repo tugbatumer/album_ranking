@@ -1,0 +1,81 @@
+{
+  "album": "The Queen Is Dead",
+  "artist": "The Smiths",
+  "spotify_id": "5Y0p2XCgRRIjna91aQE8q7",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273ada101c2e9e97feb8fae37a9",
+  "release_date": "16.06.1986",
+  "date": "05.10.2025",
+  "total_songs": 10,
+  "yagiz_score": 7.5,
+  "tugba_score": 8.2,
+  "mean_score": 7.85,
+  "similarity_y_vs_t": 2.788628707315589,
+  "similarity_y_vs_s": 1.2281509935672859,
+  "similarity_t_vs_s": 1.4882306125253364,
+  "yagiz_songs": [
+    {
+      "name": "Never Had No One Ever - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/2VyOpoblI3AHO6R8dr87Ia"
+    },
+    {
+      "name": "There Is a Light That Never Goes Out - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/0WQiDwKJclirSYG9v5tayI"
+    },
+    {
+      "name": "Bigmouth Strikes Again - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/2OErSh4oVVAUll0vHxdr6p"
+    },
+    {
+      "name": "I Know It's Over - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/3M2bD9SMYnJIPdrTKUnBd3"
+    },
+    {
+      "name": "Frankly, Mr. Shankly - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/1qIagqll7ZcgmiLTrtSvKc"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "There Is a Light That Never Goes Out - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/0WQiDwKJclirSYG9v5tayI"
+    },
+    {
+      "name": "Never Had No One Ever - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/2VyOpoblI3AHO6R8dr87Ia"
+    },
+    {
+      "name": "Bigmouth Strikes Again - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/2OErSh4oVVAUll0vHxdr6p"
+    },
+    {
+      "name": "I Know It's Over - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/3M2bD9SMYnJIPdrTKUnBd3"
+    },
+    {
+      "name": "Frankly, Mr. Shankly - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/1qIagqll7ZcgmiLTrtSvKc"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "There Is a Light That Never Goes Out - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/0WQiDwKJclirSYG9v5tayI"
+    },
+    {
+      "name": "I Know It's Over - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/3M2bD9SMYnJIPdrTKUnBd3"
+    },
+    {
+      "name": "Bigmouth Strikes Again - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/2OErSh4oVVAUll0vHxdr6p"
+    },
+    {
+      "name": "Cemetry Gates - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/03yOjwHoOPDlTUg0NRxN6t"
+    },
+    {
+      "name": "The Boy with the Thorn in His Side - 2011 Remaster",
+      "spotify_url": "https://open.spotify.com/track/6s1lXoCa6EmIGnr0GrwcJp"
+    }
+  ]
+}

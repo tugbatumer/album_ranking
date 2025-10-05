@@ -165,11 +165,11 @@
       2,
       3,
       4,
-      1,
-      0
+      0,
+      1
     ],
     "similarity_y_vs_t": 1.748310231483387,
-    "similarity_y_vs_s": 0.7079917556511849,
+    "similarity_y_vs_s": 0.4479121366931344,
     "similarity_t_vs_s": 1.2281509935672859,
     "total_songs": 10,
     "date": "18.06.2025",
@@ -238,7 +238,7 @@
       9,
       10,
       2,
-      7
+      0
     ],
     "similarity_y_vs_t": 2.448874729225565,
     "similarity_y_vs_s": 1.0630718174425164,
@@ -342,15 +342,15 @@
       4
     ],
     "Spotify": [
-      1,
       3,
+      1,
       5,
       7,
       4
     ],
     "similarity_y_vs_t": 1.986940425297882,
     "similarity_y_vs_s": 1.5250061213701993,
-    "similarity_t_vs_s": 1.986940425297882,
+    "similarity_t_vs_s": 2.217907577261723,
     "total_songs": 12,
     "date": "09.07.2025",
     "release_date": "02.05.1989",
@@ -524,13 +524,13 @@
     "Spotify": [
       3,
       0,
-      4,
       1,
+      4,
       5
     ],
     "similarity_y_vs_t": 0.1392032095871511,
-    "similarity_y_vs_s": 0.6011375135148338,
-    "similarity_t_vs_s": 1.5250061213701993,
+    "similarity_y_vs_s": 0.8321046654786752,
+    "similarity_t_vs_s": 1.2940389694063579,
     "total_songs": 14,
     "date": "17.08.2025",
     "release_date": "13.09.2024",
@@ -670,7 +670,7 @@
       3,
       1,
       4,
-      5
+      6
     ],
     "similarity_y_vs_t": 0.9680713746092353,
     "similarity_y_vs_s": 0.1878325177350839,
@@ -754,5 +754,41 @@
     "tugba_score": 8.2,
     "mean_score": 8.45,
     "index": 20
+  },
+  {
+    "album": "The Queen is Dead",
+    "artist": "The Smiths",
+    "spotify_id": "5Y0p2XCgRRIjna91aQE8q7",
+    "Yagiz": [
+      3,
+      8,
+      5,
+      2,
+      1
+    ],
+    "Tugba": [
+      8,
+      3,
+      5,
+      2,
+      1
+    ],
+    "Spotify": [
+      8,
+      2,
+      5,
+      4,
+      6
+    ],
+    "similarity_y_vs_t": 2.788628707315589,
+    "similarity_y_vs_s": 1.2281509935672859,
+    "similarity_t_vs_s": 1.4882306125253364,
+    "total_songs": 10,
+    "date": "05.10.2025",
+    "release_date": "16.06.1986",
+    "yagiz_score": 7.5,
+    "tugba_score": 8.2,
+    "mean_score": 7.85,
+    "index": 21
   }
 ]
