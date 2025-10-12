@@ -1,0 +1,81 @@
+{
+  "album": "Remedy Lane",
+  "artist": "Pain of Salvation",
+  "spotify_id": "5wdXBbdGH90qfKoWBErbdw",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b2733ef2598ca7bf8c4c9d317b9e",
+  "release_date": "15.01.2002",
+  "date": "12.10.2025",
+  "total_songs": 13,
+  "yagiz_score": 8.7,
+  "tugba_score": 8.7,
+  "mean_score": 8.7,
+  "similarity_y_vs_t": 1.0630718174425164,
+  "similarity_y_vs_s": 0.1392032095871511,
+  "similarity_t_vs_s": 1.0630718174425164,
+  "yagiz_songs": [
+    {
+      "name": "A Trace of Blood",
+      "spotify_url": "https://open.spotify.com/track/71hwOfOY1tcIww21gBxySr"
+    },
+    {
+      "name": "Undertow",
+      "spotify_url": "https://open.spotify.com/track/3ihYW3baWXEULD5ecp5ggn"
+    },
+    {
+      "name": "Beyond the Pale",
+      "spotify_url": "https://open.spotify.com/track/7vGOunSu0FJ9kR4zjvhaIr"
+    },
+    {
+      "name": "Rope Ends",
+      "spotify_url": "https://open.spotify.com/track/4bI5FVuhiGSLQ9LMa6KdV1"
+    },
+    {
+      "name": "This Heart of Mine (I Pledge)",
+      "spotify_url": "https://open.spotify.com/track/64NLeMfenPw1XbCXfvDUcH"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Rope Ends",
+      "spotify_url": "https://open.spotify.com/track/4bI5FVuhiGSLQ9LMa6KdV1"
+    },
+    {
+      "name": "Undertow",
+      "spotify_url": "https://open.spotify.com/track/3ihYW3baWXEULD5ecp5ggn"
+    },
+    {
+      "name": "Chain Sling",
+      "spotify_url": "https://open.spotify.com/track/1zg9FDwOnAHgdrT80hfFAM"
+    },
+    {
+      "name": "Ending Theme",
+      "spotify_url": "https://open.spotify.com/track/2xh7Dy2W1KJwmOxp44Y6rx"
+    },
+    {
+      "name": "Beyond the Pale",
+      "spotify_url": "https://open.spotify.com/track/7vGOunSu0FJ9kR4zjvhaIr"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Undertow",
+      "spotify_url": "https://open.spotify.com/track/3ihYW3baWXEULD5ecp5ggn"
+    },
+    {
+      "name": "Second Love",
+      "spotify_url": "https://open.spotify.com/track/2SUFKaVs0YJkxUqlMZws1h"
+    },
+    {
+      "name": "This Heart of Mine (I Pledge)",
+      "spotify_url": "https://open.spotify.com/track/64NLeMfenPw1XbCXfvDUcH"
+    },
+    {
+      "name": "Ending Theme",
+      "spotify_url": "https://open.spotify.com/track/2xh7Dy2W1KJwmOxp44Y6rx"
+    },
+    {
+      "name": "Chain Sling",
+      "spotify_url": "https://open.spotify.com/track/1zg9FDwOnAHgdrT80hfFAM"
+    }
+  ]
+}

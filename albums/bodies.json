@@ -10,7 +10,7 @@
   "tugba_score": 9.0,
   "mean_score": 9.1,
   "similarity_y_vs_t": 1.4882306125253364,
-  "similarity_y_vs_s": 0.4479121366931344,
+  "similarity_y_vs_s": 0.7079917556511849,
   "similarity_t_vs_s": 0.7079917556511849,
   "yagiz_songs": [
     {
@@ -70,12 +70,12 @@
       "spotify_url": "https://open.spotify.com/track/48Y6xWm5ayoOPfEhKNJQxt"
     },
     {
-      "name": "nerv",
-      "spotify_url": "https://open.spotify.com/track/3lfX7NlM4Ta9ie0I6Ddt4Y"
-    },
-    {
       "name": "Revolver",
       "spotify_url": "https://open.spotify.com/track/1OmtYfgEqFoU8EhG3IQzrF"
+    },
+    {
+      "name": "nerv",
+      "spotify_url": "https://open.spotify.com/track/3lfX7NlM4Ta9ie0I6Ddt4Y"
     }
   ]
 }

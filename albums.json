@@ -93,11 +93,11 @@
       7,
       2,
       5,
-      6,
-      1
+      1,
+      6
     ],
     "similarity_y_vs_t": 1.4882306125253364,
-    "similarity_y_vs_s": 0.4479121366931344,
+    "similarity_y_vs_s": 0.7079917556511849,
     "similarity_t_vs_s": 0.7079917556511849,
     "total_songs": 11,
     "date": "11.06.2025",
@@ -342,15 +342,15 @@
       4
     ],
     "Spotify": [
-      3,
       1,
+      3,
       5,
       7,
       4
     ],
     "similarity_y_vs_t": 1.986940425297882,
     "similarity_y_vs_s": 1.5250061213701993,
-    "similarity_t_vs_s": 2.217907577261723,
+    "similarity_t_vs_s": 1.986940425297882,
     "total_songs": 12,
     "date": "09.07.2025",
     "release_date": "02.05.1989",
@@ -524,13 +524,13 @@
     "Spotify": [
       3,
       0,
-      1,
       4,
+      1,
       5
     ],
     "similarity_y_vs_t": 0.1392032095871511,
-    "similarity_y_vs_s": 0.8321046654786752,
-    "similarity_t_vs_s": 1.2940389694063579,
+    "similarity_y_vs_s": 0.6011375135148338,
+    "similarity_t_vs_s": 1.5250061213701993,
     "total_songs": 14,
     "date": "17.08.2025",
     "release_date": "13.09.2024",
@@ -598,11 +598,11 @@
       4,
       3,
       0,
-      5
+      1
     ],
     "similarity_y_vs_t": 2.3585225037914124,
-    "similarity_y_vs_s": -0.793237180568771,
-    "similarity_t_vs_s": -0.06590802263949799,
+    "similarity_y_vs_s": -1.763009391141135,
+    "similarity_t_vs_s": -1.035680233211862,
     "total_songs": 11,
     "date": "31.08.2025",
     "release_date": "07.03.2025",
@@ -667,14 +667,14 @@
     ],
     "Spotify": [
       0,
-      3,
       1,
-      4,
-      6
+      3,
+      6,
+      9
     ],
     "similarity_y_vs_t": 0.9680713746092353,
-    "similarity_y_vs_s": 0.1878325177350839,
-    "similarity_t_vs_s": -0.5924063391390676,
+    "similarity_y_vs_s": 0.4479121366931344,
+    "similarity_t_vs_s": -0.3323267201810171,
     "total_songs": 11,
     "date": "14.09.2025",
     "release_date": "05.09.2025",
@@ -790,5 +790,41 @@
     "tugba_score": 8.2,
     "mean_score": 7.85,
     "index": 21
+  },
+  {
+    "album": "Remedy Lane",
+    "artist": "Pain of Salvation",
+    "spotify_id": "5wdXBbdGH90qfKoWBErbdw",
+    "Yagiz": [
+      3,
+      5,
+      12,
+      6,
+      4
+    ],
+    "Tugba": [
+      6,
+      5,
+      7,
+      1,
+      12
+    ],
+    "Spotify": [
+      5,
+      11,
+      4,
+      1,
+      7
+    ],
+    "similarity_y_vs_t": 1.0630718174425164,
+    "similarity_y_vs_s": 0.1392032095871511,
+    "similarity_t_vs_s": 1.0630718174425164,
+    "total_songs": 13,
+    "date": "12.10.2025",
+    "release_date": "15.01.2002",
+    "yagiz_score": 8.7,
+    "tugba_score": 8.7,
+    "mean_score": 8.7,
+    "index": 22
   }
 ]
