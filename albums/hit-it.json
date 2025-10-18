@@ -6,9 +6,9 @@
   "release_date": "05.09.2025",
   "date": "14.09.2025",
   "total_songs": 11,
-  "yagiz_score": 8.6,
-  "tugba_score": 7.6,
-  "mean_score": 8.1,
+  "yagiz_score": 8.2,
+  "tugba_score": 6.8,
+  "mean_score": 7.5,
   "similarity_y_vs_t": 0.9680713746092353,
   "similarity_y_vs_s": 0.4479121366931344,
   "similarity_t_vs_s": -0.3323267201810171,
@@ -66,16 +66,16 @@
       "spotify_url": "https://open.spotify.com/track/4PQrriLa0NasnTnkjBe9dp"
     },
     {
-      "name": "Oh No (Believer)",
-      "spotify_url": "https://open.spotify.com/track/0eiNN3JjLIe2Nu07RNdRrl"
-    },
-    {
       "name": "Whatever Alright",
       "spotify_url": "https://open.spotify.com/track/18orpkCnIdbjRFgL09wvIn"
     },
     {
       "name": "Uh Yaya",
       "spotify_url": "https://open.spotify.com/track/0hKZTwtN7RUPOdYCkrU0KT"
+    },
+    {
+      "name": "Oh No (Believer)",
+      "spotify_url": "https://open.spotify.com/track/0eiNN3JjLIe2Nu07RNdRrl"
     }
   ]
 }

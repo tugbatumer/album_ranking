@@ -160,22 +160,22 @@
 
       <label for="albumSort">Sort albums:
         <select id="albumSort" onchange="updateChart()">
-          <option value="date">By Date</option>
+          <option value="date">By Ranking Date</option>
           <option value="release-date">By Release Date</option>
           <option value="mean">By Mean Score</option>
-          <option value="yagiz-score">By Yagiz Score</option>
-          <option value="tugba-score">By Tugba Score</option>
-          <option value="yagba-similarity">By Yagiz vs Tugba</option>
-          <option value="tugba-similarity">By Tugba vs Spotify</option>
-          <option value="yagiz-similarity">By Yagiz vs Spotify</option>
+          <option value="yagiz-score">By Yağız Score</option>
+          <option value="tugba-score">By Tuğba Score</option>
+          <option value="yagba-similarity">By Yağız - Tuğba</option>
+          <option value="tugba-similarity">By Tuğba - Spotify</option>
+          <option value="yagiz-similarity">By Yağız - Spotify</option>
         </select>
       </label>
 
       <label for="albumFilter">Filter albums:
         <select id="albumFilter" onchange="updateChart()">
           <option value="all">All Albums</option>
-          <option value="odd">Yagiz's Albums</option>
-          <option value="even">Tugba's Albums</option>
+          <option value="odd">Yağız's Albums</option>
+          <option value="even">Tuğba's Albums</option>
         </select>
       </label>
     </div>
@@ -253,12 +253,12 @@
       const datasets = [];
 
       if (mode === 'similarity') {
-        datasets.push(buildDataset(filtered, 'similarity_y_vs_t', '#3e95cd', 'Yagiz vs Tugba', cumulative));
-        datasets.push(buildDataset(filtered, 'similarity_y_vs_s', '#4caf50', 'Yagiz vs Spotify', cumulative));
-        datasets.push(buildDataset(filtered, 'similarity_t_vs_s', '#e91e63', 'Tugba vs Spotify', cumulative));
+        datasets.push(buildDataset(filtered, 'similarity_y_vs_t', '#3e95cd', 'Yağız - Tuğba', cumulative));
+        datasets.push(buildDataset(filtered, 'similarity_y_vs_s', '#4caf50', 'Yağız - Spotify', cumulative));
+        datasets.push(buildDataset(filtered, 'similarity_t_vs_s', '#e91e63', 'Tuğba - Spotify', cumulative));
       } else {
-        datasets.push(buildDataset(filtered, 'yagiz_score', '#4caf50', "Yagiz's Rating", cumulative));
-        datasets.push(buildDataset(filtered, 'tugba_score', '#e91e63', "Tugba's Rating", cumulative));
+        datasets.push(buildDataset(filtered, 'yagiz_score', '#4caf50', "Yağız's Rating", cumulative));
+        datasets.push(buildDataset(filtered, 'tugba_score', '#e91e63', "Tuğba's Rating", cumulative));
         datasets.push(buildDataset(filtered, 'mean_score', '#555', 'Average Rating', cumulative));
       }
 
@@ -310,12 +310,12 @@
               <th>Album</th>
               <th>Release Date</th>
               <th>Date</th>
-              <th>Yagiz Score</th>
-              <th>Tugba Score</th>
+              <th>Yağız Score</th>
+              <th>Tuğba Score</th>
               <th>Mean Score</th>
-              <th>Yagiz vs Tugba</th>
-              <th>Yagiz vs Spotify</th>
-              <th>Tugba vs Spotify</th>
+              <th>Yağız - Tuğba</th>
+              <th>Yağız - Spotify</th>
+              <th>Tuğba - Spotify</th>
             </tr>
           </thead>
           <tbody>
