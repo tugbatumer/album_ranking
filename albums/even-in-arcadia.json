@@ -2,7 +2,7 @@
   "album": "Even In Arcadia",
   "artist": "Sleep Token",
   "spotify_id": "1lS7FeRcSUuIGqyg99UGpj",
-  "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730e48dcb579fd8e59d0a3c218",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273882265cd9bdded9ea9a153b9",
   "release_date": "09.05.2025",
   "date": "29.05.2025",
   "total_songs": 10,
@@ -10,8 +10,8 @@
   "tugba_score": 7.4,
   "mean_score": 7.45,
   "similarity_y_vs_t": 2.268469469399488,
-  "similarity_y_vs_s": 1.2281509935672859,
-  "similarity_t_vs_s": 0.9680713746092353,
+  "similarity_y_vs_s": 0.9680713746092353,
+  "similarity_t_vs_s": 1.2281509935672859,
   "yagiz_songs": [
     {
       "name": "Emergence",
@@ -70,12 +70,12 @@
       "spotify_url": "https://open.spotify.com/track/105Fwh9wijwT41rrfgSnrE"
     },
     {
-      "name": "Gethsemane",
-      "spotify_url": "https://open.spotify.com/track/29JLgNBcOky7QB68OrvYxO"
-    },
-    {
       "name": "Damocles",
       "spotify_url": "https://open.spotify.com/track/3enIFKYJKSVyjXVzmup28I"
+    },
+    {
+      "name": "Gethsemane",
+      "spotify_url": "https://open.spotify.com/track/29JLgNBcOky7QB68OrvYxO"
     }
   ]
 }

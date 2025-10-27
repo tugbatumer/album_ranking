@@ -1,0 +1,81 @@
+{
+  "album": "Lotus",
+  "artist": "Soen",
+  "spotify_id": "16v3Ule2sTTWT37VKUsH6F",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737089e92bd1e362f6627bfc52",
+  "release_date": "01.02.2019",
+  "date": "26.10.2025",
+  "total_songs": 9,
+  "yagiz_score": 8.0,
+  "tugba_score": 7.9,
+  "mean_score": 7.95,
+  "similarity_y_vs_t": 1.3131322488292851,
+  "similarity_y_vs_s": -0.7046130649632673,
+  "similarity_t_vs_s": 1.6013815793710784,
+  "yagiz_songs": [
+    {
+      "name": "Covenant",
+      "spotify_url": "https://open.spotify.com/track/0jaGOwI4yLwCUUJVvDffWa"
+    },
+    {
+      "name": "Penance",
+      "spotify_url": "https://open.spotify.com/track/3bulwGpP21xTagwLjoCTBC"
+    },
+    {
+      "name": "Lascivious",
+      "spotify_url": "https://open.spotify.com/track/4gt5FZwbAzEKSwBhPEDz4B"
+    },
+    {
+      "name": "Rival",
+      "spotify_url": "https://open.spotify.com/track/5zO9zz7YP2ZzxKm1I3Koqn"
+    },
+    {
+      "name": "Lunacy",
+      "spotify_url": "https://open.spotify.com/track/3ivGDXz3ClMYbghB6ohPSV"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Lotus",
+      "spotify_url": "https://open.spotify.com/track/6lThiyFluc0jY2O8SYg3II"
+    },
+    {
+      "name": "Lascivious",
+      "spotify_url": "https://open.spotify.com/track/4gt5FZwbAzEKSwBhPEDz4B"
+    },
+    {
+      "name": "Covenant",
+      "spotify_url": "https://open.spotify.com/track/0jaGOwI4yLwCUUJVvDffWa"
+    },
+    {
+      "name": "Penance",
+      "spotify_url": "https://open.spotify.com/track/3bulwGpP21xTagwLjoCTBC"
+    },
+    {
+      "name": "Rival",
+      "spotify_url": "https://open.spotify.com/track/5zO9zz7YP2ZzxKm1I3Koqn"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Lotus",
+      "spotify_url": "https://open.spotify.com/track/6lThiyFluc0jY2O8SYg3II"
+    },
+    {
+      "name": "Lascivious",
+      "spotify_url": "https://open.spotify.com/track/4gt5FZwbAzEKSwBhPEDz4B"
+    },
+    {
+      "name": "Martyrs",
+      "spotify_url": "https://open.spotify.com/track/2mijuiOFHf4EJcS2QpUkrn"
+    },
+    {
+      "name": "Covenant",
+      "spotify_url": "https://open.spotify.com/track/0jaGOwI4yLwCUUJVvDffWa"
+    },
+    {
+      "name": "River",
+      "spotify_url": "https://open.spotify.com/track/5pl5yundPiXDINnTGwBQmX"
+    }
+  ]
+}

@@ -21,12 +21,12 @@
       4,
       1,
       3,
-      8,
-      7
+      7,
+      8
     ],
     "similarity_y_vs_t": 2.268469469399488,
-    "similarity_y_vs_s": 1.2281509935672859,
-    "similarity_t_vs_s": 0.9680713746092353,
+    "similarity_y_vs_s": 0.9680713746092353,
+    "similarity_t_vs_s": 1.2281509935672859,
     "total_songs": 10,
     "date": "29.05.2025",
     "release_date": "09.05.2025",
@@ -138,9 +138,9 @@
     "total_songs": 10,
     "date": "12.06.2025",
     "release_date": "22.04.2022",
-    "yagiz_score": 8.0,
+    "yagiz_score": 8.1,
     "tugba_score": 8.7,
-    "mean_score": 8.35,
+    "mean_score": 8.399999999999999,
     "index": 3
   },
   {
@@ -235,14 +235,14 @@
     ],
     "Spotify": [
       1,
-      9,
       10,
+      9,
       2,
       0
     ],
     "similarity_y_vs_t": 2.448874729225565,
-    "similarity_y_vs_s": 1.0630718174425164,
-    "similarity_t_vs_s": 1.5250061213701993,
+    "similarity_y_vs_s": 1.2940389694063579,
+    "similarity_t_vs_s": 1.7559732733340407,
     "total_songs": 12,
     "date": "25.06.2025",
     "release_date": "19.05.2023",
@@ -416,13 +416,13 @@
     "Spotify": [
       8,
       0,
-      3,
       9,
-      1
+      2,
+      3
     ],
     "similarity_y_vs_t": 2.788628707315589,
-    "similarity_y_vs_s": 0.4479121366931344,
-    "similarity_t_vs_s": -0.3323267201810171,
+    "similarity_y_vs_s": 0.1878325177350839,
+    "similarity_t_vs_s": 0.1878325177350839,
     "total_songs": 12,
     "date": "23.07.2025",
     "release_date": "02.10.1995",
@@ -598,11 +598,11 @@
       4,
       3,
       0,
-      1
+      5
     ],
     "similarity_y_vs_t": 2.3585225037914124,
-    "similarity_y_vs_s": -1.763009391141135,
-    "similarity_t_vs_s": -1.035680233211862,
+    "similarity_y_vs_s": -0.793237180568771,
+    "similarity_t_vs_s": -0.06590802263949799,
     "total_songs": 11,
     "date": "31.08.2025",
     "release_date": "07.03.2025",
@@ -666,15 +666,15 @@
       0
     ],
     "Spotify": [
-      0,
-      1,
       6,
       9,
-      3
+      0,
+      1,
+      5
     ],
     "similarity_y_vs_t": 0.9680713746092353,
-    "similarity_y_vs_s": 0.4479121366931344,
-    "similarity_t_vs_s": -0.3323267201810171,
+    "similarity_y_vs_s": 0.7079917556511849,
+    "similarity_t_vs_s": -0.8524859580971181,
     "total_songs": 11,
     "date": "14.09.2025",
     "release_date": "05.09.2025",
@@ -814,11 +814,11 @@
       11,
       4,
       1,
-      7
+      3
     ],
     "similarity_y_vs_t": 1.0630718174425164,
-    "similarity_y_vs_s": 0.1392032095871511,
-    "similarity_t_vs_s": 1.0630718174425164,
+    "similarity_y_vs_s": 0.8321046654786752,
+    "similarity_t_vs_s": 0.3701703615509925,
     "total_songs": 13,
     "date": "12.10.2025",
     "release_date": "15.01.2002",
@@ -826,5 +826,41 @@
     "tugba_score": 8.5,
     "mean_score": 8.55,
     "index": 22
+  },
+  {
+    "album": "Lotus",
+    "artist": "Soen",
+    "spotify_id": "16v3Ule2sTTWT37VKUsH6F",
+    "Yagiz": [
+      4,
+      5,
+      1,
+      7,
+      8
+    ],
+    "Tugba": [
+      3,
+      1,
+      4,
+      5,
+      7
+    ],
+    "Spotify": [
+      3,
+      1,
+      2,
+      4,
+      6
+    ],
+    "similarity_y_vs_t": 1.3131322488292851,
+    "similarity_y_vs_s": -0.7046130649632673,
+    "similarity_t_vs_s": 1.6013815793710784,
+    "total_songs": 9,
+    "date": "26.10.2025",
+    "release_date": "01.02.2019",
+    "yagiz_score": 8.0,
+    "tugba_score": 7.9,
+    "mean_score": 7.95,
+    "index": 23
   }
 ]
