@@ -1,0 +1,81 @@
+{
+  "album": "Woe",
+  "artist": "An Abstract Illusion",
+  "spotify_id": "6X8cqvrWfIjRf09pfcLECo",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b27340031277a6deea78b532347d",
+  "release_date": "09.09.2022",
+  "date": "02.11.2025",
+  "total_songs": 7,
+  "yagiz_score": 8.8,
+  "tugba_score": 7.1,
+  "mean_score": 7.95,
+  "similarity_y_vs_t": 2.3707179670030074,
+  "similarity_y_vs_s": -0.16064659707988213,
+  "similarity_t_vs_s": -1.004434785107512,
+  "yagiz_songs": [
+    {
+      "name": "In The Heavens Above, You Will Become A Monster",
+      "spotify_url": "https://open.spotify.com/track/1rR6Z1UfRyCE5Q82c0itMR"
+    },
+    {
+      "name": "Tear Down This Holy Mountain",
+      "spotify_url": "https://open.spotify.com/track/43foMIhM2GdCzEKnaOfsn4"
+    },
+    {
+      "name": "Slaves",
+      "spotify_url": "https://open.spotify.com/track/3dV7IoPKs0VaHX04ww7223"
+    },
+    {
+      "name": "This Torment Has No End, Only New Beginnings",
+      "spotify_url": "https://open.spotify.com/track/1wdJYOfbRFsNDEKG3AH37v"
+    },
+    {
+      "name": "Prosperity",
+      "spotify_url": "https://open.spotify.com/track/1T5arTeYTRx5W1mUwTgwkt"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "In The Heavens Above, You Will Become A Monster",
+      "spotify_url": "https://open.spotify.com/track/1rR6Z1UfRyCE5Q82c0itMR"
+    },
+    {
+      "name": "Tear Down This Holy Mountain",
+      "spotify_url": "https://open.spotify.com/track/43foMIhM2GdCzEKnaOfsn4"
+    },
+    {
+      "name": "Slaves",
+      "spotify_url": "https://open.spotify.com/track/3dV7IoPKs0VaHX04ww7223"
+    },
+    {
+      "name": "Blomsterkrans",
+      "spotify_url": "https://open.spotify.com/track/7s9cpYvGUAtYiDUwpUWftK"
+    },
+    {
+      "name": "This Torment Has No End, Only New Beginnings",
+      "spotify_url": "https://open.spotify.com/track/1wdJYOfbRFsNDEKG3AH37v"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "The Behemoth That Lies Asleep",
+      "spotify_url": "https://open.spotify.com/track/7itBrMZWYvJH2xwEnk3tWK"
+    },
+    {
+      "name": "Slaves",
+      "spotify_url": "https://open.spotify.com/track/3dV7IoPKs0VaHX04ww7223"
+    },
+    {
+      "name": "Prosperity",
+      "spotify_url": "https://open.spotify.com/track/1T5arTeYTRx5W1mUwTgwkt"
+    },
+    {
+      "name": "Tear Down This Holy Mountain",
+      "spotify_url": "https://open.spotify.com/track/43foMIhM2GdCzEKnaOfsn4"
+    },
+    {
+      "name": "In The Heavens Above, You Will Become A Monster",
+      "spotify_url": "https://open.spotify.com/track/1rR6Z1UfRyCE5Q82c0itMR"
+    }
+  ]
+}
