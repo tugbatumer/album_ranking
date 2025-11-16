@@ -10,8 +10,8 @@
   "tugba_score": 7.5,
   "mean_score": 7.8,
   "similarity_y_vs_t": 2.448874729225565,
-  "similarity_y_vs_s": 1.2940389694063579,
-  "similarity_t_vs_s": 1.7559732733340407,
+  "similarity_y_vs_s": 1.0630718174425164,
+  "similarity_t_vs_s": 1.5250061213701993,
   "yagiz_songs": [
     {
       "name": "The Apparition",
@@ -62,20 +62,20 @@
       "spotify_url": "https://open.spotify.com/track/0S38Oso3I9vpDXcTb7kYt9"
     },
     {
-      "name": "Take Me Back To Eden",
-      "spotify_url": "https://open.spotify.com/track/2Gt7fjNlx901pPRkvBiNBZ"
-    },
-    {
       "name": "Rain",
       "spotify_url": "https://open.spotify.com/track/0GXwlEXCO8qeeeOIYpsR3m"
+    },
+    {
+      "name": "Take Me Back To Eden",
+      "spotify_url": "https://open.spotify.com/track/2Gt7fjNlx901pPRkvBiNBZ"
     },
     {
       "name": "Granite",
       "spotify_url": "https://open.spotify.com/track/4mxiv6HQfhqgIuN5iOONQd"
     },
     {
-      "name": "Chokehold",
-      "spotify_url": "https://open.spotify.com/track/1Uifdytv882RtTn6Gr4xAA"
+      "name": "The Apparition",
+      "spotify_url": "https://open.spotify.com/track/21eMasL93nEafqRwlI851z"
     }
   ]
 }

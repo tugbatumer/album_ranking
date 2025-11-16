@@ -1,0 +1,81 @@
+{
+  "album": "In Contact",
+  "artist": "Caligula's Horse",
+  "spotify_id": "76ffWagOEq3L48KPzK1zIj",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737c1766f40c7aca103375cb63",
+  "release_date": "15.09.2017",
+  "date": "16.11.2025",
+  "total_songs": 11,
+  "yagiz_score": 8.9,
+  "tugba_score": 8.6,
+  "mean_score": 8.75,
+  "similarity_y_vs_t": 2.528549088357538,
+  "similarity_y_vs_s": 1.2281509935672859,
+  "similarity_t_vs_s": 1.2281509935672859,
+  "yagiz_songs": [
+    {
+      "name": "Graves",
+      "spotify_url": "https://open.spotify.com/track/3cOwY51dJsHidrMFs3hczR"
+    },
+    {
+      "name": "Dream the Dead",
+      "spotify_url": "https://open.spotify.com/track/4HG1VtmkmtKIvwng66Kava"
+    },
+    {
+      "name": "Songs for No One",
+      "spotify_url": "https://open.spotify.com/track/5MWRCb2JA6ap7qAu8e32Xe"
+    },
+    {
+      "name": "The Cannon's Mouth",
+      "spotify_url": "https://open.spotify.com/track/6PpouElkAUWl6DDjuepy8P"
+    },
+    {
+      "name": "Atlas - revisited",
+      "spotify_url": "https://open.spotify.com/track/1UYOa5SOGns6tJyMa8YDEc"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Graves",
+      "spotify_url": "https://open.spotify.com/track/3cOwY51dJsHidrMFs3hczR"
+    },
+    {
+      "name": "Dream the Dead",
+      "spotify_url": "https://open.spotify.com/track/4HG1VtmkmtKIvwng66Kava"
+    },
+    {
+      "name": "Songs for No One",
+      "spotify_url": "https://open.spotify.com/track/5MWRCb2JA6ap7qAu8e32Xe"
+    },
+    {
+      "name": "Fill My Heart",
+      "spotify_url": "https://open.spotify.com/track/6oNFFHvwoiyds0IACeOTU0"
+    },
+    {
+      "name": "The Cannon's Mouth",
+      "spotify_url": "https://open.spotify.com/track/6PpouElkAUWl6DDjuepy8P"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Dream the Dead",
+      "spotify_url": "https://open.spotify.com/track/4HG1VtmkmtKIvwng66Kava"
+    },
+    {
+      "name": "The Hands Are the Hardest",
+      "spotify_url": "https://open.spotify.com/track/2srdBLjFBCHyNlNGvdSSim"
+    },
+    {
+      "name": "Songs for No One",
+      "spotify_url": "https://open.spotify.com/track/5MWRCb2JA6ap7qAu8e32Xe"
+    },
+    {
+      "name": "Graves",
+      "spotify_url": "https://open.spotify.com/track/3cOwY51dJsHidrMFs3hczR"
+    },
+    {
+      "name": "Will's Song (Let the Colours Run)",
+      "spotify_url": "https://open.spotify.com/track/4OxpKl1rLlzC201OLpVKd3"
+    }
+  ]
+}

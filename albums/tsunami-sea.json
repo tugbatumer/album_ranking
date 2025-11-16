@@ -6,12 +6,12 @@
   "release_date": "07.03.2025",
   "date": "31.08.2025",
   "total_songs": 11,
-  "yagiz_score": 8.9,
+  "yagiz_score": 9.0,
   "tugba_score": 8.1,
-  "mean_score": 8.5,
+  "mean_score": 8.55,
   "similarity_y_vs_t": 2.3585225037914124,
-  "similarity_y_vs_s": -0.793237180568771,
-  "similarity_t_vs_s": -0.06590802263949799,
+  "similarity_y_vs_s": -1.763009391141135,
+  "similarity_t_vs_s": -1.035680233211862,
   "yagiz_songs": [
     {
       "name": "A Haven With Two Faces",
@@ -74,8 +74,8 @@
       "spotify_url": "https://open.spotify.com/track/14iSCO87Qveq9UXCtN48Vm"
     },
     {
-      "name": "Tsunami Sea",
-      "spotify_url": "https://open.spotify.com/track/7bGzUyc4a949g2c0EIzMpx"
+      "name": "Black Rainbow",
+      "spotify_url": "https://open.spotify.com/track/3xNwSLvN6QsZ6BgUbQKRm3"
     }
   ]
 }

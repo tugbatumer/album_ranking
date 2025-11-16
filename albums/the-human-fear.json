@@ -10,7 +10,7 @@
   "tugba_score": 8.2,
   "mean_score": 7.6,
   "similarity_y_vs_t": 1.631193345862139,
-  "similarity_y_vs_s": 1.388750293219048,
+  "similarity_y_vs_s": 1.631193345862139,
   "similarity_t_vs_s": 1.631193345862139,
   "yagiz_songs": [
     {
@@ -66,12 +66,12 @@
       "spotify_url": "https://open.spotify.com/track/5aE5l3VnjWDNpTFGd4pRO5"
     },
     {
-      "name": "Audacious",
-      "spotify_url": "https://open.spotify.com/track/1TNdQw9rHynqZ6wur56bpr"
-    },
-    {
       "name": "Build It Up",
       "spotify_url": "https://open.spotify.com/track/4GUpfFkVZ16WGcdQxtEVzU"
+    },
+    {
+      "name": "Audacious",
+      "spotify_url": "https://open.spotify.com/track/1TNdQw9rHynqZ6wur56bpr"
     },
     {
       "name": "Everydaydreamer",
