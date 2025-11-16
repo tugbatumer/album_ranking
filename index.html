@@ -322,8 +322,7 @@
           <tbody>
             ${filtered.map(album => {
               const c = album.index % 2 === 0 ? '#4caf50' : '#e91e63';
-              const slug = album.album.toLowerCase().replace(/ /g, '-').replace(/[^\w-]/g, '');
-              return `<tr onclick="location='album.html?album=${slug}'">
+              return `<tr onclick="location='album.html?album=${album.album_slug}'">
                 <td style="color:${c}">${album.index + 1}</td>
                 <td style="color:${c}">${album.artist}</td>
                 <td style="color:${c}">${album.album}</td>

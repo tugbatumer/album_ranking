@@ -33,7 +33,8 @@
     "yagiz_score": 7.5,
     "tugba_score": 7.4,
     "mean_score": 7.45,
-    "index": 0
+    "index": 0,
+    "album_slug": "even-in-arcadia"
   },
   {
     "album": "The New Abnormal",
@@ -69,7 +70,8 @@
     "yagiz_score": 7.2,
     "tugba_score": 9.5,
     "mean_score": 8.35,
-    "index": 1
+    "index": 1,
+    "album_slug": "the-new-abnormal"
   },
   {
     "album": "BODIES",
@@ -105,7 +107,8 @@
     "yagiz_score": 9.6,
     "tugba_score": 9.3,
     "mean_score": 9.45,
-    "index": 2
+    "index": 2,
+    "album_slug": "bodies"
   },
   {
     "album": "Skinty Fia",
@@ -141,7 +144,8 @@
     "yagiz_score": 8.1,
     "tugba_score": 8.7,
     "mean_score": 8.399999999999999,
-    "index": 3
+    "index": 3,
+    "album_slug": "skinty-fia"
   },
   {
     "album": "Radiant Dark",
@@ -177,7 +181,8 @@
     "yagiz_score": 8.0,
     "tugba_score": 6.6,
     "mean_score": 7.3,
-    "index": 4
+    "index": 4,
+    "album_slug": "radiant-dark"
   },
   {
     "album": "Boxer",
@@ -213,7 +218,8 @@
     "yagiz_score": 6.5,
     "tugba_score": 7.0,
     "mean_score": 6.75,
-    "index": 5
+    "index": 5,
+    "album_slug": "boxer"
   },
   {
     "album": "Take Me Back To Eden",
@@ -249,7 +255,8 @@
     "yagiz_score": 8.1,
     "tugba_score": 7.5,
     "mean_score": 7.8,
-    "index": 6
+    "index": 6,
+    "album_slug": "take-me-back-to-eden"
   },
   {
     "album": "Origin of Symmetry",
@@ -285,7 +292,8 @@
     "yagiz_score": 6.7,
     "tugba_score": 7.2,
     "mean_score": 6.95,
-    "index": 7
+    "index": 7,
+    "album_slug": "origin-of-symmetry"
   },
   {
     "album": "Fatalism",
@@ -321,7 +329,8 @@
     "yagiz_score": 9.1,
     "tugba_score": 8.1,
     "mean_score": 8.6,
-    "index": 8
+    "index": 8,
+    "album_slug": "fatalism"
   },
   {
     "album": "Disintegration",
@@ -357,7 +366,8 @@
     "yagiz_score": 7.1,
     "tugba_score": 8.3,
     "mean_score": 7.7,
-    "index": 9
+    "index": 9,
+    "album_slug": "disintegration"
   },
   {
     "album": "The Silver Scream",
@@ -393,7 +403,8 @@
     "yagiz_score": 9.2,
     "tugba_score": 9.0,
     "mean_score": 9.1,
-    "index": 10
+    "index": 10,
+    "album_slug": "the-silver-scream"
   },
   {
     "album": "(What's the Story) Morning Glory?",
@@ -429,7 +440,8 @@
     "yagiz_score": 7.5,
     "tugba_score": 8.8,
     "mean_score": 8.15,
-    "index": 11
+    "index": 11,
+    "album_slug": "whats-the-story-morning-glory"
   },
   {
     "album": "Stargazer",
@@ -465,7 +477,8 @@
     "yagiz_score": 8.3,
     "tugba_score": 8.4,
     "mean_score": 8.350000000000001,
-    "index": 12
+    "index": 12,
+    "album_slug": "stargazer"
   },
   {
     "album": "Humbug",
@@ -501,7 +514,8 @@
     "yagiz_score": 7.3,
     "tugba_score": 8.6,
     "mean_score": 7.949999999999999,
-    "index": 13
+    "index": 13,
+    "album_slug": "humbug"
   },
   {
     "album": "People Watching",
@@ -537,7 +551,8 @@
     "yagiz_score": 8.3,
     "tugba_score": 7.6,
     "mean_score": 7.95,
-    "index": 14
+    "index": 14,
+    "album_slug": "people-watching"
   },
   {
     "album": "X&Y",
@@ -573,7 +588,8 @@
     "yagiz_score": 7.8,
     "tugba_score": 9.4,
     "mean_score": 8.6,
-    "index": 15
+    "index": 15,
+    "album_slug": "xy"
   },
   {
     "album": "Tsunami Sea",
@@ -609,7 +625,8 @@
     "yagiz_score": 9.0,
     "tugba_score": 8.1,
     "mean_score": 8.55,
-    "index": 16
+    "index": 16,
+    "album_slug": "tsunami-sea"
   },
   {
     "album": "Songs for the Deaf",
@@ -645,7 +662,8 @@
     "yagiz_score": 7.6,
     "tugba_score": 8.5,
     "mean_score": 8.05,
-    "index": 17
+    "index": 17,
+    "album_slug": "songs-for-the-deaf"
   },
   {
     "album": "Hit It!",
@@ -681,7 +699,8 @@
     "yagiz_score": 8.2,
     "tugba_score": 6.8,
     "mean_score": 7.5,
-    "index": 18
+    "index": 18,
+    "album_slug": "hit-it"
   },
   {
     "album": "The Human Fear",
@@ -717,7 +736,8 @@
     "yagiz_score": 7.0,
     "tugba_score": 8.2,
     "mean_score": 7.6,
-    "index": 19
+    "index": 19,
+    "album_slug": "the-human-fear"
   },
   {
     "album": "Melancholy",
@@ -753,7 +773,8 @@
     "yagiz_score": 8.6,
     "tugba_score": 7.8,
     "mean_score": 8.2,
-    "index": 20
+    "index": 20,
+    "album_slug": "melancholy"
   },
   {
     "album": "The Queen is Dead",
@@ -789,7 +810,8 @@
     "yagiz_score": 6.8,
     "tugba_score": 8.0,
     "mean_score": 7.4,
-    "index": 21
+    "index": 21,
+    "album_slug": "the-queen-is-dead"
   },
   {
     "album": "Remedy Lane",
@@ -825,7 +847,8 @@
     "yagiz_score": 8.6,
     "tugba_score": 8.5,
     "mean_score": 8.55,
-    "index": 22
+    "index": 22,
+    "album_slug": "remedy-lane"
   },
   {
     "album": "Lotus",
@@ -861,7 +884,8 @@
     "yagiz_score": 8.0,
     "tugba_score": 7.9,
     "mean_score": 7.95,
-    "index": 23
+    "index": 23,
+    "album_slug": "lotus"
   },
   {
     "album": "Woe",
@@ -897,7 +921,8 @@
     "yagiz_score": 8.8,
     "tugba_score": 7.1,
     "mean_score": 7.95,
-    "index": 24
+    "index": 24,
+    "album_slug": "woe"
   },
   {
     "album": "D\u00fcnya Yalan S\u00f6yl\u00fcyor",
@@ -933,7 +958,8 @@
     "yagiz_score": 9.2,
     "tugba_score": 9.2,
     "mean_score": 9.2,
-    "index": 25
+    "index": 25,
+    "album_slug": "dunya-yalan-soyluyor"
   },
   {
     "album": "In Contact",
@@ -969,6 +995,7 @@
     "yagiz_score": 8.9,
     "tugba_score": 8.6,
     "mean_score": 8.75,
-    "index": 26
+    "index": 26,
+    "album_slug": "in-contact"
   }
 ]
