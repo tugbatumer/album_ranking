@@ -154,9 +154,25 @@ def plot_all_ranking_similarities(df):
 
 
 def make_slug(album_name):
-    slug = album_name.lower()                     # Lowercase
-    slug = slug.replace(' ', '-')                 # Replace spaces with hyphens
-    slug = re.sub(r'[^\w\-]', '', slug)           # Remove anything that's not a word char or hyphen
+    # Map Turkish characters to ASCII equivalents
+    turkish_map = str.maketrans({
+        "ç": "c", "Ç": "c",
+        "ğ": "g", "Ğ": "g",
+        "ı": "i", "İ": "i",
+        "ö": "o", "Ö": "o",
+        "ş": "s", "Ş": "s",
+        "ü": "u", "Ü": "u",
+    })
+
+    # Apply lowercase and translation
+    slug = album_name.lower().translate(turkish_map)
+
+    # Replace spaces with hyphens
+    slug = slug.replace(' ', '-')
+
+    # Remove anything that's not a word char or hyphen
+    slug = re.sub(r'[^\w\-]', '', slug)
+
     return slug
 
 

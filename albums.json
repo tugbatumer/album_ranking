@@ -936,42 +936,6 @@
     "index": 25
   },
   {
-    "album": "D\u00fcnya Yalan S\u00f6yl\u00fcyor",
-    "artist": "Mor ve \u00d6tesi",
-    "spotify_id": "0QbpgPjg5eOU5ltJ05r4V7",
-    "Yagiz": [
-      9,
-      2,
-      1,
-      3,
-      4
-    ],
-    "Tugba": [
-      3,
-      9,
-      2,
-      1,
-      5
-    ],
-    "Spotify": [
-      2,
-      1,
-      6,
-      4,
-      3
-    ],
-    "similarity_y_vs_t": 2.0083898504414375,
-    "similarity_y_vs_s": 1.4882306125253364,
-    "similarity_t_vs_s": 0.4479121366931344,
-    "total_songs": 10,
-    "date": "09.11.2025",
-    "release_date": "16.04.2004",
-    "yagiz_score": 9.2,
-    "tugba_score": 9.2,
-    "mean_score": 9.2,
-    "index": 26
-  },
-  {
     "album": "In Contact",
     "artist": "Caligula's Horse",
     "spotify_id": "76ffWagOEq3L48KPzK1zIj",
@@ -1005,6 +969,6 @@
     "yagiz_score": 8.9,
     "tugba_score": 8.6,
     "mean_score": 8.75,
-    "index": 27
+    "index": 26
   }
 ]
