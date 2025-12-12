@@ -10,8 +10,8 @@
   "tugba_score": 6.8,
   "mean_score": 7.5,
   "similarity_y_vs_t": 0.9680713746092353,
-  "similarity_y_vs_s": 0.7079917556511849,
-  "similarity_t_vs_s": -0.8524859580971181,
+  "similarity_y_vs_s": 1.2281509935672859,
+  "similarity_t_vs_s": -0.5924063391390676,
   "yagiz_songs": [
     {
       "name": "Melanchronic",
@@ -66,16 +66,16 @@
       "spotify_url": "https://open.spotify.com/track/0hKZTwtN7RUPOdYCkrU0KT"
     },
     {
-      "name": "Squier Talk",
-      "spotify_url": "https://open.spotify.com/track/19LMSiPAc1Prev4mLWdDFt"
-    },
-    {
       "name": "M\u00e1s R\u00e1pido",
       "spotify_url": "https://open.spotify.com/track/4PQrriLa0NasnTnkjBe9dp"
     },
     {
       "name": "Melanchronic",
       "spotify_url": "https://open.spotify.com/track/0QQaWDSoCn6Lq78n8xaA6R"
+    },
+    {
+      "name": "Squier Talk",
+      "spotify_url": "https://open.spotify.com/track/19LMSiPAc1Prev4mLWdDFt"
     }
   ]
 }

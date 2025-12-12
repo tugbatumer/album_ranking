@@ -1,0 +1,81 @@
+{
+  "album": "Blood Covenant",
+  "artist": "Adept",
+  "spotify_id": "07I7OdOJ8FvUch5y06hd2G",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b2731fa547dfd445ac3aa122fc94",
+  "release_date": "24.10.2025",
+  "date": "07.12.2025",
+  "total_songs": 11,
+  "yagiz_score": 7.9,
+  "tugba_score": 7.7,
+  "mean_score": 7.800000000000001,
+  "similarity_y_vs_t": 0.17653503000359302,
+  "similarity_y_vs_s": 0.41897808264668407,
+  "similarity_t_vs_s": 1.388750293219048,
+  "yagiz_songs": [
+    {
+      "name": "Ignore the Sun",
+      "spotify_url": "https://open.spotify.com/track/3OtRGNTuwUmG8NyrCCzFUG"
+    },
+    {
+      "name": "Filthy Tongue",
+      "spotify_url": "https://open.spotify.com/track/5G8WCOXRG3Ti4Qw29W7S2f"
+    },
+    {
+      "name": "Blood Covenant",
+      "spotify_url": "https://open.spotify.com/track/5Fu92pIctIhDh4tngZjt3e"
+    },
+    {
+      "name": "Parting Ways",
+      "spotify_url": "https://open.spotify.com/track/5I9ZqRn6oJ6ljsg0zIE81B"
+    },
+    {
+      "name": "YOU",
+      "spotify_url": "https://open.spotify.com/track/5wNEarv5uPUkWF5bIbg2Fo"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Time Is a Destroyer",
+      "spotify_url": "https://open.spotify.com/track/7KuHweRl7mPNOMr505SLb3"
+    },
+    {
+      "name": "YOU",
+      "spotify_url": "https://open.spotify.com/track/5wNEarv5uPUkWF5bIbg2Fo"
+    },
+    {
+      "name": "Heaven",
+      "spotify_url": "https://open.spotify.com/track/6HqYq96yUVr61yyz29KBvY"
+    },
+    {
+      "name": "Blood Covenant",
+      "spotify_url": "https://open.spotify.com/track/5Fu92pIctIhDh4tngZjt3e"
+    },
+    {
+      "name": "Parting Ways",
+      "spotify_url": "https://open.spotify.com/track/5I9ZqRn6oJ6ljsg0zIE81B"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Blood Covenant",
+      "spotify_url": "https://open.spotify.com/track/5Fu92pIctIhDh4tngZjt3e"
+    },
+    {
+      "name": "Heaven",
+      "spotify_url": "https://open.spotify.com/track/6HqYq96yUVr61yyz29KBvY"
+    },
+    {
+      "name": "Define Me",
+      "spotify_url": "https://open.spotify.com/track/76JUsZqlYpjPVczNt9cgCH"
+    },
+    {
+      "name": "YOU",
+      "spotify_url": "https://open.spotify.com/track/5wNEarv5uPUkWF5bIbg2Fo"
+    },
+    {
+      "name": "Parting Ways",
+      "spotify_url": "https://open.spotify.com/track/5I9ZqRn6oJ6ljsg0zIE81B"
+    }
+  ]
+}

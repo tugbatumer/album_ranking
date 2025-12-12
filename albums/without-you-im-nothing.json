@@ -1,0 +1,81 @@
+{
+  "album": "Without You I'm Nothing",
+  "artist": "Placebo",
+  "spotify_id": "4wxoPjHSYFYurNyKaEiZNT",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273f05be6e0f6c59b1563b4e35e",
+  "release_date": "12.10.1998",
+  "date": "30.11.2025",
+  "total_songs": 13,
+  "yagiz_score": 6.3,
+  "tugba_score": 6.8,
+  "mean_score": 6.55,
+  "similarity_y_vs_t": 1.868492118706597,
+  "similarity_y_vs_s": 0.7508860003728034,
+  "similarity_t_vs_s": 2.539055789706873,
+  "yagiz_songs": [
+    {
+      "name": "Without You I'm Nothing",
+      "spotify_url": "https://open.spotify.com/track/3RQndQlG5xUt6dzINPh4yI"
+    },
+    {
+      "name": "Every You Every Me",
+      "spotify_url": "https://open.spotify.com/track/2Srd8Jgif3kc6ou6Z4pSYJ"
+    },
+    {
+      "name": "The Crawl",
+      "spotify_url": "https://open.spotify.com/track/0ZYy6kD8qL2jd3inlyqJqq"
+    },
+    {
+      "name": "Brick Shithouse",
+      "spotify_url": "https://open.spotify.com/track/3mc8UayivlPPX3wv7hsRNO"
+    },
+    {
+      "name": "Scared of Girls",
+      "spotify_url": "https://open.spotify.com/track/6RH5ApsqMe5DN53c6DYajw"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Without You I'm Nothing",
+      "spotify_url": "https://open.spotify.com/track/3RQndQlG5xUt6dzINPh4yI"
+    },
+    {
+      "name": "Every You Every Me",
+      "spotify_url": "https://open.spotify.com/track/2Srd8Jgif3kc6ou6Z4pSYJ"
+    },
+    {
+      "name": "Pure Morning",
+      "spotify_url": "https://open.spotify.com/track/32F0zqsDgqpIEYApk2b8sr"
+    },
+    {
+      "name": "You Don't Care About Us",
+      "spotify_url": "https://open.spotify.com/track/72mM8P5wxmx3S7d9OMGl80"
+    },
+    {
+      "name": "The Crawl",
+      "spotify_url": "https://open.spotify.com/track/0ZYy6kD8qL2jd3inlyqJqq"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Every You Every Me",
+      "spotify_url": "https://open.spotify.com/track/2Srd8Jgif3kc6ou6Z4pSYJ"
+    },
+    {
+      "name": "Pure Morning",
+      "spotify_url": "https://open.spotify.com/track/32F0zqsDgqpIEYApk2b8sr"
+    },
+    {
+      "name": "Without You I'm Nothing",
+      "spotify_url": "https://open.spotify.com/track/3RQndQlG5xUt6dzINPh4yI"
+    },
+    {
+      "name": "You Don't Care About Us",
+      "spotify_url": "https://open.spotify.com/track/72mM8P5wxmx3S7d9OMGl80"
+    },
+    {
+      "name": "My Sweet Prince",
+      "spotify_url": "https://open.spotify.com/track/4WNKcu75kGfRaMWdPRAxVc"
+    }
+  ]
+}
