@@ -322,7 +322,7 @@
           </thead>
           <tbody>
             ${filtered.map((a,i)=>{
-          const c = (i+1)%2===1 ? '#4caf50' : '#e91e63';
+          const c = (a.index+1)%2===1 ? '#4caf50' : '#e91e63';
           return `
             <tr onclick="location='album.html?album=${a.album_slug}'">
               <td style="color:#555; font-weight:600; border-right:1px solid #ddd; padding-right:0.8rem;">${i+1}</td>
