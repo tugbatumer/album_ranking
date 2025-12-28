@@ -58,12 +58,12 @@
   ],
   "spotify_songs": [
     {
-      "name": "Bir Derdim Var",
-      "spotify_url": "https://open.spotify.com/track/5UV2oqgMXvlkOvvtK3aT7f"
-    },
-    {
       "name": "Cambaz",
       "spotify_url": "https://open.spotify.com/track/3ZkA3JnqluUWzwr64BBkl4"
+    },
+    {
+      "name": "Bir Derdim Var",
+      "spotify_url": "https://open.spotify.com/track/5UV2oqgMXvlkOvvtK3aT7f"
     },
     {
       "name": "A\u015fk \u0130\u00e7inde",

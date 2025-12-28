@@ -318,11 +318,11 @@
       1,
       5,
       0,
-      3
+      6
     ],
     "similarity_y_vs_t": 1.1463072405759571,
     "similarity_y_vs_s": 2.3585225037914124,
-    "similarity_t_vs_s": 1.631193345862139,
+    "similarity_t_vs_s": 1.1463072405759571,
     "total_songs": 11,
     "date": "06.07.2025",
     "release_date": "01.09.2023",
@@ -392,11 +392,11 @@
       0,
       2,
       1,
-      12
+      10
     ],
     "similarity_y_vs_t": 1.4214496713730795,
-    "similarity_y_vs_s": 0.7508860003728034,
-    "similarity_t_vs_s": 2.3155345660401143,
+    "similarity_y_vs_s": 0.08032232937252733,
+    "similarity_t_vs_s": 1.868492118706597,
     "total_songs": 13,
     "date": "13.07.2025",
     "release_date": "05.10.2018",
@@ -429,11 +429,11 @@
       0,
       3,
       9,
-      1
+      11
     ],
     "similarity_y_vs_t": 2.788628707315589,
     "similarity_y_vs_s": 0.4479121366931344,
-    "similarity_t_vs_s": -0.3323267201810171,
+    "similarity_t_vs_s": 0.4479121366931344,
     "total_songs": 12,
     "date": "23.07.2025",
     "release_date": "02.10.1995",
@@ -799,7 +799,7 @@
       2,
       5,
       4,
-      6
+      9
     ],
     "similarity_y_vs_t": 2.788628707315589,
     "similarity_y_vs_s": 1.2281509935672859,
@@ -943,8 +943,8 @@
       5
     ],
     "Spotify": [
-      2,
       1,
+      2,
       6,
       4,
       3
@@ -1071,5 +1071,79 @@
     "mean_score": 7.800000000000001,
     "index": 28,
     "album_slug": "blood-covenant"
+  },
+  {
+    "album": "Turn on the Blind Lights",
+    "artist": "Interpol",
+    "spotify_id": "4sW8Eql2e2kdRP1A1R1clG",
+    "Yagiz": [
+      9,
+      1,
+      6,
+      7,
+      2
+    ],
+    "Tugba": [
+      1,
+      10,
+      7,
+      3,
+      2
+    ],
+    "Spotify": [
+      1,
+      0,
+      3,
+      10,
+      2
+    ],
+    "similarity_y_vs_t": 0.903864187932866,
+    "similarity_y_vs_s": -0.06590802263949799,
+    "similarity_t_vs_s": 1.8736363985052302,
+    "total_songs": 11,
+    "date": "14.12.2025",
+    "release_date": "20.08.2002",
+    "yagiz_score": 6.6,
+    "tugba_score": 8.5,
+    "mean_score": 7.55,
+    "index": 29,
+    "album_slug": "turn-on-the-blind-lights"
+  },
+  {
+    "album": "Keep it Quiet",
+    "artist": "Greyhaven",
+    "spotify_id": "7lP4sm3rKuo3nspTKSFO2T",
+    "Yagiz": [
+      1,
+      2,
+      4,
+      8,
+      5
+    ],
+    "Tugba": [
+      1,
+      6,
+      3,
+      9,
+      5
+    ],
+    "Spotify": [
+      3,
+      1,
+      4,
+      2,
+      6
+    ],
+    "similarity_y_vs_t": 0.17653503000359302,
+    "similarity_y_vs_s": 1.388750293219048,
+    "similarity_t_vs_s": 1.1463072405759571,
+    "total_songs": 11,
+    "date": "21.12.2025",
+    "release_date": "10.10.2025",
+    "yagiz_score": 8.4,
+    "tugba_score": 8.4,
+    "mean_score": 8.4,
+    "index": 30,
+    "album_slug": "keep-it-quiet"
   }
 ]

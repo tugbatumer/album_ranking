@@ -306,6 +306,7 @@
         <table>
           <thead>
             <tr>
+              <th></th>
               <th>#</th>
               <th>Artist</th>
               <th>Album</th>
@@ -320,23 +321,24 @@
             </tr>
           </thead>
           <tbody>
-            ${filtered.map(album => {
-              const c = album.index % 2 === 0 ? '#4caf50' : '#e91e63';
-              return `<tr onclick="location='album.html?album=${album.album_slug}'">
-                <td style="color:${c}">${album.index + 1}</td>
-                <td style="color:${c}">${album.artist}</td>
-                <td style="color:${c}">${album.album}</td>
-                <td style="color:${c}">${album.release_date}</td>
-                <td style="color:${c}">${album.date}</td>
-                <td style="color:${c}">${album.yagiz_score.toFixed(1)}</td>
-                <td style="color:${c}">${album.tugba_score.toFixed(1)}</td>
-                <td style="color:${c}">${album.mean_score.toFixed(1)}</td>
-                <td style="color:${c}">${album.similarity_y_vs_t.toFixed(3)}</td>
-                <td style="color:${c}">${album.similarity_y_vs_s.toFixed(3)}</td>
-                <td style="color:${c}">${album.similarity_t_vs_s.toFixed(3)}</td>
-              </tr>`;
-
-            }).join('')}
+            ${filtered.map((a,i)=>{
+          const c = (i+1)%2===1 ? '#4caf50' : '#e91e63';
+          return `
+            <tr onclick="location='album.html?album=${a.album_slug}'">
+              <td style="color:#555; font-weight:600; border-right:1px solid #ddd; padding-right:0.8rem;">${i+1}</td>
+              <td style="color:${c}">${a.index + 1}</td>
+              <td style="color:${c}">${a.artist}</td>
+              <td style="color:${c}">${a.album}</td>
+              <td style="color:${c}">${a.release_date}</td>
+              <td style="color:${c}">${a.date}</td>
+              <td style="color:${c}">${a.yagiz_score.toFixed(1)}</td>
+              <td style="color:${c}">${a.tugba_score.toFixed(1)}</td>
+              <td style="color:${c}">${a.mean_score.toFixed(2)}</td>
+              <td style="color:${c}">${a.similarity_y_vs_t.toFixed(3)}</td>
+              <td style="color:${c}">${a.similarity_y_vs_s.toFixed(3)}</td>
+              <td style="color:${c}">${a.similarity_t_vs_s.toFixed(3)}</td>
+            </tr>`;
+        }).join('')}
           </tbody>
         </table>`;
     }

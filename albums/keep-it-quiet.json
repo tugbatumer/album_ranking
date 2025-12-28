@@ -1,0 +1,81 @@
+{
+  "album": "Keep It Quiet",
+  "artist": "Greyhaven",
+  "spotify_id": "7lP4sm3rKuo3nspTKSFO2T",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273d61fd041d1acca7ffd768592",
+  "release_date": "10.10.2025",
+  "date": "21.12.2025",
+  "total_songs": 11,
+  "yagiz_score": 8.4,
+  "tugba_score": 8.4,
+  "mean_score": 8.4,
+  "similarity_y_vs_t": 0.17653503000359302,
+  "similarity_y_vs_s": 1.388750293219048,
+  "similarity_t_vs_s": 1.1463072405759571,
+  "yagiz_songs": [
+    {
+      "name": "Shatter And Burst",
+      "spotify_url": "https://open.spotify.com/track/5U08NOlidUfK5Ens7JTJCs"
+    },
+    {
+      "name": "Show Me Where You Are",
+      "spotify_url": "https://open.spotify.com/track/453dQe6RA1HZlQlEYorVbx"
+    },
+    {
+      "name": "Where The Light Leaves Us",
+      "spotify_url": "https://open.spotify.com/track/0cM3kf7qILdSwMbW9ed12i"
+    },
+    {
+      "name": "From The Backseat Of A Moving Car",
+      "spotify_url": "https://open.spotify.com/track/0WxHbmryS8rHYPS8rduqfh"
+    },
+    {
+      "name": "Night In October",
+      "spotify_url": "https://open.spotify.com/track/5PyA86BI0d1mqXseEPgFpm"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Shatter And Burst",
+      "spotify_url": "https://open.spotify.com/track/5U08NOlidUfK5Ens7JTJCs"
+    },
+    {
+      "name": "Technicolor Blues",
+      "spotify_url": "https://open.spotify.com/track/4qG9BHCy00PEidkBAdJlGT"
+    },
+    {
+      "name": "Burn A Miracle",
+      "spotify_url": "https://open.spotify.com/track/2BfUoI27fZM2o9XI1uBB4L"
+    },
+    {
+      "name": "Diamond To Diamond",
+      "spotify_url": "https://open.spotify.com/track/6jNBo31AbtTDz8p4tj0j85"
+    },
+    {
+      "name": "Night In October",
+      "spotify_url": "https://open.spotify.com/track/5PyA86BI0d1mqXseEPgFpm"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Burn A Miracle",
+      "spotify_url": "https://open.spotify.com/track/2BfUoI27fZM2o9XI1uBB4L"
+    },
+    {
+      "name": "Shatter And Burst",
+      "spotify_url": "https://open.spotify.com/track/5U08NOlidUfK5Ens7JTJCs"
+    },
+    {
+      "name": "Where The Light Leaves Us",
+      "spotify_url": "https://open.spotify.com/track/0cM3kf7qILdSwMbW9ed12i"
+    },
+    {
+      "name": "Show Me Where You Are",
+      "spotify_url": "https://open.spotify.com/track/453dQe6RA1HZlQlEYorVbx"
+    },
+    {
+      "name": "Technicolor Blues",
+      "spotify_url": "https://open.spotify.com/track/4qG9BHCy00PEidkBAdJlGT"
+    }
+  ]
+}

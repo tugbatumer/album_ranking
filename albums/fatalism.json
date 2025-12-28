@@ -11,7 +11,7 @@
   "mean_score": 8.6,
   "similarity_y_vs_t": 1.1463072405759571,
   "similarity_y_vs_s": 2.3585225037914124,
-  "similarity_t_vs_s": 1.631193345862139,
+  "similarity_t_vs_s": 1.1463072405759571,
   "yagiz_songs": [
     {
       "name": "Inhumane",
@@ -74,8 +74,8 @@
       "spotify_url": "https://open.spotify.com/track/5knLNMN1se4hm65TcY2Vf2"
     },
     {
-      "name": "Overflow",
-      "spotify_url": "https://open.spotify.com/track/5pov1EJLn3GtjnfVjHyNHs"
+      "name": "The Crossfire",
+      "spotify_url": "https://open.spotify.com/track/2agkb7xP67siLU2TjjsXDC"
     }
   ]
 }

@@ -1,0 +1,81 @@
+{
+  "album": "Turn On The Bright Lights",
+  "artist": "Interpol",
+  "spotify_id": "4sW8Eql2e2kdRP1A1R1clG",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b27314f8df9fb9c2d3056a994390",
+  "release_date": "20.08.2002",
+  "date": "14.12.2025",
+  "total_songs": 11,
+  "yagiz_score": 6.6,
+  "tugba_score": 8.5,
+  "mean_score": 7.55,
+  "similarity_y_vs_t": 0.903864187932866,
+  "similarity_y_vs_s": -0.06590802263949799,
+  "similarity_t_vs_s": 1.8736363985052302,
+  "yagiz_songs": [
+    {
+      "name": "The New",
+      "spotify_url": "https://open.spotify.com/track/7EL7Wt6yCFfeBejZYIiTPC"
+    },
+    {
+      "name": "Obstacle 1",
+      "spotify_url": "https://open.spotify.com/track/1ZBqJilDGBVYktvlCEo9jC"
+    },
+    {
+      "name": "Obstacle 2",
+      "spotify_url": "https://open.spotify.com/track/4zYBNOB5TOf1cMpFxA5e6N"
+    },
+    {
+      "name": "Stella was a diver and she was always down",
+      "spotify_url": "https://open.spotify.com/track/4tZdPxjFCZepceY2iuoeKp"
+    },
+    {
+      "name": "NYC",
+      "spotify_url": "https://open.spotify.com/track/4PAR0Zp6Mbu3p6NKYClgBr"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Obstacle 1",
+      "spotify_url": "https://open.spotify.com/track/1ZBqJilDGBVYktvlCEo9jC"
+    },
+    {
+      "name": "Leif Erikson",
+      "spotify_url": "https://open.spotify.com/track/0whlogyhf1AejBU72KNv38"
+    },
+    {
+      "name": "Stella was a diver and she was always down",
+      "spotify_url": "https://open.spotify.com/track/4tZdPxjFCZepceY2iuoeKp"
+    },
+    {
+      "name": "PDA",
+      "spotify_url": "https://open.spotify.com/track/286mFeYjBJ9fkioaIzaxoN"
+    },
+    {
+      "name": "NYC",
+      "spotify_url": "https://open.spotify.com/track/4PAR0Zp6Mbu3p6NKYClgBr"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Obstacle 1",
+      "spotify_url": "https://open.spotify.com/track/1ZBqJilDGBVYktvlCEo9jC"
+    },
+    {
+      "name": "Untitled",
+      "spotify_url": "https://open.spotify.com/track/2ZgyzFYYOz21b2AhPPkWKF"
+    },
+    {
+      "name": "PDA",
+      "spotify_url": "https://open.spotify.com/track/286mFeYjBJ9fkioaIzaxoN"
+    },
+    {
+      "name": "Leif Erikson",
+      "spotify_url": "https://open.spotify.com/track/0whlogyhf1AejBU72KNv38"
+    },
+    {
+      "name": "NYC",
+      "spotify_url": "https://open.spotify.com/track/4PAR0Zp6Mbu3p6NKYClgBr"
+    }
+  ]
+}
