@@ -10,8 +10,8 @@
   "tugba_score": 8.5,
   "mean_score": 8.55,
   "similarity_y_vs_t": 1.0630718174425164,
-  "similarity_y_vs_s": 0.8321046654786752,
-  "similarity_t_vs_s": 0.3701703615509925,
+  "similarity_y_vs_s": 0.1392032095871511,
+  "similarity_t_vs_s": 1.0630718174425164,
   "yagiz_songs": [
     {
       "name": "A Trace of Blood",
@@ -74,8 +74,8 @@
       "spotify_url": "https://open.spotify.com/track/2xh7Dy2W1KJwmOxp44Y6rx"
     },
     {
-      "name": "A Trace of Blood",
-      "spotify_url": "https://open.spotify.com/track/71hwOfOY1tcIww21gBxySr"
+      "name": "Chain Sling",
+      "spotify_url": "https://open.spotify.com/track/1zg9FDwOnAHgdrT80hfFAM"
     }
   ]
 }

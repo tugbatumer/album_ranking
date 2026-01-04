@@ -11,7 +11,7 @@
   "mean_score": 8.6,
   "similarity_y_vs_t": 1.1463072405759571,
   "similarity_y_vs_s": 2.3585225037914124,
-  "similarity_t_vs_s": 1.1463072405759571,
+  "similarity_t_vs_s": 1.631193345862139,
   "yagiz_songs": [
     {
       "name": "Inhumane",
@@ -66,16 +66,16 @@
       "spotify_url": "https://open.spotify.com/track/0jrOt6XnOTeZOd56U16Bfp"
     },
     {
-      "name": "Inhumane",
-      "spotify_url": "https://open.spotify.com/track/4JpUHYV5xwiBHx9wnTSjh1"
-    },
-    {
       "name": "Harbinger",
       "spotify_url": "https://open.spotify.com/track/5knLNMN1se4hm65TcY2Vf2"
     },
     {
-      "name": "The Crossfire",
-      "spotify_url": "https://open.spotify.com/track/2agkb7xP67siLU2TjjsXDC"
+      "name": "Inhumane",
+      "spotify_url": "https://open.spotify.com/track/4JpUHYV5xwiBHx9wnTSjh1"
+    },
+    {
+      "name": "With Regards",
+      "spotify_url": "https://open.spotify.com/track/0rWFAPbnfmD0TX9Ahz4WAw"
     }
   ]
 }

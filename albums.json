@@ -169,12 +169,12 @@
       2,
       3,
       4,
-      0,
-      1
+      1,
+      9
     ],
     "similarity_y_vs_t": 1.748310231483387,
-    "similarity_y_vs_s": 0.4479121366931344,
-    "similarity_t_vs_s": 1.2281509935672859,
+    "similarity_y_vs_s": 0.7079917556511849,
+    "similarity_t_vs_s": 1.748310231483387,
     "total_songs": 10,
     "date": "18.06.2025",
     "release_date": "17.07.2020",
@@ -244,11 +244,11 @@
       10,
       9,
       2,
-      7
+      3
     ],
     "similarity_y_vs_t": 2.448874729225565,
-    "similarity_y_vs_s": 1.2940389694063579,
-    "similarity_t_vs_s": 1.7559732733340407,
+    "similarity_y_vs_s": 0.6011375135148338,
+    "similarity_t_vs_s": 1.2940389694063579,
     "total_songs": 12,
     "date": "25.06.2025",
     "release_date": "19.05.2023",
@@ -316,13 +316,13 @@
     "Spotify": [
       7,
       1,
-      5,
       0,
-      6
+      5,
+      4
     ],
     "similarity_y_vs_t": 1.1463072405759571,
     "similarity_y_vs_s": 2.3585225037914124,
-    "similarity_t_vs_s": 1.1463072405759571,
+    "similarity_t_vs_s": 1.631193345862139,
     "total_songs": 11,
     "date": "06.07.2025",
     "release_date": "01.09.2023",
@@ -429,11 +429,11 @@
       0,
       3,
       9,
-      11
+      1
     ],
     "similarity_y_vs_t": 2.788628707315589,
     "similarity_y_vs_s": 0.4479121366931344,
-    "similarity_t_vs_s": 0.4479121366931344,
+    "similarity_t_vs_s": -0.3323267201810171,
     "total_songs": 12,
     "date": "23.07.2025",
     "release_date": "02.10.1995",
@@ -612,8 +612,8 @@
     "Spotify": [
       2,
       4,
-      3,
       0,
+      3,
       1
     ],
     "similarity_y_vs_t": 2.3585225037914124,
@@ -836,11 +836,11 @@
       11,
       4,
       1,
-      3
+      7
     ],
     "similarity_y_vs_t": 1.0630718174425164,
-    "similarity_y_vs_s": 0.8321046654786752,
-    "similarity_t_vs_s": 0.3701703615509925,
+    "similarity_y_vs_s": 0.1392032095871511,
+    "similarity_t_vs_s": 1.0630718174425164,
     "total_songs": 13,
     "date": "12.10.2025",
     "release_date": "15.01.2002",
@@ -1145,5 +1145,79 @@
     "mean_score": 8.4,
     "index": 30,
     "album_slug": "keep-it-quiet"
+  },
+  {
+    "album": "Modern Primitive",
+    "artist": "Septicflesh",
+    "spotify_id": "2Mys40rXrG4GNkRDeJMZ88",
+    "Yagiz": [
+      3,
+      0,
+      8,
+      4,
+      2
+    ],
+    "Tugba": [
+      3,
+      5,
+      4,
+      0,
+      8
+    ],
+    "Spotify": [
+      3,
+      5,
+      0,
+      1,
+      4
+    ],
+    "similarity_y_vs_t": 1.6013815793710784,
+    "similarity_y_vs_s": 1.024882918287492,
+    "similarity_t_vs_s": 2.1778802404546647,
+    "total_songs": 9,
+    "date": "28.12.2025",
+    "release_date": "20.05.2022",
+    "yagiz_score": 7.4,
+    "tugba_score": 7.8,
+    "mean_score": 7.6,
+    "index": 31,
+    "album_slug": "modern-primitive"
+  },
+  {
+    "album": "Periphery II",
+    "artist": "Periphery",
+    "spotify_id": "6JfrPc1Vt7PHVd6B4dreQ7",
+    "Yagiz": [
+      6,
+      1,
+      5,
+      0,
+      13
+    ],
+    "Tugba": [
+      5,
+      1,
+      6,
+      12,
+      9
+    ],
+    "Spotify": [
+      4,
+      5,
+      8,
+      0,
+      1
+    ],
+    "similarity_y_vs_t": 1.9712330348234979,
+    "similarity_y_vs_s": 1.0978978199771996,
+    "similarity_t_vs_s": 0.4428964088424759,
+    "total_songs": 14,
+    "date": "04.01.2026",
+    "release_date": "03.07.2012",
+    "yagiz_score": 8.0,
+    "tugba_score": 8.1,
+    "mean_score": 8.05,
+    "index": 32,
+    "album_slug": "periphery-ii"
   }
 ]

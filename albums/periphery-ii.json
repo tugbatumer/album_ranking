@@ -1,0 +1,81 @@
+{
+  "album": "Periphery II",
+  "artist": "Periphery",
+  "spotify_id": "6JfrPc1Vt7PHVd6B4dreQ7",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b2735e07ee269b03adc236d0d6ae",
+  "release_date": "03.07.2012",
+  "date": "04.01.2026",
+  "total_songs": 14,
+  "yagiz_score": 8.0,
+  "tugba_score": 8.1,
+  "mean_score": 8.05,
+  "similarity_y_vs_t": 1.9712330348234979,
+  "similarity_y_vs_s": 1.0978978199771996,
+  "similarity_t_vs_s": 0.4428964088424759,
+  "yagiz_songs": [
+    {
+      "name": "Ragnarok",
+      "spotify_url": "https://open.spotify.com/track/1hEEZKVr5Iepj1K943Uxfl"
+    },
+    {
+      "name": "Have a Blast",
+      "spotify_url": "https://open.spotify.com/track/3rsbaM3vMMpNnFiSyrFNil"
+    },
+    {
+      "name": "Luck As A Constant",
+      "spotify_url": "https://open.spotify.com/track/3ztGkfpYtg8X0K3rSvUgNF"
+    },
+    {
+      "name": "Muramasa",
+      "spotify_url": "https://open.spotify.com/track/0fVEeYKtAZ6qtng16t2fOL"
+    },
+    {
+      "name": "Masamune",
+      "spotify_url": "https://open.spotify.com/track/4ghwHJRPMAekmheuWPK42E"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Luck As A Constant",
+      "spotify_url": "https://open.spotify.com/track/3ztGkfpYtg8X0K3rSvUgNF"
+    },
+    {
+      "name": "Have a Blast",
+      "spotify_url": "https://open.spotify.com/track/3rsbaM3vMMpNnFiSyrFNil"
+    },
+    {
+      "name": "Ragnarok",
+      "spotify_url": "https://open.spotify.com/track/1hEEZKVr5Iepj1K943Uxfl"
+    },
+    {
+      "name": "Mile Zero",
+      "spotify_url": "https://open.spotify.com/track/7aQrkhkdRkPoJpIrdKYJRv"
+    },
+    {
+      "name": "Erised",
+      "spotify_url": "https://open.spotify.com/track/7CBrTNgdNQ1PdkZvQNjUfV"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Scarlet",
+      "spotify_url": "https://open.spotify.com/track/0LAwOpMA20nj3M6oDStbkv"
+    },
+    {
+      "name": "Luck As A Constant",
+      "spotify_url": "https://open.spotify.com/track/3ztGkfpYtg8X0K3rSvUgNF"
+    },
+    {
+      "name": "Make Total Destroy",
+      "spotify_url": "https://open.spotify.com/track/530kBwK0wiN1LHssFeFZUS"
+    },
+    {
+      "name": "Muramasa",
+      "spotify_url": "https://open.spotify.com/track/0fVEeYKtAZ6qtng16t2fOL"
+    },
+    {
+      "name": "Have a Blast",
+      "spotify_url": "https://open.spotify.com/track/3rsbaM3vMMpNnFiSyrFNil"
+    }
+  ]
+}

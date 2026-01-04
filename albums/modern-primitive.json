@@ -1,0 +1,81 @@
+{
+  "album": "Modern Primitive",
+  "artist": "Septicflesh",
+  "spotify_id": "2Mys40rXrG4GNkRDeJMZ88",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273abaaff451e959a44b2fa3035",
+  "release_date": "20.05.2022",
+  "date": "28.12.2025",
+  "total_songs": 9,
+  "yagiz_score": 7.4,
+  "tugba_score": 7.8,
+  "mean_score": 7.6,
+  "similarity_y_vs_t": 1.6013815793710784,
+  "similarity_y_vs_s": 1.024882918287492,
+  "similarity_t_vs_s": 2.1778802404546647,
+  "yagiz_songs": [
+    {
+      "name": "Neuromancer",
+      "spotify_url": "https://open.spotify.com/track/5qsc3cYKkUvOzNGtUbdpNk"
+    },
+    {
+      "name": "The Collector",
+      "spotify_url": "https://open.spotify.com/track/65gv70Xo8afQcwk9KEt1Cu"
+    },
+    {
+      "name": "A Dreadful Muse",
+      "spotify_url": "https://open.spotify.com/track/5xcQnhkznVHKRUXViLixGR"
+    },
+    {
+      "name": "Coming Storm",
+      "spotify_url": "https://open.spotify.com/track/1QISerMz8cRzCGBhJkTC64"
+    },
+    {
+      "name": "Self-Eater",
+      "spotify_url": "https://open.spotify.com/track/0chaoIXWSKSNxnpHRnjDMV"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Neuromancer",
+      "spotify_url": "https://open.spotify.com/track/5qsc3cYKkUvOzNGtUbdpNk"
+    },
+    {
+      "name": "A Desert Throne",
+      "spotify_url": "https://open.spotify.com/track/3m3xlb2rdYGX5CZj0A8DBX"
+    },
+    {
+      "name": "Coming Storm",
+      "spotify_url": "https://open.spotify.com/track/1QISerMz8cRzCGBhJkTC64"
+    },
+    {
+      "name": "The Collector",
+      "spotify_url": "https://open.spotify.com/track/65gv70Xo8afQcwk9KEt1Cu"
+    },
+    {
+      "name": "A Dreadful Muse",
+      "spotify_url": "https://open.spotify.com/track/5xcQnhkznVHKRUXViLixGR"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Neuromancer",
+      "spotify_url": "https://open.spotify.com/track/5qsc3cYKkUvOzNGtUbdpNk"
+    },
+    {
+      "name": "A Desert Throne",
+      "spotify_url": "https://open.spotify.com/track/3m3xlb2rdYGX5CZj0A8DBX"
+    },
+    {
+      "name": "The Collector",
+      "spotify_url": "https://open.spotify.com/track/65gv70Xo8afQcwk9KEt1Cu"
+    },
+    {
+      "name": "Hierophant",
+      "spotify_url": "https://open.spotify.com/track/0Qog3o6eaT0WorEFOfRwVD"
+    },
+    {
+      "name": "Coming Storm",
+      "spotify_url": "https://open.spotify.com/track/1QISerMz8cRzCGBhJkTC64"
+    }
+  ]
+}

@@ -10,8 +10,8 @@
   "tugba_score": 7.5,
   "mean_score": 7.8,
   "similarity_y_vs_t": 2.448874729225565,
-  "similarity_y_vs_s": 1.2940389694063579,
-  "similarity_t_vs_s": 1.7559732733340407,
+  "similarity_y_vs_s": 0.6011375135148338,
+  "similarity_t_vs_s": 1.2940389694063579,
   "yagiz_songs": [
     {
       "name": "The Apparition",
@@ -74,8 +74,8 @@
       "spotify_url": "https://open.spotify.com/track/4mxiv6HQfhqgIuN5iOONQd"
     },
     {
-      "name": "The Apparition",
-      "spotify_url": "https://open.spotify.com/track/21eMasL93nEafqRwlI851z"
+      "name": "Aqua Regia",
+      "spotify_url": "https://open.spotify.com/track/5ub6Cb5yKmgGGwjvqZM1gI"
     }
   ]
 }
