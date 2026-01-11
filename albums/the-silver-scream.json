@@ -10,8 +10,8 @@
   "tugba_score": 9.0,
   "mean_score": 9.1,
   "similarity_y_vs_t": 1.4214496713730795,
-  "similarity_y_vs_s": 0.08032232937252733,
-  "similarity_t_vs_s": 1.868492118706597,
+  "similarity_y_vs_s": 0.7508860003728034,
+  "similarity_t_vs_s": 2.3155345660401143,
   "yagiz_songs": [
     {
       "name": "Stabbing In The Dark",
@@ -74,8 +74,8 @@
       "spotify_url": "https://open.spotify.com/track/6eHkHIGGcGatFhhqeuRWFN"
     },
     {
-      "name": "Merry Axe-Mas",
-      "spotify_url": "https://open.spotify.com/track/2kM94CiYjbN4932wToEMJo"
+      "name": "IT Is The End (ft. JR Wasilewski & Buddy Schaub of Less Than Jake and Will Salazar of Fenix TX)",
+      "spotify_url": "https://open.spotify.com/track/19u5pVvN3Ud0u3bPaq6Lnn"
     }
   ]
 }

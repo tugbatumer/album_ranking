@@ -11,7 +11,7 @@
   "mean_score": 8.2,
   "similarity_y_vs_t": 1.2281509935672859,
   "similarity_y_vs_s": -0.5924063391390676,
-  "similarity_t_vs_s": 0.9680713746092353,
+  "similarity_t_vs_s": 0.4479121366931344,
   "yagiz_songs": [
     {
       "name": "Malediction",
@@ -74,8 +74,8 @@
       "spotify_url": "https://open.spotify.com/track/4mUBsaJY3BxRHLLTdhBG4l"
     },
     {
-      "name": "Oudenophobia",
-      "spotify_url": "https://open.spotify.com/track/2J0BtzwPO4AUnVKRU9Fzux"
+      "name": "Dirge of the Void",
+      "spotify_url": "https://open.spotify.com/track/1MQUDPQf7XH22WyBenazXH"
     }
   ]
 }

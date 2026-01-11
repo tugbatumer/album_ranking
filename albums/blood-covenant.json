@@ -11,7 +11,7 @@
   "mean_score": 7.800000000000001,
   "similarity_y_vs_t": 0.17653503000359302,
   "similarity_y_vs_s": 0.41897808264668407,
-  "similarity_t_vs_s": 1.388750293219048,
+  "similarity_t_vs_s": 1.631193345862139,
   "yagiz_songs": [
     {
       "name": "Ignore the Sun",
@@ -66,12 +66,12 @@
       "spotify_url": "https://open.spotify.com/track/6HqYq96yUVr61yyz29KBvY"
     },
     {
-      "name": "Define Me",
-      "spotify_url": "https://open.spotify.com/track/76JUsZqlYpjPVczNt9cgCH"
-    },
-    {
       "name": "YOU",
       "spotify_url": "https://open.spotify.com/track/5wNEarv5uPUkWF5bIbg2Fo"
+    },
+    {
+      "name": "Define Me",
+      "spotify_url": "https://open.spotify.com/track/76JUsZqlYpjPVczNt9cgCH"
     },
     {
       "name": "Parting Ways",

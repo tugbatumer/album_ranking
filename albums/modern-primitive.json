@@ -10,7 +10,7 @@
   "tugba_score": 7.8,
   "mean_score": 7.6,
   "similarity_y_vs_t": 1.6013815793710784,
-  "similarity_y_vs_s": 1.024882918287492,
+  "similarity_y_vs_s": 0.7366335877456988,
   "similarity_t_vs_s": 2.1778802404546647,
   "yagiz_songs": [
     {
@@ -66,12 +66,12 @@
       "spotify_url": "https://open.spotify.com/track/3m3xlb2rdYGX5CZj0A8DBX"
     },
     {
-      "name": "The Collector",
-      "spotify_url": "https://open.spotify.com/track/65gv70Xo8afQcwk9KEt1Cu"
-    },
-    {
       "name": "Hierophant",
       "spotify_url": "https://open.spotify.com/track/0Qog3o6eaT0WorEFOfRwVD"
+    },
+    {
+      "name": "The Collector",
+      "spotify_url": "https://open.spotify.com/track/65gv70Xo8afQcwk9KEt1Cu"
     },
     {
       "name": "Coming Storm",

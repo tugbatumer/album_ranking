@@ -1,0 +1,81 @@
+{
+  "album": "Magma",
+  "artist": "Gojira",
+  "spotify_id": "7D7V6M05UIOTjLdqbwRX0w",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273422c622517ea0bd7eda33e08",
+  "release_date": "17.06.2016",
+  "date": "11.01.2026",
+  "total_songs": 10,
+  "yagiz_score": 8.1,
+  "tugba_score": 8.0,
+  "mean_score": 8.05,
+  "similarity_y_vs_t": 2.1778802404546647,
+  "similarity_y_vs_s": 0.7366335877456988,
+  "similarity_t_vs_s": 1.8896309099128716,
+  "yagiz_songs": [
+    {
+      "name": "Silvera",
+      "spotify_url": "https://open.spotify.com/track/5uunXHE4kIW6uS4HWAXaOQ"
+    },
+    {
+      "name": "Magma",
+      "spotify_url": "https://open.spotify.com/track/56iv5TqfvxVa4zLMs6SvmP"
+    },
+    {
+      "name": "Stranded",
+      "spotify_url": "https://open.spotify.com/track/60fUDmIWuKhngaeBIVhqIV"
+    },
+    {
+      "name": "Only Pain",
+      "spotify_url": "https://open.spotify.com/track/7MuPOXU2vjEe3Kh9LfbM5v"
+    },
+    {
+      "name": "Low Lands",
+      "spotify_url": "https://open.spotify.com/track/6nJgZy8CATEMz9PNRAJGDt"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Stranded",
+      "spotify_url": "https://open.spotify.com/track/60fUDmIWuKhngaeBIVhqIV"
+    },
+    {
+      "name": "Silvera",
+      "spotify_url": "https://open.spotify.com/track/5uunXHE4kIW6uS4HWAXaOQ"
+    },
+    {
+      "name": "Magma",
+      "spotify_url": "https://open.spotify.com/track/56iv5TqfvxVa4zLMs6SvmP"
+    },
+    {
+      "name": "Only Pain",
+      "spotify_url": "https://open.spotify.com/track/7MuPOXU2vjEe3Kh9LfbM5v"
+    },
+    {
+      "name": "The Cell",
+      "spotify_url": "https://open.spotify.com/track/7nCD5l7GrFyt6o1mstCUFr"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Stranded",
+      "spotify_url": "https://open.spotify.com/track/60fUDmIWuKhngaeBIVhqIV"
+    },
+    {
+      "name": "Silvera",
+      "spotify_url": "https://open.spotify.com/track/5uunXHE4kIW6uS4HWAXaOQ"
+    },
+    {
+      "name": "The Cell",
+      "spotify_url": "https://open.spotify.com/track/7nCD5l7GrFyt6o1mstCUFr"
+    },
+    {
+      "name": "The Shooting Star",
+      "spotify_url": "https://open.spotify.com/track/6HQfFAupOMsmfWV4CbG1Kj"
+    },
+    {
+      "name": "Only Pain",
+      "spotify_url": "https://open.spotify.com/track/7MuPOXU2vjEe3Kh9LfbM5v"
+    }
+  ]
+}

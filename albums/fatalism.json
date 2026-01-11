@@ -10,7 +10,7 @@
   "tugba_score": 8.1,
   "mean_score": 8.6,
   "similarity_y_vs_t": 1.1463072405759571,
-  "similarity_y_vs_s": 2.3585225037914124,
+  "similarity_y_vs_s": 2.1160794511483214,
   "similarity_t_vs_s": 1.631193345862139,
   "yagiz_songs": [
     {
@@ -74,8 +74,8 @@
       "spotify_url": "https://open.spotify.com/track/4JpUHYV5xwiBHx9wnTSjh1"
     },
     {
-      "name": "With Regards",
-      "spotify_url": "https://open.spotify.com/track/0rWFAPbnfmD0TX9Ahz4WAw"
+      "name": "Overflow",
+      "spotify_url": "https://open.spotify.com/track/5pov1EJLn3GtjnfVjHyNHs"
     }
   ]
 }
