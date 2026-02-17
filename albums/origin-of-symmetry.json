@@ -10,7 +10,7 @@
   "tugba_score": 7.2,
   "mean_score": 6.95,
   "similarity_y_vs_t": 1.2940389694063579,
-  "similarity_y_vs_s": 1.7559732733340407,
+  "similarity_y_vs_s": 1.5250061213701993,
   "similarity_t_vs_s": 1.7559732733340407,
   "yagiz_songs": [
     {
@@ -66,12 +66,12 @@
       "spotify_url": "https://open.spotify.com/track/5PK1JCSdr34gWgzYHgt3Jq"
     },
     {
-      "name": "New Born",
-      "spotify_url": "https://open.spotify.com/track/2VrJMuLt2m9HbifGrKWHqk"
-    },
-    {
       "name": "Space Dementia",
       "spotify_url": "https://open.spotify.com/track/00jXDm9BLNZdf2QC3Br0r7"
+    },
+    {
+      "name": "New Born",
+      "spotify_url": "https://open.spotify.com/track/2VrJMuLt2m9HbifGrKWHqk"
     },
     {
       "name": "Bliss",

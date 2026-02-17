@@ -10,8 +10,8 @@
   "tugba_score": 8.3,
   "mean_score": 7.7,
   "similarity_y_vs_t": 1.986940425297882,
-  "similarity_y_vs_s": 1.5250061213701993,
-  "similarity_t_vs_s": 1.986940425297882,
+  "similarity_y_vs_s": 1.7559732733340407,
+  "similarity_t_vs_s": 2.217907577261723,
   "yagiz_songs": [
     {
       "name": "Lullaby - Remastered",
@@ -58,16 +58,16 @@
   ],
   "spotify_songs": [
     {
-      "name": "Pictures Of You - Remastered",
-      "spotify_url": "https://open.spotify.com/track/72gg0bqrLCCyomkfunyiuU"
-    },
-    {
       "name": "Lovesong - Remastered",
       "spotify_url": "https://open.spotify.com/track/1y6XHeNN5DSX5PYy7gT0qL"
     },
     {
       "name": "Lullaby - Remastered",
       "spotify_url": "https://open.spotify.com/track/4N54VofLAv0gNeSL1rwoeq"
+    },
+    {
+      "name": "Pictures Of You - Remastered",
+      "spotify_url": "https://open.spotify.com/track/72gg0bqrLCCyomkfunyiuU"
     },
     {
       "name": "Prayers For Rain - Remastered",

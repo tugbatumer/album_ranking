@@ -10,8 +10,8 @@
   "tugba_score": 8.0,
   "mean_score": 8.05,
   "similarity_y_vs_t": 2.1778802404546647,
-  "similarity_y_vs_s": 0.7366335877456988,
-  "similarity_t_vs_s": 1.8896309099128716,
+  "similarity_y_vs_s": 1.024882918287492,
+  "similarity_t_vs_s": 2.1778802404546647,
   "yagiz_songs": [
     {
       "name": "Silvera",
@@ -66,16 +66,16 @@
       "spotify_url": "https://open.spotify.com/track/5uunXHE4kIW6uS4HWAXaOQ"
     },
     {
+      "name": "Only Pain",
+      "spotify_url": "https://open.spotify.com/track/7MuPOXU2vjEe3Kh9LfbM5v"
+    },
+    {
       "name": "The Cell",
       "spotify_url": "https://open.spotify.com/track/7nCD5l7GrFyt6o1mstCUFr"
     },
     {
       "name": "The Shooting Star",
       "spotify_url": "https://open.spotify.com/track/6HQfFAupOMsmfWV4CbG1Kj"
-    },
-    {
-      "name": "Only Pain",
-      "spotify_url": "https://open.spotify.com/track/7MuPOXU2vjEe3Kh9LfbM5v"
     }
   ]
 }

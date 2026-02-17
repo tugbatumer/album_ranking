@@ -10,8 +10,8 @@
   "tugba_score": 8.8,
   "mean_score": 8.15,
   "similarity_y_vs_t": 2.788628707315589,
-  "similarity_y_vs_s": 0.4479121366931344,
-  "similarity_t_vs_s": -0.3323267201810171,
+  "similarity_y_vs_s": 0.7079917556511849,
+  "similarity_t_vs_s": 0.7079917556511849,
   "yagiz_songs": [
     {
       "name": "Champagne Supernova",
@@ -62,20 +62,20 @@
       "spotify_url": "https://open.spotify.com/track/7zstmK6nTu4S1fWNAwoyAl"
     },
     {
-      "name": "Hello",
-      "spotify_url": "https://open.spotify.com/track/6RYOFeJmhmb6RRtoPjMCai"
-    },
-    {
       "name": "Don't Look Back in Anger",
       "spotify_url": "https://open.spotify.com/track/6qkIxHddw8eqVefnJwo4YM"
+    },
+    {
+      "name": "Hello",
+      "spotify_url": "https://open.spotify.com/track/6RYOFeJmhmb6RRtoPjMCai"
     },
     {
       "name": "Morning Glory",
       "spotify_url": "https://open.spotify.com/track/17AvbUjwymZs2hNBHT06ob"
     },
     {
-      "name": "Roll with It",
-      "spotify_url": "https://open.spotify.com/track/0TIfkp5gMB1dQbiA6ORubQ"
+      "name": "Champagne Supernova",
+      "spotify_url": "https://open.spotify.com/track/4DHuZPe5EmOueMoPXC1BKJ"
     }
   ]
 }

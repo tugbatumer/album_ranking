@@ -10,8 +10,8 @@
   "tugba_score": 8.1,
   "mean_score": 8.05,
   "similarity_y_vs_t": 1.9712330348234979,
-  "similarity_y_vs_s": 1.0978978199771996,
-  "similarity_t_vs_s": 0.4428964088424759,
+  "similarity_y_vs_s": 1.316231623688774,
+  "similarity_t_vs_s": 0.6612302125540505,
   "yagiz_songs": [
     {
       "name": "Ragnarok",
@@ -66,16 +66,16 @@
       "spotify_url": "https://open.spotify.com/track/3ztGkfpYtg8X0K3rSvUgNF"
     },
     {
-      "name": "Make Total Destroy",
-      "spotify_url": "https://open.spotify.com/track/530kBwK0wiN1LHssFeFZUS"
-    },
-    {
       "name": "Muramasa",
       "spotify_url": "https://open.spotify.com/track/0fVEeYKtAZ6qtng16t2fOL"
     },
     {
       "name": "Have a Blast",
       "spotify_url": "https://open.spotify.com/track/3rsbaM3vMMpNnFiSyrFNil"
+    },
+    {
+      "name": "Make Total Destroy",
+      "spotify_url": "https://open.spotify.com/track/530kBwK0wiN1LHssFeFZUS"
     }
   ]
 }

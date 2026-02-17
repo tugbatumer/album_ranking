@@ -1,0 +1,81 @@
+{
+  "album": "The Purpose of the Moon",
+  "artist": "Lower Definition",
+  "spotify_id": "0HF4KKnrZvPb6a2kQuL4Um",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b27367a824abb636a2ada220eadd",
+  "release_date": "09.01.2026",
+  "date": "17.02.2026",
+  "total_songs": 12,
+  "yagiz_score": 7.0,
+  "tugba_score": 6.7,
+  "mean_score": 6.85,
+  "similarity_y_vs_t": 2.448874729225565,
+  "similarity_y_vs_s": 1.0630718174425164,
+  "similarity_t_vs_s": 1.7559732733340407,
+  "yagiz_songs": [
+    {
+      "name": "The Purpose of the Moon",
+      "spotify_url": "https://open.spotify.com/track/2FWwBTLn2jBjoIbTLIqmDL"
+    },
+    {
+      "name": "Godmode",
+      "spotify_url": "https://open.spotify.com/track/0NaatcajrxQoJY50S38RFl"
+    },
+    {
+      "name": "What Are You Running From",
+      "spotify_url": "https://open.spotify.com/track/6u5knUxnVsb9BhXNzcpbft"
+    },
+    {
+      "name": "Abattoir",
+      "spotify_url": "https://open.spotify.com/track/1wTQMIVL2ODrV2gT8CGJMr"
+    },
+    {
+      "name": "Miami Nights II",
+      "spotify_url": "https://open.spotify.com/track/21rfPkf5udCIaVvbIqkOa4"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Godmode",
+      "spotify_url": "https://open.spotify.com/track/0NaatcajrxQoJY50S38RFl"
+    },
+    {
+      "name": "The Purpose of the Moon",
+      "spotify_url": "https://open.spotify.com/track/2FWwBTLn2jBjoIbTLIqmDL"
+    },
+    {
+      "name": "What Are You Running From",
+      "spotify_url": "https://open.spotify.com/track/6u5knUxnVsb9BhXNzcpbft"
+    },
+    {
+      "name": "Loom",
+      "spotify_url": "https://open.spotify.com/track/2jkuS1DhsOw5wXdGdCCHpZ"
+    },
+    {
+      "name": "Miami Nights II",
+      "spotify_url": "https://open.spotify.com/track/21rfPkf5udCIaVvbIqkOa4"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Loom",
+      "spotify_url": "https://open.spotify.com/track/2jkuS1DhsOw5wXdGdCCHpZ"
+    },
+    {
+      "name": "The Purpose of the Moon",
+      "spotify_url": "https://open.spotify.com/track/2FWwBTLn2jBjoIbTLIqmDL"
+    },
+    {
+      "name": "Miami Nights II",
+      "spotify_url": "https://open.spotify.com/track/21rfPkf5udCIaVvbIqkOa4"
+    },
+    {
+      "name": "What Are You Running From",
+      "spotify_url": "https://open.spotify.com/track/6u5knUxnVsb9BhXNzcpbft"
+    },
+    {
+      "name": "Blackflower",
+      "spotify_url": "https://open.spotify.com/track/6l28xZ6JW45Yp9Izaz3rK5"
+    }
+  ]
+}
