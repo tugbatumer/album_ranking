@@ -10,8 +10,8 @@
   "tugba_score": 8.3,
   "mean_score": 7.7,
   "similarity_y_vs_t": 1.986940425297882,
-  "similarity_y_vs_s": 1.7559732733340407,
-  "similarity_t_vs_s": 2.217907577261723,
+  "similarity_y_vs_s": 2.448874729225565,
+  "similarity_t_vs_s": 1.7559732733340407,
   "yagiz_songs": [
     {
       "name": "Lullaby - Remastered",
@@ -70,12 +70,12 @@
       "spotify_url": "https://open.spotify.com/track/72gg0bqrLCCyomkfunyiuU"
     },
     {
-      "name": "Prayers For Rain - Remastered",
-      "spotify_url": "https://open.spotify.com/track/7mJ8LgmL8VX9jJGgqbbzFv"
+      "name": "Fascination Street - Remastered",
+      "spotify_url": "https://open.spotify.com/track/3lDAJbYBmCoWbQx93JTrea"
     },
     {
-      "name": "Last Dance - Remastered",
-      "spotify_url": "https://open.spotify.com/track/5wogpGnbWL89uAlRviQWJL"
+      "name": "Prayers For Rain - Remastered",
+      "spotify_url": "https://open.spotify.com/track/7mJ8LgmL8VX9jJGgqbbzFv"
     }
   ]
 }

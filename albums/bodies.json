@@ -10,8 +10,8 @@
   "tugba_score": 9.3,
   "mean_score": 9.45,
   "similarity_y_vs_t": 1.4882306125253364,
-  "similarity_y_vs_s": 0.9680713746092353,
-  "similarity_t_vs_s": 0.1878325177350839,
+  "similarity_y_vs_s": 0.4479121366931344,
+  "similarity_t_vs_s": 0.4479121366931344,
   "yagiz_songs": [
     {
       "name": "Revolver",
@@ -66,16 +66,16 @@
       "spotify_url": "https://open.spotify.com/track/48Y6xWm5ayoOPfEhKNJQxt"
     },
     {
-      "name": "Revolver",
-      "spotify_url": "https://open.spotify.com/track/1OmtYfgEqFoU8EhG3IQzrF"
-    },
-    {
       "name": "Silver Swarm",
       "spotify_url": "https://open.spotify.com/track/0c5LR1RdTl6LXYVRHcGee5"
     },
     {
-      "name": "under the knife",
-      "spotify_url": "https://open.spotify.com/track/1fyHEYD5nCPYILDtsuOre9"
+      "name": "Revolver",
+      "spotify_url": "https://open.spotify.com/track/1OmtYfgEqFoU8EhG3IQzrF"
+    },
+    {
+      "name": "nerv",
+      "spotify_url": "https://open.spotify.com/track/3lfX7NlM4Ta9ie0I6Ddt4Y"
     }
   ]
 }

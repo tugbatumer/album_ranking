@@ -11,7 +11,7 @@
   "mean_score": 8.2,
   "similarity_y_vs_t": 1.2281509935672859,
   "similarity_y_vs_s": -0.5924063391390676,
-  "similarity_t_vs_s": 0.4479121366931344,
+  "similarity_t_vs_s": 0.9680713746092353,
   "yagiz_songs": [
     {
       "name": "Malediction",
@@ -58,12 +58,12 @@
   ],
   "spotify_songs": [
     {
-      "name": "Gravesinger",
-      "spotify_url": "https://open.spotify.com/track/6hIwIA4Ub8jLcEBecMHC1k"
-    },
-    {
       "name": "Barren and Breathless Macrocosm",
       "spotify_url": "https://open.spotify.com/track/5LoE9oTVlb2x59rKfkyyTZ"
+    },
+    {
+      "name": "Gravesinger",
+      "spotify_url": "https://open.spotify.com/track/6hIwIA4Ub8jLcEBecMHC1k"
     },
     {
       "name": "Melancholy",
@@ -74,8 +74,8 @@
       "spotify_url": "https://open.spotify.com/track/4mUBsaJY3BxRHLLTdhBG4l"
     },
     {
-      "name": "Dirge of the Void",
-      "spotify_url": "https://open.spotify.com/track/1MQUDPQf7XH22WyBenazXH"
+      "name": "Oudenophobia",
+      "spotify_url": "https://open.spotify.com/track/2J0BtzwPO4AUnVKRU9Fzux"
     }
   ]
 }

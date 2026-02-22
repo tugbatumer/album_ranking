@@ -10,8 +10,8 @@
   "tugba_score": 7.8,
   "mean_score": 7.6,
   "similarity_y_vs_t": 1.6013815793710784,
-  "similarity_y_vs_s": 0.7366335877456988,
-  "similarity_t_vs_s": 2.1778802404546647,
+  "similarity_y_vs_s": -0.12811440387968087,
+  "similarity_t_vs_s": 1.6013815793710784,
   "yagiz_songs": [
     {
       "name": "Neuromancer",
@@ -74,8 +74,8 @@
       "spotify_url": "https://open.spotify.com/track/65gv70Xo8afQcwk9KEt1Cu"
     },
     {
-      "name": "Coming Storm",
-      "spotify_url": "https://open.spotify.com/track/1QISerMz8cRzCGBhJkTC64"
+      "name": "Psychohistory",
+      "spotify_url": "https://open.spotify.com/track/2mPpszGmEDW21zynGWM5Ew"
     }
   ]
 }

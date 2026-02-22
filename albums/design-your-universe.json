@@ -1,0 +1,81 @@
+{
+  "album": "Design Your Universe",
+  "artist": "Epica",
+  "spotify_id": "4vqXD8pLD66LZm7p4Y7K05",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b2731b10ef0efe2fc1c1f19a8020",
+  "release_date": "16.10.2009",
+  "date": "22.02.2026",
+  "total_songs": 15,
+  "yagiz_score": 8.4,
+  "tugba_score": 8.7,
+  "mean_score": 8.55,
+  "similarity_y_vs_t": 1.7559732733340407,
+  "similarity_y_vs_s": 1.7559732733340407,
+  "similarity_t_vs_s": 2.9108090331532472,
+  "yagiz_songs": [
+    {
+      "name": "Unleashed",
+      "spotify_url": "https://open.spotify.com/track/2EO2MCzUHcZ1L8NWx2vYSJ"
+    },
+    {
+      "name": "Design Your Universe ~ A New Age Dawns, Pt. 6",
+      "spotify_url": "https://open.spotify.com/track/0NItkszzfij2ogzMjm0ibk"
+    },
+    {
+      "name": "Kingdom of Heaven ~ A New Age Dawns, Pt. 5",
+      "spotify_url": "https://open.spotify.com/track/3l2wlu0SFU3kR3zt4nORFn"
+    },
+    {
+      "name": "Our Destiny",
+      "spotify_url": "https://open.spotify.com/track/2Q7aoJBtUdoxUr95AZ6EUP"
+    },
+    {
+      "name": "Tides of Time",
+      "spotify_url": "https://open.spotify.com/track/7D7IoJRGCDf8C6BZqyeo1r"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Unleashed",
+      "spotify_url": "https://open.spotify.com/track/2EO2MCzUHcZ1L8NWx2vYSJ"
+    },
+    {
+      "name": "Tides of Time",
+      "spotify_url": "https://open.spotify.com/track/7D7IoJRGCDf8C6BZqyeo1r"
+    },
+    {
+      "name": "Our Destiny",
+      "spotify_url": "https://open.spotify.com/track/2Q7aoJBtUdoxUr95AZ6EUP"
+    },
+    {
+      "name": "Martyr of the Free Word",
+      "spotify_url": "https://open.spotify.com/track/3QyWGKM9GUKwYho9mPIT2B"
+    },
+    {
+      "name": "Design Your Universe ~ A New Age Dawns, Pt. 6",
+      "spotify_url": "https://open.spotify.com/track/0NItkszzfij2ogzMjm0ibk"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Unleashed",
+      "spotify_url": "https://open.spotify.com/track/2EO2MCzUHcZ1L8NWx2vYSJ"
+    },
+    {
+      "name": "Tides of Time",
+      "spotify_url": "https://open.spotify.com/track/7D7IoJRGCDf8C6BZqyeo1r"
+    },
+    {
+      "name": "Martyr of the Free Word",
+      "spotify_url": "https://open.spotify.com/track/3QyWGKM9GUKwYho9mPIT2B"
+    },
+    {
+      "name": "Our Destiny",
+      "spotify_url": "https://open.spotify.com/track/2Q7aoJBtUdoxUr95AZ6EUP"
+    },
+    {
+      "name": "Design Your Universe ~ A New Age Dawns, Pt. 6",
+      "spotify_url": "https://open.spotify.com/track/0NItkszzfij2ogzMjm0ibk"
+    }
+  ]
+}
