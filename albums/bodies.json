@@ -11,7 +11,7 @@
   "mean_score": 9.45,
   "similarity_y_vs_t": 1.4882306125253364,
   "similarity_y_vs_s": 0.4479121366931344,
-  "similarity_t_vs_s": 0.4479121366931344,
+  "similarity_t_vs_s": 0.1878325177350839,
   "yagiz_songs": [
     {
       "name": "Revolver",
@@ -66,12 +66,12 @@
       "spotify_url": "https://open.spotify.com/track/48Y6xWm5ayoOPfEhKNJQxt"
     },
     {
-      "name": "Silver Swarm",
-      "spotify_url": "https://open.spotify.com/track/0c5LR1RdTl6LXYVRHcGee5"
-    },
-    {
       "name": "Revolver",
       "spotify_url": "https://open.spotify.com/track/1OmtYfgEqFoU8EhG3IQzrF"
+    },
+    {
+      "name": "Silver Swarm",
+      "spotify_url": "https://open.spotify.com/track/0c5LR1RdTl6LXYVRHcGee5"
     },
     {
       "name": "nerv",

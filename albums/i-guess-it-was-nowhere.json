@@ -1,0 +1,81 @@
+{
+  "album": "I Guess It Was Nowhere",
+  "artist": "Above, Below",
+  "spotify_id": "5ZKqJvhlH4v2pqO99lMiVY",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273601b9b0073cbca7624a25fee",
+  "release_date": "20.02.2026",
+  "date": "27.02.2026",
+  "total_songs": 13,
+  "yagiz_score": 9.6,
+  "tugba_score": 9.2,
+  "mean_score": 9.399999999999999,
+  "similarity_y_vs_t": 1.2281509935672859,
+  "similarity_y_vs_s": -0.07224710122296661,
+  "similarity_t_vs_s": -1.89280443392932,
+  "yagiz_songs": [
+    {
+      "name": "I Have Lost My Appetite for Spring",
+      "spotify_url": "https://open.spotify.com/track/24at86582thppoEPAC8UvU"
+    },
+    {
+      "name": "The Hands That Held Exploding Suns",
+      "spotify_url": "https://open.spotify.com/track/44HfmFoDAXJryTiHexS8AE"
+    },
+    {
+      "name": "Starbreather",
+      "spotify_url": "https://open.spotify.com/track/2EmOv35dL1ZOoYQo49yjk7"
+    },
+    {
+      "name": "Prism",
+      "spotify_url": "https://open.spotify.com/track/3jfpUxMMEr8awJNZQlslf6"
+    },
+    {
+      "name": "Heat",
+      "spotify_url": "https://open.spotify.com/track/3J1UA6Zh2bYDpLctg6A6aF"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "The Hands That Held Exploding Suns",
+      "spotify_url": "https://open.spotify.com/track/44HfmFoDAXJryTiHexS8AE"
+    },
+    {
+      "name": "Collapsing Eden",
+      "spotify_url": "https://open.spotify.com/track/69vjFiFiZnXcIM9vK9hXw5"
+    },
+    {
+      "name": "I Have Lost My Appetite for Spring",
+      "spotify_url": "https://open.spotify.com/track/24at86582thppoEPAC8UvU"
+    },
+    {
+      "name": "Starbreather",
+      "spotify_url": "https://open.spotify.com/track/2EmOv35dL1ZOoYQo49yjk7"
+    },
+    {
+      "name": "Telos",
+      "spotify_url": "https://open.spotify.com/track/4kOh9yrbWgGXXPGWNKLuGt"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Heat",
+      "spotify_url": "https://open.spotify.com/track/3J1UA6Zh2bYDpLctg6A6aF"
+    },
+    {
+      "name": "Soothsayer",
+      "spotify_url": "https://open.spotify.com/track/2p8OtDHXlxMH1oG9XmBsb7"
+    },
+    {
+      "name": "An Orchestration of Carbon",
+      "spotify_url": "https://open.spotify.com/track/7oYWm7IZymhL4fjPxQzIsd"
+    },
+    {
+      "name": "Starbreather",
+      "spotify_url": "https://open.spotify.com/track/2EmOv35dL1ZOoYQo49yjk7"
+    },
+    {
+      "name": "Prism",
+      "spotify_url": "https://open.spotify.com/track/3jfpUxMMEr8awJNZQlslf6"
+    }
+  ]
+}
