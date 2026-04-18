@@ -1,0 +1,81 @@
+{
+  "album": "My Head Is An Animal",
+  "artist": "Of Monsters and Men",
+  "spotify_id": "4p9dVvZDaZliSjTCbFRhJy",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273cb3f67e8026e2e493a1e8262",
+  "release_date": "01.01.2012",
+  "date": "04.04.2026",
+  "total_songs": 12,
+  "yagiz_score": 6.7,
+  "tugba_score": 7.8,
+  "mean_score": 7.25,
+  "similarity_y_vs_t": 2.9108090331532472,
+  "similarity_y_vs_s": 2.217907577261723,
+  "similarity_t_vs_s": 2.448874729225565,
+  "yagiz_songs": [
+    {
+      "name": "Little Talks",
+      "spotify_url": "https://open.spotify.com/track/2ihCaVdNZmnHZWt0fvAM7B"
+    },
+    {
+      "name": "King And Lionheart",
+      "spotify_url": "https://open.spotify.com/track/310d8Vawp5kYDYrGrrTAzl"
+    },
+    {
+      "name": "Love Love Love",
+      "spotify_url": "https://open.spotify.com/track/3o1cohFfwd57rAvrbyVE5e"
+    },
+    {
+      "name": "Dirty Paws",
+      "spotify_url": "https://open.spotify.com/track/5g7rJvWYVrloJZwKiShqlS"
+    },
+    {
+      "name": "Mountain Sound",
+      "spotify_url": "https://open.spotify.com/track/3SPVZJzf1Hs30rB6yXVf2y"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "Little Talks",
+      "spotify_url": "https://open.spotify.com/track/2ihCaVdNZmnHZWt0fvAM7B"
+    },
+    {
+      "name": "King And Lionheart",
+      "spotify_url": "https://open.spotify.com/track/310d8Vawp5kYDYrGrrTAzl"
+    },
+    {
+      "name": "Dirty Paws",
+      "spotify_url": "https://open.spotify.com/track/5g7rJvWYVrloJZwKiShqlS"
+    },
+    {
+      "name": "Love Love Love",
+      "spotify_url": "https://open.spotify.com/track/3o1cohFfwd57rAvrbyVE5e"
+    },
+    {
+      "name": "Mountain Sound",
+      "spotify_url": "https://open.spotify.com/track/3SPVZJzf1Hs30rB6yXVf2y"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Little Talks",
+      "spotify_url": "https://open.spotify.com/track/2ihCaVdNZmnHZWt0fvAM7B"
+    },
+    {
+      "name": "Dirty Paws",
+      "spotify_url": "https://open.spotify.com/track/5g7rJvWYVrloJZwKiShqlS"
+    },
+    {
+      "name": "Mountain Sound",
+      "spotify_url": "https://open.spotify.com/track/3SPVZJzf1Hs30rB6yXVf2y"
+    },
+    {
+      "name": "King And Lionheart",
+      "spotify_url": "https://open.spotify.com/track/310d8Vawp5kYDYrGrrTAzl"
+    },
+    {
+      "name": "Love Love Love",
+      "spotify_url": "https://open.spotify.com/track/3o1cohFfwd57rAvrbyVE5e"
+    }
+  ]
+}

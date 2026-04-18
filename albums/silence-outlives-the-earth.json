@@ -1,0 +1,81 @@
+{
+  "album": "silence outlives the earth",
+  "artist": "ERRA",
+  "spotify_id": "78YcVZNpzM357BBvAOKS6H",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273b968f2971f8b21c5b9be4b6e",
+  "release_date": "06.03.2026",
+  "date": "08.03.2026",
+  "total_songs": 11,
+  "yagiz_score": 9.3,
+  "tugba_score": 9.3,
+  "mean_score": 9.3,
+  "similarity_y_vs_t": 2.8434086090775943,
+  "similarity_y_vs_s": -0.55079412792568,
+  "similarity_t_vs_s": -0.55079412792568,
+  "yagiz_songs": [
+    {
+      "name": "echo sonata",
+      "spotify_url": "https://open.spotify.com/track/1QcUGVrFdJW7zaAlUdTRnE"
+    },
+    {
+      "name": "spiral (of liminal infinity)",
+      "spotify_url": "https://open.spotify.com/track/0kw5qcS91GaplKgk6iqVkO"
+    },
+    {
+      "name": "gore of being",
+      "spotify_url": "https://open.spotify.com/track/3jv0WonJb2dfpbpZXR82pw"
+    },
+    {
+      "name": "lucid threshold",
+      "spotify_url": "https://open.spotify.com/track/7lKnfimtVYWlfOv46aXGdX"
+    },
+    {
+      "name": "black cloud",
+      "spotify_url": "https://open.spotify.com/track/3mKOb2WrVo8YAyqV4sqRA0"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "echo sonata",
+      "spotify_url": "https://open.spotify.com/track/1QcUGVrFdJW7zaAlUdTRnE"
+    },
+    {
+      "name": "spiral (of liminal infinity)",
+      "spotify_url": "https://open.spotify.com/track/0kw5qcS91GaplKgk6iqVkO"
+    },
+    {
+      "name": "lucid threshold",
+      "spotify_url": "https://open.spotify.com/track/7lKnfimtVYWlfOv46aXGdX"
+    },
+    {
+      "name": "gore of being",
+      "spotify_url": "https://open.spotify.com/track/3jv0WonJb2dfpbpZXR82pw"
+    },
+    {
+      "name": "black cloud",
+      "spotify_url": "https://open.spotify.com/track/3mKOb2WrVo8YAyqV4sqRA0"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "black cloud",
+      "spotify_url": "https://open.spotify.com/track/3mKOb2WrVo8YAyqV4sqRA0"
+    },
+    {
+      "name": "further eden",
+      "spotify_url": "https://open.spotify.com/track/1mrAlj4btJnjnAlD2cSJrT"
+    },
+    {
+      "name": "stelliform",
+      "spotify_url": "https://open.spotify.com/track/2qDDbYmRMDTSWElnDKsqVa"
+    },
+    {
+      "name": "gore of being",
+      "spotify_url": "https://open.spotify.com/track/3jv0WonJb2dfpbpZXR82pw"
+    },
+    {
+      "name": "cicada siren",
+      "spotify_url": "https://open.spotify.com/track/4kZ3obq4ABdbm9hFKujRv0"
+    }
+  ]
+}

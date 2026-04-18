@@ -1,0 +1,81 @@
+{
+  "album": "I Let It in and It Took Everything",
+  "artist": "Loathe",
+  "spotify_id": "6nUUV3haj8ug8okTmOyIU2",
+  "album_art_url": "https://i.scdn.co/image/ab67616d0000b273101232ffd5af0e3c37e2c528",
+  "release_date": "07.02.2020",
+  "date": "07.03.2026",
+  "total_songs": 14,
+  "yagiz_score": 9.1,
+  "tugba_score": 9.1,
+  "mean_score": 9.1,
+  "similarity_y_vs_t": 2.6009655564345033,
+  "similarity_y_vs_s": 1.388750293219048,
+  "similarity_t_vs_s": 1.8736363985052302,
+  "yagiz_songs": [
+    {
+      "name": "I Let It in and It Took Everything...",
+      "spotify_url": "https://open.spotify.com/track/09fDemXgXzRReTfb7UWxjD"
+    },
+    {
+      "name": "Screaming",
+      "spotify_url": "https://open.spotify.com/track/611WshW3yQKLCQ2pTCOii4"
+    },
+    {
+      "name": "Is It Really You?",
+      "spotify_url": "https://open.spotify.com/track/4OmlsAT8r4q9vPFBvfYgyZ"
+    },
+    {
+      "name": "A Sad Cartoon",
+      "spotify_url": "https://open.spotify.com/track/2fyDWKsx5904KnZMGllmAv"
+    },
+    {
+      "name": "New Faces in the Dark",
+      "spotify_url": "https://open.spotify.com/track/73ESek0SF1ZcdRKMc8hsKi"
+    }
+  ],
+  "tugba_songs": [
+    {
+      "name": "I Let It in and It Took Everything...",
+      "spotify_url": "https://open.spotify.com/track/09fDemXgXzRReTfb7UWxjD"
+    },
+    {
+      "name": "Is It Really You?",
+      "spotify_url": "https://open.spotify.com/track/4OmlsAT8r4q9vPFBvfYgyZ"
+    },
+    {
+      "name": "Screaming",
+      "spotify_url": "https://open.spotify.com/track/611WshW3yQKLCQ2pTCOii4"
+    },
+    {
+      "name": "A Sad Cartoon",
+      "spotify_url": "https://open.spotify.com/track/2fyDWKsx5904KnZMGllmAv"
+    },
+    {
+      "name": "Two-Way Mirror",
+      "spotify_url": "https://open.spotify.com/track/0b4TKuvZ4eJ8eHgJgXaCnN"
+    }
+  ],
+  "spotify_songs": [
+    {
+      "name": "Is It Really You?",
+      "spotify_url": "https://open.spotify.com/track/4OmlsAT8r4q9vPFBvfYgyZ"
+    },
+    {
+      "name": "Screaming",
+      "spotify_url": "https://open.spotify.com/track/611WshW3yQKLCQ2pTCOii4"
+    },
+    {
+      "name": "Two-Way Mirror",
+      "spotify_url": "https://open.spotify.com/track/0b4TKuvZ4eJ8eHgJgXaCnN"
+    },
+    {
+      "name": "A Sad Cartoon",
+      "spotify_url": "https://open.spotify.com/track/2fyDWKsx5904KnZMGllmAv"
+    },
+    {
+      "name": "Aggressive Evolution",
+      "spotify_url": "https://open.spotify.com/track/0ZfpA3Tq0OWlxpowofOlH9"
+    }
+  ]
+}

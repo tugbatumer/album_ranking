@@ -10,8 +10,8 @@
   "tugba_score": 8.8,
   "mean_score": 8.15,
   "similarity_y_vs_t": 2.788628707315589,
-  "similarity_y_vs_s": 0.7079917556511849,
-  "similarity_t_vs_s": 0.7079917556511849,
+  "similarity_y_vs_s": 0.9680713746092353,
+  "similarity_t_vs_s": 0.9680713746092353,
   "yagiz_songs": [
     {
       "name": "Champagne Supernova",
@@ -62,6 +62,10 @@
       "spotify_url": "https://open.spotify.com/track/7zstmK6nTu4S1fWNAwoyAl"
     },
     {
+      "name": "Champagne Supernova",
+      "spotify_url": "https://open.spotify.com/track/4DHuZPe5EmOueMoPXC1BKJ"
+    },
+    {
       "name": "Don't Look Back in Anger",
       "spotify_url": "https://open.spotify.com/track/6qkIxHddw8eqVefnJwo4YM"
     },
@@ -72,10 +76,6 @@
     {
       "name": "Morning Glory",
       "spotify_url": "https://open.spotify.com/track/17AvbUjwymZs2hNBHT06ob"
-    },
-    {
-      "name": "Champagne Supernova",
-      "spotify_url": "https://open.spotify.com/track/4DHuZPe5EmOueMoPXC1BKJ"
     }
   ]
 }

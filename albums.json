@@ -93,14 +93,14 @@
     ],
     "Spotify": [
       7,
+      2,
       5,
       1,
-      2,
       6
     ],
     "similarity_y_vs_t": 1.4882306125253364,
-    "similarity_y_vs_s": 0.4479121366931344,
-    "similarity_t_vs_s": 0.1878325177350839,
+    "similarity_y_vs_s": 0.7079917556511849,
+    "similarity_t_vs_s": 0.7079917556511849,
     "total_songs": 11,
     "date": "11.06.2025",
     "release_date": "04.04.2025",
@@ -354,12 +354,12 @@
       3,
       5,
       1,
-      6,
-      7
+      7,
+      4
     ],
     "similarity_y_vs_t": 1.986940425297882,
-    "similarity_y_vs_s": 2.448874729225565,
-    "similarity_t_vs_s": 1.7559732733340407,
+    "similarity_y_vs_s": 1.7559732733340407,
+    "similarity_t_vs_s": 2.217907577261723,
     "total_songs": 12,
     "date": "09.07.2025",
     "release_date": "02.05.1989",
@@ -426,14 +426,14 @@
     ],
     "Spotify": [
       8,
+      11,
       3,
       0,
-      9,
-      11
+      9
     ],
     "similarity_y_vs_t": 2.788628707315589,
-    "similarity_y_vs_s": 0.7079917556511849,
-    "similarity_t_vs_s": 0.7079917556511849,
+    "similarity_y_vs_s": 0.9680713746092353,
+    "similarity_t_vs_s": 0.9680713746092353,
     "total_songs": 12,
     "date": "23.07.2025",
     "release_date": "02.10.1995",
@@ -684,14 +684,14 @@
       0
     ],
     "Spotify": [
-      6,
       5,
+      6,
       9,
       1,
       0
     ],
     "similarity_y_vs_t": 0.9680713746092353,
-    "similarity_y_vs_s": 1.4882306125253364,
+    "similarity_y_vs_s": 1.748310231483387,
     "similarity_t_vs_s": -0.8524859580971181,
     "total_songs": 11,
     "date": "14.09.2025",
@@ -907,10 +907,10 @@
     ],
     "Spotify": [
       0,
-      3,
       1,
+      3,
       2,
-      6
+      5
     ],
     "similarity_y_vs_t": 2.3707179670030074,
     "similarity_y_vs_s": -0.16064659707988213,
@@ -1278,12 +1278,12 @@
     "Spotify": [
       2,
       0,
-      1,
       4,
-      3
+      1,
+      7
     ],
     "similarity_y_vs_t": 2.448874729225565,
-    "similarity_y_vs_s": 1.5250061213701993,
+    "similarity_y_vs_s": 1.7559732733340407,
     "similarity_t_vs_s": 1.986940425297882,
     "total_songs": 12,
     "date": "17.02.2026",
@@ -1350,15 +1350,15 @@
       6
     ],
     "Spotify": [
-      2,
-      1,
       3,
+      1,
       5,
-      7
+      9,
+      2
     ],
     "similarity_y_vs_t": 1.2281509935672859,
-    "similarity_y_vs_s": -0.07224710122296661,
-    "similarity_t_vs_s": -1.89280443392932,
+    "similarity_y_vs_s": -0.5924063391390676,
+    "similarity_t_vs_s": -0.5924063391390676,
     "total_songs": 13,
     "date": "27.02.2026",
     "release_date": "20.02.2026",
@@ -1367,5 +1367,116 @@
     "mean_score": 9.399999999999999,
     "index": 36,
     "album_slug": "i-guess-it-was-nowhere"
+  },
+  {
+    "album": "I Let It In and It Took Everything",
+    "artist": "Loathe",
+    "spotify_id": "6nUUV3haj8ug8okTmOyIU2",
+    "Yagiz": [
+      13,
+      7,
+      8,
+      11,
+      5
+    ],
+    "Tugba": [
+      13,
+      8,
+      7,
+      11,
+      3
+    ],
+    "Spotify": [
+      8,
+      7,
+      3,
+      11,
+      1
+    ],
+    "similarity_y_vs_t": 2.6009655564345033,
+    "similarity_y_vs_s": 1.388750293219048,
+    "similarity_t_vs_s": 1.8736363985052302,
+    "total_songs": 14,
+    "date": "07.03.2026",
+    "release_date": "07.02.2020",
+    "yagiz_score": 9.1,
+    "tugba_score": 9.1,
+    "mean_score": 9.1,
+    "index": 37,
+    "album_slug": "i-let-it-in-and-it-took-everything"
+  },
+  {
+    "album": "silence outlives the earth",
+    "artist": "ERRA",
+    "spotify_id": "78YcVZNpzM357BBvAOKS6H",
+    "Yagiz": [
+      5,
+      7,
+      2,
+      6,
+      3
+    ],
+    "Tugba": [
+      5,
+      7,
+      6,
+      2,
+      3
+    ],
+    "Spotify": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ],
+    "similarity_y_vs_t": 2.8434086090775943,
+    "similarity_y_vs_s": -0.55079412792568,
+    "similarity_t_vs_s": -0.55079412792568,
+    "total_songs": 11,
+    "date": "08.03.2026",
+    "release_date": "06.03.2026",
+    "yagiz_score": 9.3,
+    "tugba_score": 9.3,
+    "mean_score": 9.3,
+    "index": 38,
+    "album_slug": "silence-outlives-the-earth"
+  },
+  {
+    "album": "My Head Is an Animal",
+    "artist": "Of Monsters and Men",
+    "spotify_id": "4p9dVvZDaZliSjTCbFRhJy",
+    "Yagiz": [
+      5,
+      1,
+      7,
+      0,
+      2
+    ],
+    "Tugba": [
+      5,
+      1,
+      0,
+      7,
+      2
+    ],
+    "Spotify": [
+      5,
+      0,
+      2,
+      1,
+      7
+    ],
+    "similarity_y_vs_t": 2.9108090331532472,
+    "similarity_y_vs_s": 2.217907577261723,
+    "similarity_t_vs_s": 2.448874729225565,
+    "total_songs": 12,
+    "date": "04.04.2026",
+    "release_date": "01.01.2012",
+    "yagiz_score": 6.7,
+    "tugba_score": 7.8,
+    "mean_score": 7.25,
+    "index": 39,
+    "album_slug": "my-head-is-an-animal"
   }
 ]

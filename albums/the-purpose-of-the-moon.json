@@ -10,7 +10,7 @@
   "tugba_score": 6.7,
   "mean_score": 6.85,
   "similarity_y_vs_t": 2.448874729225565,
-  "similarity_y_vs_s": 1.5250061213701993,
+  "similarity_y_vs_s": 1.7559732733340407,
   "similarity_t_vs_s": 1.986940425297882,
   "yagiz_songs": [
     {
@@ -66,16 +66,16 @@
       "spotify_url": "https://open.spotify.com/track/2jkuS1DhsOw5wXdGdCCHpZ"
     },
     {
-      "name": "What Are You Running From",
-      "spotify_url": "https://open.spotify.com/track/6u5knUxnVsb9BhXNzcpbft"
-    },
-    {
       "name": "Miami Nights II",
       "spotify_url": "https://open.spotify.com/track/21rfPkf5udCIaVvbIqkOa4"
     },
     {
-      "name": "Blackflower",
-      "spotify_url": "https://open.spotify.com/track/6l28xZ6JW45Yp9Izaz3rK5"
+      "name": "What Are You Running From",
+      "spotify_url": "https://open.spotify.com/track/6u5knUxnVsb9BhXNzcpbft"
+    },
+    {
+      "name": "Godmode",
+      "spotify_url": "https://open.spotify.com/track/0NaatcajrxQoJY50S38RFl"
     }
   ]
 }
